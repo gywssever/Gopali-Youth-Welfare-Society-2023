@@ -1,0 +1,227 @@
+/* Navbar.css */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    color: #fff;
+    padding: 0 50px;
+    height: 110px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.nav_space {
+    height: 110px;
+}
+
+.nav_space {
+    height: 110px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .logo img {
+    height: 100px;
+    margin: 5px 10px;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle.open {
+    transform: rotate(90deg);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: auto 0px;
+    font-size: 15px;
+}
+
+.nav-links li {
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li:hover a {
+    color: #fed136;
+    transition: all 0.4s ease 0s;
+}
+
+.donatebtn a {
+    background-color: #fed136;
+    border-radius: 25px;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    margin: auto 0px;
+    transition: all 0.4s ease 0s;
+    height: 40px;
+}
+
+.donatebtn:hover {
+    transition: all 0.4s ease 0s;
+    transform: scale(1.15);
+}
+
+.donatebtn:hover a {
+    color: #000 !important;
+}
+
+.carousel_heading {
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ebebeb;
+    background-color: #2d271980;
+    width: 74%;
+    text-shadow: 2px 2px 5px #0000004f;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.carousel_donate button {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2d271980;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    margin: auto 0px;
+    transition: all 0.4s ease 0s;
+    height: 40px;
+}
+
+.carousel_donate button:hover {
+    background-color: #000;
+    transition: all 0.4s ease 0s;
+}
+
+.HiMenu {
+    font-size: 35px;
+    /* margin-top: 10px; */
+}
+
+@media (max-width: 1024px) {
+    nav {
+        height: 90px;
+    }
+
+    .logo {
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    nav .logo img {
+        height: 90px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background-color: #13192197;
+        line-height: 30px;
+        padding: 20px 0px;
+        position: fixed;
+        top: 90px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav_space {
+        height: 90px;
+    }
+
+    .nav-links.show {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        line-height: 50px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .nav-links li {
+        margin-right: 0px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        padding: 0 10px;
+        height: 69px;
+    }
+
+    .nav_space {
+        height: 69px;
+    }
+
+    .logo {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .menu-toggle,
+    .HiMenu {
+        font-size: 20px;
+    }
+
+    nav .logo img {
+        height: 44px;
+    }
+
+    .nav-links {
+        top: 69px;
+    }
+}
