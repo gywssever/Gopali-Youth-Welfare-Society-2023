@@ -1,0 +1,42 @@
+.members_card{
+    width: 330px;
+    min-height: 400px;
+   margin: 10px;
+   padding: 40px;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0 0 10px blue;
+   transition: 0.5s;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   /* background-color: green; */
+}
+
+.members_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.members_card_image img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius: 200px;
+    margin-bottom: 20px;
+}
+
+.members_card_info h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.members_card_info p{
+    text-align: center;
+}
+.members_card_button{
+    text-align: center;
+}

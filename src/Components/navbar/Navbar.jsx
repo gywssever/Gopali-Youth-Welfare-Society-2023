@@ -41,7 +41,7 @@ function Navbar() {
                         <Link to="/media">Media</Link>
                     </li>
                     <li>
-                        <Link to="/">Members</Link>
+                        <Link to="/member">Members</Link>
                     </li>
                     <li className="donatebtn">
                         <a href="/" target="_blank" rel="noopener noreferrer">
