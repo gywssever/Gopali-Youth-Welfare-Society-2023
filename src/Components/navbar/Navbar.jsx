@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import { AiOutlineMenu } from 'react-icons/ai';
 import { IoClose } from 'react-icons/io5';
-import {IoMenu} from 'react-icons/io5';
+import { IoMenu } from 'react-icons/io5';
 import { Link } from 'react-router-dom'; // Import Link if using React Router
 import './Navbar.css';
 import LOGO from './Images/logo.png';
@@ -30,20 +30,28 @@ function Navbar() {
                     {menuIcon}
                 </div>
 
-                <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
-                    <li>
-                        <Link to="/">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/">Initiatives</Link>
-                    </li>
-                    <li>
-                        <Link to="/media">Media</Link>
-                    </li>
-                    <li>
-                        <Link to="/member">Members</Link>
-                    </li>
-                    <li className="donatebtn">
+                <ul className={`nav-links ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
+                    <Link to="/">
+                        <li>
+                            About
+                        </li>
+                    </Link>
+                    <Link to="/">
+                        <li>
+                            Initiatives
+                        </li>
+                    </Link>
+                    <Link to="/media">
+                        <li>
+                            Media
+                        </li>
+                    </Link>
+                    <Link to="/member">
+                        <li>
+                            Members
+                        </li>
+                    </Link>
+                    <li id="donatebtn">
                         <a href="/" target="_blank" rel="noopener noreferrer">
                             Donate
                         </a>

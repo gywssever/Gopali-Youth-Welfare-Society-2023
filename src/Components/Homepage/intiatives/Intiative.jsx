@@ -11,7 +11,7 @@ export default function intiative() {
                     <h1>OUT INTIATIVES</h1>
                 </div>
                 <div className={inticss.box} id={inticss.area1}>
-                    <div className={inticss.name}><b style={{ color: "#05A1C7" }}> Jagriti Vidhya Mandir </b></div>
+                    <div className={inticss.name}><b style={{ color: "#05A1C7" }}> Jagriti Vidya Mandir </b></div>
                     <div className={inticss.mainbox} id={inticss.first}>
                         <div id={inticss.image}>
                             <img src={jvmlogo} alt="" />

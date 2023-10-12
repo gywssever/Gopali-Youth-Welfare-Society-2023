@@ -13,7 +13,6 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    transition: all 0.4s ease 0s;
 }
 
 .nav_space {
@@ -53,7 +52,7 @@ nav .logo img {
 }
 
 .menu-toggle.open {
-    transform: rotate(90deg);
+    transform: rotate(270deg);
 }
 
 .nav-links {
@@ -66,6 +65,7 @@ nav .logo img {
 .nav-links li {
     margin-right: 30px;
     text-transform: uppercase;
+    transition: all 0.2s ease-in;
 }
 
 .nav-links a {
@@ -73,12 +73,15 @@ nav .logo img {
     color: white;
 }
 
-.nav-links li:hover a {
+.nav-links li:hover {
     color: #fed136;
-    transition: all 0.4s ease 0s;
 }
 
-.donatebtn a {
+#donatebtn {
+    transition: all 0.2s ease-out;
+}
+
+#donatebtn a {
     background-color: #fed136;
     border-radius: 25px;
     color: #000;
@@ -86,17 +89,12 @@ nav .logo img {
     letter-spacing: 1px;
     padding: 10px 20px;
     margin: auto 0px;
-    transition: all 0.4s ease 0s;
+    transition: all 0.2s ease 0s;
     height: 40px;
 }
 
-.donatebtn:hover {
-    transition: all 0.4s ease 0s;
-    transform: scale(1.15);
-}
-
-.donatebtn:hover a {
-    color: #000 !important;
+#donatebtn:hover {
+    transform: scale(1.04);
 }
 
 .carousel_heading {
@@ -138,8 +136,7 @@ nav .logo img {
 }
 
 .HiMenu {
-    font-size: 35px;
-    /* margin-top: 10px; */
+    scale: 1.1;
 }
 
 @media (max-width: 1024px) {
@@ -160,17 +157,21 @@ nav .logo img {
         list-style: none;
         display: flex;
         flex-direction: column;
-        background-color: #13192197;
+        justify-content: space-evenly;
+        background-color: #ddd;
         line-height: 30px;
-        padding: 20px 0px;
+        margin: -7px 0px;
+        padding: 20px 10px;
         position: fixed;
         top: 90px;
         right: 0;
-        width: 100%;
+        min-width: 70%;
+        min-height: 50vh;
         text-align: center;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-out;
         z-index: 999;
+        border-radius: 10px 0px 0px 10px;
     }
 
     .nav_space {
@@ -179,10 +180,12 @@ nav .logo img {
 
     .nav-links.show {
         transform: translateX(0);
+        transition: transform 0.2s ease-out;
     }
 
     .menu-toggle {
         display: block;
+        margin-bottom: 5px;
     }
 
     .nav-links {
@@ -192,8 +195,26 @@ nav .logo img {
     }
 
     .nav-links li {
-        margin-right: 0px;
+        font-weight: 600;
+        color: #161e1e;
+        margin: 0px 10px;
+        
         text-transform: uppercase;
+        text-shadow: 2px 2px 5px #0000004f;
+        border-radius: 10px;
+    }
+
+    .nav-links li:hover {
+        background-color: #fed336;
+        color: #000;
+    }
+
+    #donatebtn a{
+        background-color: transparent;
+    }
+
+    #donatebtn:hover {
+        transform: none;
     }
 }
 
