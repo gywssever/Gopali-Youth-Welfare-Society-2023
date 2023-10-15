@@ -52,7 +52,7 @@ nav .logo img {
 }
 
 .menu-toggle.open {
-    transform: rotate(270deg);
+    transform: rotate(180deg);
 }
 
 .nav-links {
@@ -66,6 +66,8 @@ nav .logo img {
     margin-right: 30px;
     text-transform: uppercase;
     transition: all 0.2s ease-in;
+    /* font-weight: 600; */
+    letter-spacing: 0.4px;
 }
 
 .nav-links a {
@@ -83,57 +85,22 @@ nav .logo img {
 
 #donatebtn a {
     background-color: #fed136;
-    border-radius: 25px;
+    border-radius: 5px;
     color: #000;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 10px 20px;
+    padding: 11px 14px;
     margin: auto 0px;
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s ease-out;
     height: 40px;
 }
 
 #donatebtn:hover {
     transform: scale(1.04);
+    box-shadow: 0px 0px 10px 0px #73C48F;
 }
 
-.carousel_heading {
-    position: absolute;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #ebebeb;
-    background-color: #2d271980;
-    width: 74%;
-    text-shadow: 2px 2px 5px #0000004f;
-    text-align: center;
-    border-radius: 20px 20px 0px 0px;
-}
 
-.carousel_donate button {
-    position: absolute;
-    top: 86%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #2d271980;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 10px 20px;
-    margin: auto 0px;
-    transition: all 0.4s ease 0s;
-    height: 40px;
-}
-
-.carousel_donate button:hover {
-    background-color: #000;
-    transition: all 0.4s ease 0s;
-}
 
 .HiMenu {
     scale: 1.1;
