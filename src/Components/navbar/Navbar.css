@@ -125,20 +125,20 @@ nav .logo img {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: #ddd;
+        background-color: #13192180;
         line-height: 30px;
         margin: -7px 0px;
         padding: 20px 10px;
         position: fixed;
         top: 90px;
         right: 0;
-        min-width: 70%;
+        width: 100%;
         min-height: 50vh;
         text-align: center;
         transform: translateX(100%);
         transition: transform 0.3s ease-out;
         z-index: 999;
-        border-radius: 10px 0px 0px 10px;
+        border-radius: 0px 0px 10px 10px;
     }
 
     .nav_space {
@@ -163,25 +163,17 @@ nav .logo img {
 
     .nav-links li {
         font-weight: 600;
-        color: #161e1e;
+        color: #fff;
         margin: 0px 10px;
         
         text-transform: uppercase;
         text-shadow: 2px 2px 5px #0000004f;
         border-radius: 10px;
-    }
-
-    .nav-links li:hover {
-        background-color: #fed336;
-        color: #000;
-    }
-
-    #donatebtn a{
-        background-color: transparent;
+        cursor: pointer;
     }
 
     #donatebtn:hover {
-        transform: none;
+        box-shadow: none;
     }
 }
 
