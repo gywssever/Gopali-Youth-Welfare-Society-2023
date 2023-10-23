@@ -15,7 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/media" element={<Media />} />
-        <Route path="/member" element={<Member />} />
+        <Route path="/member/*" element={<Member />} />
       </Routes>
       <ScrollToTop />
       <Footer />

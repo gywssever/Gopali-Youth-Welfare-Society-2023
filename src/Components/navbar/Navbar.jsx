@@ -5,7 +5,7 @@ import { IoMenu } from 'react-icons/io5';
 import { Link } from 'react-router-dom'; // Import Link if using React Router
 import './Navbar.css';
 import LOGO from './Images/logo.png';
-import Hamburger from './Hamburger';
+// import Hamburger from './Hamburger';
 
 function Navbar() {
     const [showMenu, setShowMenu] = useState(false);

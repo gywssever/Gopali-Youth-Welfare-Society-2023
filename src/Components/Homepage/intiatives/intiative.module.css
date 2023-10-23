@@ -65,6 +65,7 @@
     padding-bottom: 2vh;
     margin: 0 auto;
     width: 450px;
+    transition: 0.5s;
 }
 
 .mainbox button {
@@ -76,10 +77,18 @@
     background-color: #F9EE34;
     border: solid #F9EE34;
     border-radius: 2rem;
+    transition: all 0.2s ease-out;
 
 }
-
-
+.mainbox button:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 0px #73C48F;
+}
+.mainbox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
 .mainbox img {
     width: 300px;
     /* height: 200px; */
@@ -107,6 +116,8 @@
     border-bottom: 10px solid #05A1C7;
     border-left: 2px solid #05A1C7;
     border-top: 2px solid #05A1C7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 #middle {
@@ -116,6 +127,8 @@
     border-right: 2px solid #F9EE34;
     border-top: 2px solid #F9EE34;
     /* padding: 2.7rem; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 #third {
@@ -123,6 +136,8 @@
     border-bottom: 10px solid #F16A36;
     border-left: 2px solid #F16A36;
     border-top: 2px solid #F16A36;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 
