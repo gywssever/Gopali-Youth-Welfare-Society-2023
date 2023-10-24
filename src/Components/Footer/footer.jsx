@@ -31,7 +31,7 @@ function footer() {
                                     </IconContext.Provider>
                                 </li>
                                 <li>
-                                    <IconContext.Provider value={{ color: '#3b5998' }}>
+                                    <IconContext.Provider value={{ color: '#fa7e1e' }}>
                                         <Link href="/">
                                             <AiOutlineInstagram />
                                         </Link>
