@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 // import { AiOutlineMenu } from 'react-icons/ai';
 import { IoClose } from 'react-icons/io5';
 import { IoMenu } from 'react-icons/io5';
 import { Link } from 'react-router-dom'; // Import Link if using React Router
 import './Navbar.css';
 import LOGO from './Images/logo.png';
-import Hamburger from './Hamburger';
+// import Hamburger from './Hamburger';
 
 function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
@@ -27,6 +27,7 @@ function Navbar() {
                     <img src={LOGO} alt="GYWS_Logo" />
                     <Link to="/">Gopali Youth Welfare Society</Link> {/* Use Link here */}
                 </div>
+                
                 <div className={`menu-toggle ${showMenu ? 'open' : ''}`}>
                     {menuIcon}
                     {/* <Hamburger className="HiMenu" onClick={toggleMenu}  /> */}
