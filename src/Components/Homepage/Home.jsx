@@ -6,7 +6,7 @@ import Impact from './impact/Impact'
 
 
 function Home() {
-    document.title = "GYWS - Home";
+    document.title = "Home | GYWS"
 
 
     return (

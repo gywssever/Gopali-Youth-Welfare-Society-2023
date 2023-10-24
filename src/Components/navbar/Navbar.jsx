@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 // import { AiOutlineMenu } from 'react-icons/ai';
 import { IoClose } from 'react-icons/io5';
 import { IoMenu } from 'react-icons/io5';
@@ -27,6 +27,7 @@ function Navbar() {
                     <img src={LOGO} alt="GYWS_Logo" />
                     <Link to="/">Gopali Youth Welfare Society</Link> {/* Use Link here */}
                 </div>
+                
                 <div className={`menu-toggle ${showMenu ? 'open' : ''}`}>
                     {menuIcon}
                     {/* <Hamburger className="HiMenu" onClick={toggleMenu}  /> */}

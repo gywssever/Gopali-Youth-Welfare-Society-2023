@@ -13,7 +13,6 @@ function footer() {
     return (
         <>
             <div className="footer_footerbody">
-
                 <footer>
                     <div className="footer_container1">
                         <div className="footer_sec footer_aboutus">
@@ -24,16 +23,27 @@ function footer() {
                             <p>Gopali Youth Welfare Society is a registered voluntary non-governmental organisation run by IIT Kharagpur students along with some faculty members with the support of local members from Gopali.
                             </p>
                             <ul className="footer_sci">
-
-                                <li> <IconContext.Provider
-                                    value={{ color: '#3b5998' }}
-                                ><Link href="/"><BiLogoFacebook /></Link> </IconContext.Provider></li>
-                                <li> <IconContext.Provider
-                                    value={{ color: '#4f5bd5' }}
-                                ><Link href="/"><AiOutlineInstagram /></Link> </IconContext.Provider></li>
-                                <li> <IconContext.Provider
-                                    value={{ color: '#0072b1' }}
-                                ><Link href="/"><AiOutlineLinkedin /></Link> </IconContext.Provider></li>
+                                <li>
+                                    <IconContext.Provider value={{ color: '#3b5998' }}>
+                                        <Link href="/">
+                                            <BiLogoFacebook />
+                                        </Link>
+                                    </IconContext.Provider>
+                                </li>
+                                <li>
+                                    <IconContext.Provider value={{ color: '#3b5998' }}>
+                                        <Link href="/">
+                                            <AiOutlineInstagram />
+                                        </Link>
+                                    </IconContext.Provider>
+                                </li>
+                                <li>
+                                    <IconContext.Provider value={{ color: '#3b5998' }}>
+                                        <Link href="/">
+                                            <AiOutlineLinkedin />
+                                        </Link>
+                                    </IconContext.Provider>
+                                </li>
                             </ul>
                         </div>
                         <div className="footer_sec footer_quicklinks">
@@ -52,8 +62,8 @@ function footer() {
                             <ul className="footer_info">
                                 <li>
                                     <p>Gopali (No-shooting Area),</p>
-                                    <p>P.O. – Salua, Dist. – Paschim Medinipur,</p>
-                                    <p>    West Bengal, Pin-721145.</p>
+                                    <p><strong>P.O.:</strong> Salua <strong>Dist.:</strong> Paschim Medinipur</p>
+                                    <p>West Bengal, 721145.</p>
                                 </li>
                                 <li>
                                     <span><IoIosCall /></span><Link href="8386832934"> 8815655639</Link>
@@ -69,9 +79,6 @@ function footer() {
                     </div>
                 </footer >
             </div >
-
-
-
         </>
     )
 }
