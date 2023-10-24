@@ -1,11 +1,12 @@
 import './footer.css'
 import { IconContext } from "react-icons";
-// import logo from '../navbar/Images/logo.png'
+import logo from '../navbar/Images/logo.png'
 import { BiLogoFacebook } from 'react-icons/bi'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { IoIosCall } from 'react-icons/io'
 import { HiOutlineMail } from 'react-icons/hi'
+import { Link } from 'react-router-dom';
 
 function footer() {
 
@@ -16,32 +17,33 @@ function footer() {
                 <footer>
                     <div className="footer_container1">
                         <div className="footer_sec footer_aboutus">
-                            <h2>GYWS</h2>
+                            <div className='footer_logo'>
+                                <img src={logo} alt="" />
+                                <h2>GYWS</h2>
+                            </div>
                             <p>Gopali Youth Welfare Society is a registered voluntary non-governmental organisation run by IIT Kharagpur students along with some faculty members with the support of local members from Gopali.
-
-
                             </p>
                             <ul className="footer_sci">
 
                                 <li> <IconContext.Provider
-                                    value={{ color: '#fff', fontSize: '20px' }}
-                                ><a href="/"><BiLogoFacebook /></a> </IconContext.Provider></li>
+                                    value={{ color: '#3b5998' }}
+                                ><Link href="/"><BiLogoFacebook /></Link> </IconContext.Provider></li>
                                 <li> <IconContext.Provider
-                                    value={{ color: '#fff', fontSize: '20px' }}
-                                ><a href="/"><AiOutlineInstagram /></a> </IconContext.Provider></li>
+                                    value={{ color: '#4f5bd5' }}
+                                ><Link href="/"><AiOutlineInstagram /></Link> </IconContext.Provider></li>
                                 <li> <IconContext.Provider
-                                    value={{ color: '#fff', fontSize: '20px' }}
-                                ><a href="/"><AiOutlineLinkedin /></a> </IconContext.Provider></li>
+                                    value={{ color: '#0072b1' }}
+                                ><Link href="/"><AiOutlineLinkedin /></Link> </IconContext.Provider></li>
                             </ul>
                         </div>
                         <div className="footer_sec footer_quicklinks">
                             <h2>Quick Link</h2>
                             <ul>
-                                <li><a href="/">Home</a></li><hr />
-                                <li><a href="/">About Us</a></li><hr />
-                                <li><a href="/">Intiative</a></li><hr />
-                                <li><a href="/">Media</a></li><hr />
-                                <li><a href="/">Members</a></li><hr />
+                                <li><Link to="/">Home</Link></li><hr />
+                                <li><Link to="/">About Us</Link></li><hr />
+                                <li><Link to="/">Intiative</Link></li><hr />
+                                <li><Link to="/media">Media</Link></li><hr />
+                                <li><Link to="/member">Members</Link></li><hr />
                             </ul>
                         </div>
 
@@ -54,10 +56,10 @@ function footer() {
                                     <p>    West Bengal, Pin-721145.</p>
                                 </li>
                                 <li>
-                                    <span><IoIosCall /></span><a href="8386832934"> 8815655639</a>
+                                    <span><IoIosCall /></span><Link href="8386832934"> 8815655639</Link>
                                 </li>
                                 <li>
-                                    <span><HiOutlineMail /></span><a href="gywsociety@gmail.com">gywsociety@gmail.com</a>
+                                    <span><HiOutlineMail /></span><Link href="gywsociety@gmail.com">gywsociety@gmail.com</Link>
                                 </li>
                             </ul>
                         </div>
