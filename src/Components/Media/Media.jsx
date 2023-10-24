@@ -3,7 +3,7 @@ import Newsletter from './Newletter/Newsletter.jsx'
 import './Media.css'
 
 export default function Media() {
-    document.title = "GYWS - Media";
+    document.title = "Media | GYWS"
 
     return (
         <>
