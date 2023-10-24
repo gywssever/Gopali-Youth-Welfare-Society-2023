@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 import logo from '../navbar/Images/logo.png'
 import { BiLogoFacebook } from 'react-icons/bi'
 import { AiOutlineInstagram } from 'react-icons/ai'
-import { AiOutlineLinkedin } from 'react-icons/ai'
+import { FaLinkedinIn } from 'react-icons/fa'
 import { IoIosCall } from 'react-icons/io'
 import { HiOutlineMail } from 'react-icons/hi'
 import { Link } from 'react-router-dom';
@@ -40,7 +40,7 @@ function footer() {
                                 <li>
                                     <IconContext.Provider value={{ color: '#3b5998' }}>
                                         <Link href="/">
-                                            <AiOutlineLinkedin />
+                                            <FaLinkedinIn />
                                         </Link>
                                     </IconContext.Provider>
                                 </li>

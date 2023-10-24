@@ -85,6 +85,12 @@ footer .footer_container1 .footer_quicklinks ul li a {
     /* margin-bottom: 10px; */
     display: inline-block;
 }
+footer .footer_container1 .footer_quicklinks ul li a:hover{
+    color: #091eff;
+    text-decoration: none;
+    /* margin-bottom: 10px; */
+    display: inline-block;
+}
 
 footer .footer_container1 .footer_container1 .footer_info {
     display: grid;
