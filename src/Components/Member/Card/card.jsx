@@ -1,27 +1,46 @@
-import React from 'react'
-import { BiLogoFacebook } from 'react-icons/bi'
-import { AiOutlineLinkedin } from 'react-icons/ai'
-import './card.css'
-function card(props) {
-    return (
-        <>
-            <div className="members_card">
-                <div className="members_card_image">
-                    <img src={props.imageUrl} alt="imae" srcset="" />
-                </div>
-                <div className="members_card_info">
-                    <h3>{props.name}</h3>
-                    <p>{props.position}</p>
-                    <div className="members_card_button">
-                        <a href={props.facebookLink} className="" target='_blank' rel="noreferrer"><BiLogoFacebook/></a>
-                        &nbsp;&nbsp;
-                        <a href={props.linkedinLink} className="" target='_blank' rel="noreferrer"><AiOutlineLinkedin/></a>
-                    </div>
+import "./card.css";
+import { Linkedin, Facebook, EnvelopeFill } from 'react-bootstrap-icons'
 
-                </div>
-            </div>
-        </>
-    )
+function card(props) {
+  return (
+    <>
+      <div className="members_card">
+        <div className="members_card_image">
+          <img src={props.imageUrl} alt="imae" srcset="" />
+        </div>
+        <div className="members_card_info">
+          <h3 className="members_name">{props.name}</h3>
+          <p className="members_designation">{props.position}</p>
+          <div className="members_social_links">
+            <a
+              href={props.facebookLink}
+              className=""
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Facebook />
+            </a>
+            <a
+              href={props.email}
+              className=""
+              target="_blank"
+              rel="noreferrer"
+            >              <EnvelopeFill />
+              
+            </a>
+            <a
+              href={props.linkedinLink}
+              className=""
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Linkedin />
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default card
+export default card;

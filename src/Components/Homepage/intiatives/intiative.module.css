@@ -1,14 +1,6 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
-
 .heading h1 {
-    /* border: solid red; */
     text-align: center;
-    margin-bottom: 2vw;
-    font-weight: 600;
+    margin: 0 auto;
 }
 
 .container {

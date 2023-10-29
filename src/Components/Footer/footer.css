@@ -29,7 +29,6 @@ footer .footer_container1 .footer_logo{
 }
 
 footer .footer_container1 .footer_logo img{
-    height: 80px;
     width: 80px;
 }
 footer .footer_container1 .footer_sec h2 {
@@ -64,7 +63,9 @@ footer .footer_container1 .footer_sci li a {
     align-content: center;
     justify-content: center;
     text-decoration: none;
-    transition: all 0.2s ease-out;}
+    transition: all 0.2s ease-out;
+    color: #555;
+}
 
 footer .footer_container1 .footer_sci li a:hover{
     transform: scale(1.05);
@@ -92,11 +93,6 @@ footer .footer_container1 .footer_container1 .footer_info {
     margin-bottom: 16px;
 }
 
-footer .footer_container1 .footer_container1 .footer_info li span {
-    color: #555;
-    font-size: 20px;
-}
-
 footer .footer_container1 .footer_container1 .footer_info li a {
     color: #555;
     text-decoration: none;
@@ -122,6 +118,10 @@ footer .footer_container1 .footer_container1 .footer_info li a {
 .footer_info li a {
     margin-left: 8px;
     text-decoration: none;
+}
+
+.footer_footerbody .footer_contact {    
+    line-height: 3;
 }
 
 .footer_footerbody .footer_contact a {

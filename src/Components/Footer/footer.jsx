@@ -1,12 +1,8 @@
 import './footer.css'
 import { IconContext } from "react-icons";
 import logo from '../navbar/Images/logo.png'
-import { BiLogoFacebook } from 'react-icons/bi'
-import { AiOutlineInstagram } from 'react-icons/ai'
-import { AiOutlineLinkedin } from 'react-icons/ai'
-import { IoIosCall } from 'react-icons/io'
-import { HiOutlineMail } from 'react-icons/hi'
 import { Link } from 'react-router-dom';
+import {Facebook, Instagram, Linkedin , TelephoneFill, EnvelopeFill } from 'react-bootstrap-icons';
 
 function footer() {
 
@@ -18,7 +14,7 @@ function footer() {
                         <div className="footer_sec footer_aboutus">
                             <div className='footer_logo'>
                                 <img src={logo} alt="" />
-                                <h2>GYWS</h2>
+                                <h2>GOPALI YOUTH WELFARE SOCIETY</h2>
                             </div>
                             <p>Gopali Youth Welfare Society is a registered voluntary non-governmental organisation run by IIT Kharagpur students along with some faculty members with the support of local members from Gopali.
                             </p>
@@ -26,28 +22,28 @@ function footer() {
                                 <li>
                                     <IconContext.Provider value={{ color: '#3b5998' }}>
                                         <Link href="/">
-                                            <BiLogoFacebook />
+                                            <Facebook />
                                         </Link>
                                     </IconContext.Provider>
                                 </li>
                                 <li>
                                     <IconContext.Provider value={{ color: '#3b5998' }}>
                                         <Link href="/">
-                                            <AiOutlineInstagram />
+                                            <Instagram />
                                         </Link>
                                     </IconContext.Provider>
                                 </li>
                                 <li>
                                     <IconContext.Provider value={{ color: '#3b5998' }}>
                                         <Link href="/">
-                                            <AiOutlineLinkedin />
+                                            <Linkedin />
                                         </Link>
                                     </IconContext.Provider>
                                 </li>
                             </ul>
                         </div>
                         <div className="footer_sec footer_quicklinks">
-                            <h2>Quick Link</h2>
+                            <h2>QUICK LINKS</h2>
                             <ul>
                                 <li><Link to="/">Home</Link></li><hr />
                                 <li><Link to="/">About Us</Link></li><hr />
@@ -58,19 +54,23 @@ function footer() {
                         </div>
 
                         <div className="footer_sec footer_contact">
-                            <h2>Contact Us</h2>
+                            <h2>CONTACT US</h2>
                             <ul className="footer_info">
                                 <li>
                                     <p>Gopali (No-shooting Area),</p>
                                     <p><strong>P.O.:</strong> Salua <strong>Dist.:</strong> Paschim Medinipur</p>
                                     <p>West Bengal, 721145.</p>
                                 </li>
-                                <li>
-                                    <span><IoIosCall /></span><Link href="8386832934"> 8815655639</Link>
-                                </li>
-                                <li>
-                                    <span><HiOutlineMail /></span><Link href="gywsociety@gmail.com">gywsociety@gmail.com</Link>
-                                </li>
+                                <a href="tel:+918386832934">
+                                    <li>
+                                        <TelephoneFill/> 8815655639
+                                    </li>
+                                </a>
+                                <a href="mailto:gywsociety@gmail.com">
+                                    <li>
+                                        <EnvelopeFill/> gywsociety@gmail.com
+                                    </li>
+                                </a>
                             </ul>
                         </div>
                     </div>
