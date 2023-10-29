@@ -20,25 +20,19 @@ function footer() {
                             </p>
                             <ul className="footer_sci">
                                 <li>
-                                    <IconContext.Provider value={{ color: '#3b5998' }}>
-                                        <Link href="/">
+                                        <a href="/">
                                             <Facebook />
-                                        </Link>
-                                    </IconContext.Provider>
+                                        </a>
                                 </li>
                                 <li>
-                                    <IconContext.Provider value={{ color: '#3b5998' }}>
-                                        <Link href="/">
+                                        <a href="/">
                                             <Instagram />
-                                        </Link>
-                                    </IconContext.Provider>
+                                        </a>
                                 </li>
                                 <li>
-                                    <IconContext.Provider value={{ color: '#3b5998' }}>
-                                        <Link href="/">
+                                        <a href="/">
                                             <Linkedin />
-                                        </Link>
-                                    </IconContext.Provider>
+                                        </a>
                                 </li>
                             </ul>
                         </div>
