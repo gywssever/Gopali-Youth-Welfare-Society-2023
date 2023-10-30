@@ -1,5 +1,5 @@
-import Member2223 from './Member2022-23/members2223'
 import './Member.css'
+import Member2223 from './Member2022-23/members2223'
 import Member2324 from './Member2023-24/members2324'
 import { Routes, Route, Link } from 'react-router-dom'
 
@@ -28,7 +28,7 @@ function Members() {
                             </li>
                         </Link>
                     </ul>
-                    <h2>Intiative</h2>
+                    <h2>Heads</h2>
                     <ul>
                         <Link to="/member">
                             <li>
@@ -38,7 +38,7 @@ function Members() {
                         </Link>
                         <Link to="/member">
                             <li>
-                                Rise <br />
+                                RISE <br />
                                 Reform and Innovate School Education
                             </li>
                         </Link>
@@ -53,12 +53,11 @@ function Members() {
                 </div>
                 <div class="main_content">
                     <Routes>
-                        <Route exact path="/" element={<Member2324 key={1} />}/>
-                        <Route exact path="/Member2223" element={<Member2223 key={3} />}/>
+                        <Route exact path="/" element={<Member2324 key={1} />} />
+                        <Route exact path="/Member2223" element={<Member2223 key={3} />} />
                     </Routes>
                 </div>
             </div>
-
         </>
     )
 }

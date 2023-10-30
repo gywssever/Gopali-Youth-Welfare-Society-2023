@@ -1,8 +1,7 @@
 import './footer.css'
-import { IconContext } from "react-icons";
 import logo from '../navbar/Images/logo.png'
 import { Link } from 'react-router-dom';
-import {Facebook, Instagram, Linkedin , TelephoneFill, EnvelopeFill } from 'react-bootstrap-icons';
+import { Facebook, Instagram, Linkedin, Twitter, TelephoneFill, EnvelopeFill } from 'react-bootstrap-icons';
 
 function footer() {
 
@@ -20,19 +19,24 @@ function footer() {
                             </p>
                             <ul className="footer_sci">
                                 <li>
-                                        <a href="/">
-                                            <Facebook />
-                                        </a>
+                                    <a href="https://www.facebook.com/gyws.iitkgp">
+                                        <Facebook />
+                                    </a>
                                 </li>
                                 <li>
-                                        <a href="/">
-                                            <Instagram />
-                                        </a>
+                                    <a href="https://www.instagram.com/gyws_ngo.iitkgp/">
+                                        <Instagram />
+                                    </a>
                                 </li>
                                 <li>
-                                        <a href="/">
-                                            <Linkedin />
-                                        </a>
+                                    <a href="https://www.linkedin.com/company/gopali-youth-welfare-society/mycompany/">
+                                        <Linkedin />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/gopali_youth">
+                                        <Twitter />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -57,12 +61,12 @@ function footer() {
                                 </li>
                                 <a href="tel:+918386832934">
                                     <li>
-                                        <TelephoneFill/> 8815655639
+                                        <TelephoneFill className='logo-footercontact'/> 8815655639
                                     </li>
                                 </a>
                                 <a href="mailto:gywsociety@gmail.com">
                                     <li>
-                                        <EnvelopeFill/> gywsociety@gmail.com
+                                        <EnvelopeFill className='logo-footercontact'/> gywsociety@gmail.com
                                     </li>
                                 </a>
                             </ul>

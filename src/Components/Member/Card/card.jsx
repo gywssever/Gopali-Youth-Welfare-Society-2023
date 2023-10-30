@@ -21,12 +21,12 @@ function card(props) {
               <Facebook />
             </a>
             <a
-              href={props.email}
+              href={`mailto:${props.email}`}
               className=""
               target="_blank"
               rel="noreferrer"
             >              <EnvelopeFill />
-              
+
             </a>
             <a
               href={props.linkedinLink}

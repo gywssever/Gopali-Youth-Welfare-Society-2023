@@ -47,12 +47,15 @@ nav .logo img {
 .menu-toggle {
     display: none;
     cursor: pointer;
-    font-size: 30px;
     transition: transform 0.3s ease-in-out;
 }
 
 .menu-toggle.open {
     transform: rotate(180deg);
+}
+
+.HiMenu {
+    transform: scale(1.2);
 }
 
 .nav-links {
@@ -102,9 +105,6 @@ nav .logo img {
 
 
 
-.HiMenu {
-    scale: 1.1;
-}
 
 @media (max-width: 1024px) {
     nav {
@@ -151,8 +151,8 @@ nav .logo img {
     }
 
     .menu-toggle {
-        display: block;
-        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
     }
 
     .nav-links {

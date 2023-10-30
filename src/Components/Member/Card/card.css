@@ -62,8 +62,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 0 0 7px rgb(0, 0, 0, 0.5); */
-  /* border-radius: 20px; */
 }
 
 .members_card_info .members_social_links a {

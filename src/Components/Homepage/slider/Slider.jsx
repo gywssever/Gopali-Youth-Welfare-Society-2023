@@ -15,8 +15,8 @@ function Slider() {
           timeInterval={1000}
           autoPlay={true}
           interval={2000}
-          centerMode={true}
-          centerSlidePercentage={96}
+          // centerMode={true}
+          // centerSlidePercentage={96}
           infiniteLoop={true}
           stopOnHover={true}
           preventMovementUntilSwipeScrollTolerance={true}

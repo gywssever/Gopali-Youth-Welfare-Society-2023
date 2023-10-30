@@ -9,7 +9,7 @@ export default function page() {
         <>
             <div className="members_container">
                 {data.map((data,index)=>(
-                    <Card key={index} name={data.name} position={data.position} imageUrl={data.imageUrl}/>
+                    <Card key={index} name={data.name} position={data.position} email={data.email} imageUrl={data.imageUrl} facebookLink={data.facebookLink} linkedinLink={data.linkedinLink} />
                 ))}
             </div>
         </>
