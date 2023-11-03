@@ -1,8 +1,5 @@
 import './Navbar.css';
 import { useState } from 'react';
-// import { AiOutlineMenu } from 'react-icons/ai';
-// import { IoClose } from 'react-icons/io5';
-// import { IoMenu } from 'react-icons/io5';
 import { Link } from 'react-router-dom'; // Import Link if using React Router
 import LOGO from './Images/logo.png';
 // import Hamburger from './Hamburger';
