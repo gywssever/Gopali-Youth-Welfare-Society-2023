@@ -5,8 +5,8 @@ function ContactUs() {
   return (
     <>
       <div class="contactUs">
-        <div class="title">
-          <h2>Get in Touch</h2>
+        <div class="heading">
+          <h1>GET IN TOUCH</h1>
         </div>
 
         <div class="box">

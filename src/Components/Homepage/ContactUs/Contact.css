@@ -4,19 +4,16 @@
 
 .contactUs {
     background: linear-gradient(90deg, #695E91 0%, #73c48f 30%, #05A1C7 100%);
-
-}
-.contactUs {
     position: relative;
     width: 100%;
     padding: 40px 100px;
+
 }
 
-.contactUs .title {
+.contactUs .heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
 }
 
 .contactUs .title h2 {
@@ -227,10 +224,6 @@
 /* Media responsive */
 
 @media (max-width:991px) {
-
-    .contactUs {
-        background: #67e1f4;
-    }
 
     .contactUs {
         padding: 20px;
