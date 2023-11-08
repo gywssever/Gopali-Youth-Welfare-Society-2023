@@ -11,7 +11,11 @@ export default function intiative() {
                     <h1>OUR INTIATIVES</h1>
                 </div>
                 <div className={inticss.box} id={inticss.area1}>
-                    <div className={inticss.name}><b style={{ color: "#05A1C7" }}> Jagriti Vidya Mandir </b></div>
+                    <div className={inticss.name}>
+                        <strong style={{ color: "#05A1C7" }}>
+                            Jagriti Vidya Mandir
+                        </strong>
+                    </div>
                     <div className={inticss.mainbox} id={inticss.first}>
                         <div id={inticss.image}>
                             <img src={jvmlogo} alt="" />
@@ -23,30 +27,35 @@ export default function intiative() {
                         <button style={{
                             backgroundColor: '#F16A36',
                             borderColor: '#F16A36',
-                    
-                        }}><b><a style={{textDecoration: 'none', color: 'black'}} href="https://www.gyws.org/initiatives.html">Read More </a> </b></button>
+                        }}><b><a style={{ textDecoration: 'none', color: 'black' }} href="https://www.gyws.org/initiatives.html">Read More </a> </b></button>
                     </div>
                 </div>
                 <div className={inticss.box} id={inticss.area2}>
-                    <div className={inticss.name}><b style={{ color: "#F9EE34 " }}>LiGHT </b></div>
+                    <div className={inticss.name}>
+                        <strong style={{ color: "#F9EE34 " }}>LiGHT </strong>
+                    </div>
                     <div className={inticss.mainbox} id={inticss.middle}>
                         <div id={inticss.image}>
                             <img src={lightlogo} alt="" />
                         </div>
-                        <div className={inticss.discr}>"Expansion Initiative
-                            - forming a PAN India network of socially motivated youth."</div>
+                        <div className={inticss.discr}>
+                            "Expansion Initiative
+                            - forming a PAN India network of socially motivated youth."
+                        </div>
                         <div id={inticss.number} >12+</div>
                         <div className={inticss.discr}>Student run centers
                         </div>
                         <button style={{
                             backgroundColor: '#F16A36',
                             borderColor: '#F16A36'
-                        }}><b><a style={{textDecoration: 'none', color: 'black'}} href="https://light.org.in/">Read More </a> </b></button>
+                        }}><b><a style={{ textDecoration: 'none', color: 'black' }} href="https://light.org.in/">Read More </a> </b></button>
                     </div>
                 </div>
 
                 <div className={inticss.box} id={inticss.area3}>
-                    <div className={inticss.name}><b style={{ color: "#F16A36" }}> Covid-19 </b></div>
+                    <div className={inticss.name}>
+                        <strong style={{ color: "#F16A36" }}> Covid-19 </strong>
+                    </div>
                     <div className={inticss.mainbox} id={inticss.third}>
                         <div id={inticss.image}>
                             <img src={covidlogo} alt="" />

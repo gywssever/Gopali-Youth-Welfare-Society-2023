@@ -64,59 +64,43 @@
 
 }
 
-
-/* form */
-
 .formBox {
     position: 100%;
     width: 100%;
-
 }
 
 .formBox .row50 {
-
     display: flex;
     gap: 20px;
-
 }
 
 .inputBox {
-
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
-
-
 }
 
 .formBox .row100 .inputBox {
-
     width: 100%;
-
 }
 
 
 .inputBox span {
-
     color: #18b7ff;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
-
 }
 
 .inputBox input {
-
     padding: 10px;
     font-size: 1.1rem;
     outline: none;
     border: 1px solid #333;
-
 }
 
 .inputBox textarea {
-
     padding: 10px;
     font-size: 1.1rem;
     outline: none;
@@ -128,7 +112,6 @@
 
 
 .inputBox input[type="submit"] {
-
     background: #ff578b;
     color: #fff;
     border: none;
@@ -139,7 +122,6 @@
     padding: 14px 15px;
 }
 
-/* info */
 .info {
     background: #ffc107;
 }
@@ -149,16 +131,12 @@
 }
 
 .info .infobox div {
-
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-
-
 }
 
 .info .infobox div span {
-
     min-width: 40px;
     height: 40px;
     color: #fff;
@@ -172,14 +150,11 @@
 }
 
 .info .infobox div p {
-
     color: #fff;
     font-size: 1.1em;
-
 }
 
 .info .infobox div a {
-
     color: #fff;
     text-decoration: none;
     font-size: 1.1em;
@@ -188,7 +163,6 @@
 .sci {
     margin-top: 40px;
     display: flex;
-
 }
 
 .sci li {
@@ -197,7 +171,6 @@
 }
 
 .sci li a {
-
     color: #fff;
     font-size: 2em;
     color: #332a2a;
@@ -205,11 +178,9 @@
 
 .sci li a:hover {
     color: #fff;
-
 }
 
 .map {
-
     padding: 0px;
     width: 100%;
     height: 100%
@@ -220,29 +191,20 @@
     height: 100%;
 }
 
-
-/* Media responsive */
-
 @media (max-width:991px) {
-
     .contactUs {
         padding: 20px;
-
-
     }
 
     .box {
-
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "form"
             "info"
-            "map"
-
+            "map";
     }
 
     .map {
-
         min-height: 300px;
     }
 
@@ -250,11 +212,9 @@
         display: flex;
         gap: 0px;
         flex-direction: column;
-
     }
 
     .inputBox {
-
         width: 100%;
     }
 

@@ -2,11 +2,10 @@ import React from "react";
 import "./guest.css";
 import guestPhoto from "./image/SDO_AzmalHossain.jpg";
 
-function Guest() {
- 
+export default function Guest() {
+
   return (
     <>
-    
       <div className="guestPage">
         <div className="infoGuest">
           <h2 className="titleGuest">
@@ -23,14 +22,11 @@ function Guest() {
         </div>
 
         <div className="imageGuest">
-      <div className="image">
-        <img src={guestPhoto} alt="" />
+          <div className="image">
+            <img src={guestPhoto} alt="" />
+          </div>
+        </div>
       </div>
-    </div>
-       </div>
-       
     </>
   );
-  }
-
-export default Guest;
+}

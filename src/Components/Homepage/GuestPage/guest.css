@@ -1,14 +1,8 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
-
 .guestPage{
     display: grid;
     grid-template-columns: 50% 50% ;
-    margin: 5vh;
-    padding: 7vh;
+    max-width: 1200px;
+    margin: 10px auto;
     text-align: justify;
 }
 
