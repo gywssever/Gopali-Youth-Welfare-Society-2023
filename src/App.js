@@ -19,7 +19,6 @@ export default function App() {
       </Routes>
       <ScrollToTop />
       <Footer />
-      {/* <MemberNav/> */}
     </>
   );
 }
