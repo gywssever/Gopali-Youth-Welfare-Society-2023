@@ -19,7 +19,7 @@
     align-items: center;
     border-radius: 60px;
     margin: 10px auto;
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 450px;
     min-height: 300px;
     transition: all 0.2s ease-in-out;
@@ -32,8 +32,8 @@
 }
 
 .mainbox img {
-    width: 20vh;
-    height: 20vh;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     box-shadow: 3px lightgray;
 }

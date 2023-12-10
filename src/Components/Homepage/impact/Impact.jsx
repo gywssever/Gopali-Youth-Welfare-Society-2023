@@ -1,4 +1,3 @@
-import React from 'react'
 import impcss from './impact.module.css'
 import childlogo from './images/child.jpg'
 import mapimg from './images/map.png'
@@ -6,8 +5,7 @@ import mapimg from './images/map.png'
 export default function Impact() {
     return (
         <div>
-
-            <div className="impcss.container">
+            <div className={impcss.container}>
                 <div className={impcss.heading} id={impcss.area0}>
                     <h1>IMPACT</h1>
                 </div>

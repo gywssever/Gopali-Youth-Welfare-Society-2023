@@ -1,19 +1,21 @@
-.guestPage{
+.guestPage {
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 50% 50%;
     max-width: 1200px;
     margin: 10px auto;
     text-align: justify;
 }
 
-.descriptionGuest{
+.descriptionGuest {
     padding-top: 50px;
 }
-.nameGuest{
-    color:red;
+
+.nameGuest {
+    color: red;
 }
-.image img{
-    width: 80vh;
+
+.image img {
+    width: 80vw;
     border-radius: 2vmax;
     text-align: center;
     margin-left: 10px;
@@ -21,7 +23,8 @@
     border-bottom: 10px solid blue;
     align-items: center;
 }
-.image{
+
+.image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,19 +40,19 @@
 @media (max-width:500px) {
     .guestPage {
         padding: 0px;
-        flex-wrap: wrap;
         flex-direction: column-reverse;
     }
-    .image img{
-        width: 100%;
+
+    .image img {
+        max-width: 100%;
         border-radius: 2vmax;
         padding-top: 10px;
-        margin-bottom: 30px;
+        margin: 10px 0px;
         display: flex;
         justify-content: space-evenly;
     }
-    .mainbox {
-        margin: 1rem;
+
+    .infoGuest {
+        margin: 10px;
     }
 }
-
