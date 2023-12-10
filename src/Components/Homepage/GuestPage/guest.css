@@ -15,7 +15,7 @@
 }
 
 .image img {
-    width: 80vw;
+    width: 30vw;
     border-radius: 2vmax;
     text-align: center;
     margin-left: 10px;
@@ -34,6 +34,15 @@
     .guestPage {
         display: flex;
         flex-direction: column;
+    }
+
+    .image  img {
+        width: 95%;
+        border-radius: 2vmax;
+        padding-top: 10px;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
