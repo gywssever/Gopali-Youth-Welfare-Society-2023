@@ -14,8 +14,8 @@ function Home() {
         <Slider />
         <MissionVision />
         <Intiative />
-        <Impact />
-        <GuestPage />
+        {/* <Impact /> */}
+        {/* <GuestPage /> */}
         <ContactUs />
       </div>
     </>

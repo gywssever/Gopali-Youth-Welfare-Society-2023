@@ -1,0 +1,7 @@
+
+
+@media screen and (max-width: 768px) {
+    .hide_slider {
+        display: none;
+    }
+}

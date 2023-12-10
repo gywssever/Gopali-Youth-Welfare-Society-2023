@@ -2,8 +2,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import header_bg_1 from './images/header-bg-1.jpg';
 import JVM from './images/JVM2.jpg';
+import './Slider.css';
 
 function Slider() {
+
+
   return (
     <>
       <div>
@@ -11,7 +14,7 @@ function Slider() {
           showArrows={true}
           showStatus={false}
           showThumbs={false}
-          showIndicators={true}
+          showIndicators={false}
           timeInterval={1000}
           autoPlay={true}
           interval={2000}
@@ -23,59 +26,59 @@ function Slider() {
         >
           <div>
             <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
-            <p className="legend">Students at Jagriti Vidya Mandir(JVM)</p>
+            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
             <img src={JVM} alt='We with the students' className='carousel_image' />
-            <p className="legend">We with the students</p>
+            <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
             <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
-            <p className="legend">Students at Jagriti Vidya Mandir(JVM)</p>
+            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
             <img src={JVM} alt='We with the students' className='carousel_image' />
-            <p className="legend">We with the students</p>
+            <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
             <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
-            <p className="legend">Students at Jagriti Vidya Mandir(JVM)</p>
+            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
             <img src={JVM} alt='We with the students' className='carousel_image' />
-            <p className="legend">We with the students</p>
+            <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
             <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
-            <p className="legend">Students at Jagriti Vidya Mandir(JVM)</p>
+            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
             <img src={JVM} alt='We with the students' className='carousel_image' />
-            <p className="legend">We with the students</p>
+            <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
             <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
-            <p className="legend">Students at Jagriti Vidya Mandir(JVM)</p>
+            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
             <img src={JVM} alt='We with the students' className='carousel_image' />
-            <p className="legend">We with the students</p>
+            <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
             <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
-            <p className="legend">Students at Jagriti Vidya Mandir(JVM)</p>
+            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
             <img src={JVM} alt='We with the students' className='carousel_image' />
-            <p className="legend">We with the students</p>
+            <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
             <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
-            <p className="legend">Students at Jagriti Vidya Mandir(JVM)</p>
+            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
             <img src={JVM} alt='We with the students' className='carousel_image' />
-            <p className="legend">We with the students</p>
+            <p className="legend hide_slider">We with the students</p>
           </div>
         </Carousel>
 
