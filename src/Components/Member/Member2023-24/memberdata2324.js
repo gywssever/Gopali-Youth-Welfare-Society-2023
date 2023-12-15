@@ -1,74 +1,104 @@
 const Data = [
     {
-        name: "Jatin Mahawar",
+        name: "Nilesh Nagesh",
         position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        imageUrl: "gyws/assets/img/new_website_img/members/NileshNagesh.png",
+        facebookLink: "https://www.facebook.com/jatin.m.376695",
+        email: 'jatin.mahawar08@gmail.com',
+        linkedinLink: "https://www.facebook.com/jatin.m.376695"
+    },
+    {
+        name: "K Nikhil Sathwik",
+        position: "General Secretary",
+        imageUrl: "gyws/assets/img/new_website_img/members/GB23/K Nikhil Sathwik.jpg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Priyam Goenka",
+        position: "Vice President",
+        imageUrl: "gyws/assets/img/new_website_img/members/GB23/priyam goenka.jpg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Vinay Siwach",
+        position: "Assistance Secretary ",
+        imageUrl: "gyws/assets/img/new_website_img/members/GB23/Vinay Siwach.jpg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Vageesh Tiwari",
+        position: "Human Resource Manager",
+        imageUrl: "gyws/assets/img/new_website_img/members/GB23/Vageesh Tiwari.jpg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Debasish Tudu",
+        position: "Treasurer",
+        imageUrl: "gyws/assets/img/new_website_img/members/GB23/Debasish T.jpg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Mridula Mathukumalli",
+        position: "School Development Officer ",
+        imageUrl: "gyws/assets/img/new_website_img/members/Mridula.JPG",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Rudransh Agrawal",
+        position: "Chief Fundraising Officer",
+        imageUrl: "gyws/assets/img/new_website_img/members/GB23/Rudransh Agrawal.jpeg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Sayali Mahipal Ganvir",
+        position: "Hostel Committee Officer",
+        imageUrl: "gyws/assets/img/new_website_img/members/MahipalGanvir.jpg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Nikhil Lahane",
+        position: "Chief Executive Officer, LiGHT",
+        imageUrl: "gyws/assets/img/new_website_img/members/NikhilLahane.jpg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
     {
-        name: "Jatin Mahawar",
-        position: "President",
-        imageUrl: "https://media.licdn.com/dms/image/D5603AQHGcskVZoZmIQ/profile-displayphoto-shrink_800_800/0/1688794632284?e=2147483647&v=beta&t=MFHS3qfQPRGeBzUM3umIjOr4VPpyElVXJkzHIKx1cDI",
+        name: "Ankita",
+        position: "Donor Engagement Officer",
+        imageUrl: "gyws/assets/img/new_website_img/members/AnkitaKhakhal.jpg",
         facebookLink: "https://www.facebook.com/jatin.m.376695",
         linkedinLink: "https://www.facebook.com/jatin.m.376695"
     },
+    {
+        name: "Swastik Sambhav",
+        position: "Chief Techinical Officer",
+        imageUrl: "gyws/assets/img/new_website_img/members/SwastikSambhav.jpg",
+        facebookLink: "https://www.facebook.com/jatin.m.376695",
+        linkedinLink: "https://www.facebook.com/jatin.m.376695"
+    },
+    {
+        name: "Nadimpalli Deepthi",
+        position: "Public Relation Officer",
+        imageUrl: "gyws/assets/img/new_website_img/members/Deepthi.jpg",
+        facebookLink: "https://www.facebook.com/jatin.m.376695",
+        linkedinLink: "https://www.facebook.com/jatin.m.376695"
+    },
+    {
+        name: "Tanishq Agrawal",
+        position: "Foreign and Corporate Relation Officer",
+        imageUrl: "gyws/assets/img/new_website_img/members/GB23/Tanishq Agrawal.jpg",
+        facebookLink: "https://www.facebook.com/jatin.m.376695",
+        linkedinLink: "https://www.facebook.com/jatin.m.376695"
+    },
+   
 ]
 
 export default Data;

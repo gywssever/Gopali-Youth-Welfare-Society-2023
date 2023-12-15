@@ -31,6 +31,8 @@
 
 .members_card_image img {
   width: 100%;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 200px;
   margin-bottom: 20px;
@@ -43,6 +45,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.members_card_info p,h3{
+  /* text-transform: capitalize !important; */
+  text-align: center;
+
 }
 
 .members_card_info .members_name {

@@ -25,59 +25,59 @@ function Slider() {
           preventMovementUntilSwipeScrollTolerance={true}
         >
           <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
+            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
             <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
-            <img src={JVM} alt='We with the students' className='carousel_image' />
+            <img src={JVM} alt='We with the students' className='carousel_image'  />
             <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
+            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
             <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
-            <img src={JVM} alt='We with the students' className='carousel_image' />
+            <img src={JVM} alt='We with the students' className='carousel_image'  />
             <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
+            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
             <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
-            <img src={JVM} alt='We with the students' className='carousel_image' />
+            <img src={JVM} alt='We with the students' className='carousel_image'  />
             <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
+            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
             <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
-            <img src={JVM} alt='We with the students' className='carousel_image' />
+            <img src={JVM} alt='We with the students' className='carousel_image'  />
             <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
+            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
             <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
-            <img src={JVM} alt='We with the students' className='carousel_image' />
+            <img src={JVM} alt='We with the students' className='carousel_image'  />
             <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
+            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
             <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
-            <img src={JVM} alt='We with the students' className='carousel_image' />
+            <img src={JVM} alt='We with the students' className='carousel_image'  />
             <p className="legend hide_slider">We with the students</p>
           </div>
           <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image' />
+            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
             <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
           </div>
           <div>
-            <img src={JVM} alt='We with the students' className='carousel_image' />
+            <img src={JVM} alt='We with the students' className='carousel_image'  />
             <p className="legend hide_slider">We with the students</p>
           </div>
         </Carousel>

@@ -1,0 +1,307 @@
+/* body {
+    background-color: #FFF8F2;
+    color: #373539;
+    font-family: 'Montserrat', sans-serif;
+} */
+
+#faq .container {
+    padding: 200px;
+}
+
+.faq-drawer {
+    margin-bottom: 30px;
+}
+
+.faq-drawer__content-wrapper {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+}
+
+.faq-drawer__title {
+    border-top: #000 1px solid;
+    cursor: pointer;
+    display: block;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 30px 0 0 0;
+    position: relative;
+    margin-bottom: 0;
+    transition: all 0.25s ease-out;
+}
+
+.faq-drawer__title::after {
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: " ";
+    display: inline-block;
+    /* float: right; */
+    height: 10px;
+    left: 2px;
+    position: relative;
+    right: 20px;
+    top: 2px;
+    transform: rotate(135deg);
+    transition: 0.35s ease-in-out;
+    vertical-align: top;
+    width: 10px;
+}
+
+/* OPTIONAL HOVER STATE */
+.faq-drawer__title:hover {
+    color: #4E4B52;
+}
+
+.faq-drawer__trigger:checked+.faq-drawer__title+.faq-drawer__content-wrapper {
+    max-height: 350px;
+}
+
+.faq-drawer__trigger:checked+.faq-drawer__title::after {
+    transform: rotate(-45deg);
+    transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 80px;
+    }
+}
+
+
+
+
+/* Founders message */
+.member-card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    margin: 0px 0;
+}
+
+.member-card img {
+    width: 60% !important;
+    border-radius: 50%;
+}
+
+.member-card .member-name {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 5px 0 5px;
+    margin: 5px 0 0;
+}
+
+.member-card .member-post {
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+.member-card .member-social-strip {
+    background-color: black;
+    padding: 5px 5px 7px 5px;
+    border-radius: 8px;
+    bottom: 10px;
+}
+
+.member-card .member-social-strip a {
+    color: white;
+    padding: 0 8px;
+    font-size: smaller;
+}
+
+.member-card .member-social-strip a:hover {
+    color: #18d26e;
+}
+
+
+
+/* New profile card */
+/**** Sass Variables ****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #333;
+}
+
+.container-pr {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.card-wrapper-pr {
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+.card-pr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 450px;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-pr .card-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.card-pr:hover img {
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.card-pr:hover .card-image {
+    transform: translateY(-100px);
+    transition: all 0.9s;
+}
+
+/**** Social Icons *****/
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    font-size: 23px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 6px;
+    transition: 0.4s;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.card-pr:hover .social-icons li a {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.social-icons li a:hover {
+    background: #000;
+    transition: 0.2s;
+}
+
+.social-icons li a:hover .fab {
+    color: #fff;
+}
+
+.social-icons li a .fab {
+    transition: 0.8s;
+}
+
+.social-icons li a .fab:hover {
+    transform: rotateY(360deg);
+    color: #fff;
+}
+
+.card-pr:hover li:nth-child(1) a {
+    transition-delay: 0.1s;
+}
+
+.card-pr:hover li:nth-child(2) a {
+    transition-delay: 0.2s;
+}
+
+.card-pr:hover li:nth-child(3) a {
+    transition-delay: 0.3s;
+}
+
+.card-pr:hover li:nth-child(4) a {
+    transition-delay: 0.4s;
+}
+
+/**** Personal Details ****/
+.details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.details h2 {
+    margin: 30px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.details h2 .job-title {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #333;
+    font-weight: 300;
+}
+
+.jane {
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    opacity: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 3;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.profile-two .social-icons li a {
+    border-radius: 50%;
+}
+
+.card:hover .profile-img--two {
+    transform: rotateY(180deg);
+}
+
+.card:hover .jane {
+    bottom: 0;
+    left: 0;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
