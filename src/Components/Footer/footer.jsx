@@ -24,7 +24,7 @@ function Footer() {
             <div className="footer_sec footer_aboutus">
               <div className='footer_logo'>
                 <img src={logo} alt="" />
-                <h2>GOPALI YOUTH WELFARE SOCIETY</h2>
+                <h2 style={{fontSize: '2rem'}}>GYWS</h2>
               </div>
               <p>Gopali Youth Welfare Society is a registered voluntary non-governmental organisation run by IIT Kharagpur students along with some faculty members with the support of local members from Gopali.
               </p>
@@ -57,27 +57,27 @@ function Footer() {
                 <li>
                   <Link to="/" onClick={scrollToTop}>
                     Home
-                  </Link>
+                  </Link><hr />
                 </li>
                 <li>
                   <Link to="/" onClick={scrollToTop}>
                     About Us
-                  </Link>
+                  </Link>  <hr />
                 </li>
                 <li>
                   <Link to="/" onClick={scrollToTop}>
                     Initiative
-                  </Link>
+                  </Link> <hr />
                 </li>
                 <li>
                   <Link to="/media" onClick={scrollToTop}>
                     Media
-                  </Link>
+                  </Link> <hr />
                 </li>
                 <li>
                   <Link to="/member" onClick={scrollToTop}>
                     Members
-                  </Link>
+                  </Link> <hr />
                 </li>
               </ul>
             </div>
@@ -87,7 +87,7 @@ function Footer() {
               <ul className="footer_info">
                 <li>
                   <p>Gopali (No-shooting Area),</p>
-                  <p><strong>P.O.:</strong> Salua <strong>Dist.:</strong> Paschim Medinipur</p>
+                  <p><strong>P.O.:</strong> Salua &nbsp; <strong>Dist.:</strong> Paschim Medinipur</p>
                   <p>West Bengal, 721145.</p>
                 </li>
                 <a href="tel:+918386832934">
