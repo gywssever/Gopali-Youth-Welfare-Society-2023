@@ -64,7 +64,7 @@ function Members() {
                         {/* New li with dropdown */}
                     </ul>
 
-                    <h2>Heads</h2>
+                    <h2>Intiatives</h2>
                     <ul>
                         <Link to="/member/members2021-22/jvm" onClick={scrollToTop}>
                             <li>

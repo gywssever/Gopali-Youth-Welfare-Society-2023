@@ -101,6 +101,11 @@
       width: 100vw !important;
       position: relative !important;
       top: 0rem !important;
+      height: fit-content !important; 
+    }
+
+    .jack{
+      display: none;
     }
   }
   

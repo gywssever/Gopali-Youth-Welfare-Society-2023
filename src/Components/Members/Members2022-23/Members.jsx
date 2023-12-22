@@ -15,36 +15,42 @@ function Members() {
             mainContent.scrollIntoView({ behavior: 'smooth' });
         }
     };
-
+    const showinti = () => {
+        const jack = document.querySelector('.jack');
+        if(jack)
+        {
+            jack.style.display = 'block';
+        }
+    }
     return (
         <>
             <div className="wrapper">
                 <div className="sidebar">
                     <h2>Members</h2>
                     <ul>
-                    <li className="dropdown">
+                        <li className="dropdown">
                             <Link>
-                                Sessions 
+                                Sessions
                             </Link>
                             <ul className="dropdown-content">
-                            <li>
+                                <li>
                                     <Link to="/member/" onClick={scrollToTop}>
-                                        Session 2023-24                                    
+                                        Session 2023-24
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/member/members2021-22" onClick={scrollToTop}>
-                                        Session 2021-22                                    
+                                        Session 2021-22
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/member/members2020-21" onClick={scrollToTop}>
-                                        Session 2020-21                                    
+                                        Session 2020-21
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/member/members2019-20" onClick={scrollToTop}>
-                                        Session 2019-20                                    
+                                        Session 2019-20
                                     </Link>
                                 </li>
                                 {/* Add more items as needed */}
@@ -61,36 +67,39 @@ function Members() {
                             </li>
                         </Link>
 
-                        
+
                         {/* New li with dropdown */}
                     </ul>
 
-                    <h2>Heads</h2>
-                    <ul>
-                        <Link to="/member/members2022-23/jvm" onClick={scrollToTop}>
-                            <li>
-                                Jagriti Vidya Mandir <br />
-                                Education Initiative
-                            </li>
-                        </Link>
-                        <Link to="/member/members2022-23/prayas" onClick={scrollToTop}>
-                            <li>
-                               PRAYAS <br /> Business Development Intiative
-                            </li>
-                        </Link>
-                        <Link to="/member/members2022-23/Rise" onClick={scrollToTop}>
-                            <li>
-                                RISE <br />
-                                Reform and Innovate School Education
-                            </li>
-                        </Link>
-                        <Link to="/member/members2022-23/LiGHT" onClick={scrollToTop}>
-                            <li>
-                                LiGHT <br />
-                                Expansion Initiative
-                            </li>
-                        </Link>
-                    </ul>
+                    <h2 onClick={showinti}>Intiatives</h2>
+                    <div className="jack">
+
+                        <ul>
+                            <Link to="/member/members2022-23/jvm" onClick={scrollToTop}>
+                                <li>
+                                    Jagriti Vidya Mandir <br />
+                                    Education Initiative
+                                </li>
+                            </Link>
+                            <Link to="/member/members2022-23/prayas" onClick={scrollToTop}>
+                                <li>
+                                    PRAYAS <br /> Business Development Intiative
+                                </li>
+                            </Link>
+                            <Link to="/member/members2022-23/Rise" onClick={scrollToTop}>
+                                <li>
+                                    RISE <br />
+                                    Reform and Innovate School Education
+                                </li>
+                            </Link>
+                            <Link to="/member/members2022-23/LiGHT" onClick={scrollToTop}>
+                                <li>
+                                    LiGHT <br />
+                                    Expansion Initiative
+                                </li>
+                            </Link>
+                        </ul>
+                    </div>
                 </div>
                 <div className="main_content">
                     <Routes>

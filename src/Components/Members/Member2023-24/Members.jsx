@@ -67,7 +67,7 @@ function Members() {
 
                     </ul>
 
-                    <h2>Heads</h2>
+                    <h2>Intiatives</h2>
                     <ul>
                         <Link to="/member/jvm" onClick={scrollToTop}>
                             <li>
