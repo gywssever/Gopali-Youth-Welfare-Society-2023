@@ -19,7 +19,10 @@ function Members() {
         const jack = document.querySelector('.jack');
         if(jack)
         {
-            jack.style.display = 'block';
+            if(jack.style.display === 'block'){
+                jack.style.display = 'none';
+            }
+            else jack.style.display = 'block';
         }
     }
     return (
@@ -71,7 +74,7 @@ function Members() {
                         {/* New li with dropdown */}
                     </ul>
 
-                    <h2 onClick={showinti}>Intiatives</h2>
+                    <h2 onClick={showinti} className="insti"><span>Intiatives</span></h2>
                     <div className="jack">
 
                         <ul>
