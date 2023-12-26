@@ -7,6 +7,7 @@ import Media from './Components/Media/Media';
 import ScrollToTop from './Components/scrollToTop/scrollToTop';
 import Member from './Components/Member/Members';
 import Footer from './Components/Footer/footer'
+import Accordion from './Components/aboutUs/Accordion';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/media" element={<Media />} />
+        <Route path="/accordion" element={<Accordion />} />
         <Route path="/member/*" element={<Member />} />
       </Routes>
       <ScrollToTop />
