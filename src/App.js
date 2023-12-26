@@ -10,7 +10,8 @@ import Footer from './Components/Footer/footer'
 import Members2223 from './Components/Members/Members2022-23/Members.jsx'
 import Members2122 from './Components/Members/Members2021-22/Members.jsx'
 import Members2021 from './Components/Members/Members2020-21/Members.jsx'
-import Members2020 from './Components/Members/Members2019-20/Members.jsx'import Accordion from './Components/aboutUs/Accordion';
+import Members2020 from './Components/Members/Members2019-20/Members.jsx'
+import Accordion from './Components/aboutUs/Accordion';
 
 export default function App() {
   return (
