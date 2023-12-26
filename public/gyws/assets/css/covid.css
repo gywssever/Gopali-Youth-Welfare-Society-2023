@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* .row-custom {
+    max-width: 114rem;
+    margin: 0 auto;
+    padding-bottom: 30rem; }
+    .row-custom [class^="col-"] {
+      float: left; }
+      .row-custom [class^="col-"]::after {
+        content: "";
+        display: table;
+        clear: both; }
+      .row-custom [class^="col-"]:not(:last-child) {
+        margin-right: 6rem; }
+    .row-custom .col-1-of-2 {
+      width: calc((100% - 6rem)/2); }
+    .row-custom .col-1-of-3 {
+      width: calc((100% - 2*6rem)/3); }
+    .row-custom .col-1-of-4 {
+      width: calc((100% - 3*6rem)/4); }
+    .row-custom .col-2-of-3 {
+      width: calc(((2/3)*((100% - 2*6rem))) + 6rem); }
+    .row-custom .col-2-of-4 {
+      width: calc((2*(100% - 3*6rem)/4) + 6rem); }
+    .row-custom .col-3-of-4 {
+      width: calc(3*((100% - 3*6rem)/4) + 2 * 6rem); } */
+
+.header-covid{
+    position: relative;
+    width: 100vw;
+    height: 30rem;
+    background-color: rgba(94,86,51, 0.6);
+    background-image: url('../img/jvm_kids.jpg');
+    background-size: cover;
+    background-clip:border-box;
+    -webkit-background-blend-mode: multiply;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.header__text  {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #ffff;
+    /* text-shadow: 0 .2rem 4rem black; */
+}
+
+.section-about {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.about__img {
+    width: 100%;
+    height: 100%;
+}
+
+.about__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:950px){
+
+  .header__text {
+    font-size: 3rem;
+  }
+  
+  [class^="col-"] {
+    display: block;
+    width: 100%;
+  }
+  
+}
+
+@media (max-width:320px)
+{
+  .header__text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:200px)
+{
+  .header__text {
+    font-size: 2rem;
+  }
+}

@@ -69,6 +69,7 @@ footer .footer_container1 .footer_sci li a {
 
 footer .footer_container1 .footer_sci li a:hover{
     transform: scale(1.05);
+    color: #05A1C7;
 }
 
 footer .footer_container1 .footer_quicklinks {
@@ -88,7 +89,7 @@ footer .footer_container1 .footer_quicklinks ul li a {
     transition: all 0.2s ease-out;
 }
 footer .footer_container1 .footer_quicklinks ul li a:hover{
-    color: #fed136;
+    color: #05A1C7;
     text-decoration: none;
     /* margin-bottom: 10px; */
     display: inline-block;
@@ -135,7 +136,7 @@ footer .footer_container1 .footer_container1 .footer_info li a {
 }
 
 .footer_footerbody .footer_contact a:hover {
-    color: #101010;
+    color: #05A1C7;
 }
 
 .footer_footerbody .footer_contact a li {
