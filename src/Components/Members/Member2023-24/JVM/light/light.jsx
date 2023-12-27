@@ -3,11 +3,14 @@ import '../../GB/GB.css'
 import Card from '../../Card/card'
 import data from './light'
 import ceo from './ceo'
+import HCard from '../../../HeaderCard/HCard.jsx'
+
 export default function page() {
     return (
 
         <>
-            <h1>LiGHT CEO</h1>
+
+            <HCard head={"LiGHT CEO"}></HCard>
             <div className="members_container">
                 {ceo.map((data, index) => (
                     <Card key={index} name={data.name} position={data.position} imageUrl={data.imageUrl} facebookLink={data.facebookLink}
@@ -15,7 +18,8 @@ export default function page() {
                 ))}
             </div>
             <br /><br />
-            <h1>LiGHT Heads</h1>
+           
+            <HCard head={"LiGHT Heads"}></HCard>
             <div className="members_container">
                 {data.map((data, index) => (
                     <Card key={index} name={data.name} position={data.position} imageUrl={data.imageUrl} facebookLink={data.facebookLink}

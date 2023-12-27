@@ -1,12 +1,10 @@
-import './Member.css';
-
 import Member2324 from './GB/GB.jsx';
 import Advisory from './Advisory/Advisory.jsx';
 import { Routes, Route, Link } from 'react-router-dom';
 import Jvm from './JVM/jvm.jsx';
 import Rise from './JVM/rise/rise.jsx';
 import Light from './JVM/light/light.jsx';
-import './Member.css'; // Add your CSS file for styling
+import '../Members.css';
 import { useState } from 'react';
 
 function Members() {

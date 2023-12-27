@@ -2,10 +2,11 @@ import React from 'react'
 import Card from '../Card/card.jsx'
 import data from './GB.js'
 import '../Advisory/Advisory.css'
+import HCard from '../../HeaderCard/HCard.jsx'
 function GB() {
     return (
         <>
-            <h1>Governing Body Members 2021-22</h1>
+            <HCard head={"Governing Body Members"}></HCard>
             <div className="members_container">
                 {data.map((data, index) => (
                     <Card key={index} name={data.name} position={data.position} imageUrl={data.imageUrl} facebookLink={data.facebookLink}

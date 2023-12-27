@@ -3,12 +3,12 @@
 import React from 'react';
 import './GB.css'; // Import the CSS file for styling
 import tableData from './GB.js';
+import HCard from '../../HeaderCard/HCard.jsx'
 const GB = () => {
 
 
     return (
-        <>
-            <h1>Governing Body 2019-20</h1>
+        <> <HCard head={"Governing Body Members"}></HCard>
 
             <div className="table-container">
                 <table className="table">

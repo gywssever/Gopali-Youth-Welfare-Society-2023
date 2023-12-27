@@ -1,7 +1,7 @@
 import Advisory from './Advisory/Advisory.jsx';
 import { Routes, Route, Link } from 'react-router-dom';
 import GB from './GB/GB.jsx'
-import './Members.css'; // Add your CSS file for styling
+import '../Members.css';
 import { useState } from 'react';
 
 

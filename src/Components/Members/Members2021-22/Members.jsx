@@ -4,7 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Jvm from './JVM/jvm.jsx';
 
 import Light from './JVM/light/light.jsx';
-import './Members.css'; // Add your CSS file for styling
+import '../Members.css';
 import GB from './GB/GB.jsx'
 import Prayas from './JVM/prayas/prayas.jsx'
 function Members() {
