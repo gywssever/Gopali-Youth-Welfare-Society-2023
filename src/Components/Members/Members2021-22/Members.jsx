@@ -25,7 +25,7 @@ function Members() {
             <div className="wrapper">
                 <div className="hamburgerbtn">
                     <div className="hamburger" onClick={toggleSidebar}>
-                       <a href="#top">&#9776;</a>
+                    &#9776;
                     </div>
                 </div>
                 <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
