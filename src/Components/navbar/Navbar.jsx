@@ -27,7 +27,7 @@ function Navbar() {
             <nav>
                 <div className="logo">
                     <img src={LOGO} alt="GYWS_Logo" />
-                    <Link to="/">Gopali Youth Welfare Society</Link> {/* Use Link here */}
+                    <Link to="/" onClick={scrollToTop}>Gopali Youth Welfare Society</Link> {/* Use Link here */}
                 </div>
                 
                 <div className={`menu-toggle ${showMenu ? 'open' : ''}`}>
