@@ -11,10 +11,7 @@ function Members() {
     document.title = "Members | GYWS";
 
     const scrollToTop = () => {
-        const mainContent = document.querySelector('.main_content');
-        if (mainContent) {
-            mainContent.scrollIntoView({ behavior: 'smooth' });
-        }
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     };
 
     const [isCollapsed, setCollapsed] = useState(true);
@@ -42,34 +39,34 @@ function Members() {
                                 </Link>
                                 <ul className="dropdown-content">
                                     <li>
-                                        <Link to="/member/" onClick={scrollToTop}>
+                                        <Link to="/member/" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                             Session 2023-24
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/member/members2021-22" onClick={scrollToTop}>
-                                            Session 2021-22
+                                        <Link to="/member/members2022-23" onClick={() => { toggleSidebar(); scrollToTop() }}>
+                                            Session 2022-23
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/member/members2020-21" onClick={scrollToTop}>
+                                        <Link to="/member/members2020-21" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                             Session 2020-21
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/member/members2019-20" onClick={scrollToTop}>
+                                        <Link to="/member/members2019-20" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                             Session 2019-20
                                         </Link>
                                     </li>
                                     {/* Add more items as needed */}
                                 </ul>
                             </li>
-                            <Link to="/member/members2021-22/" onClick={scrollToTop}>
+                            <Link to="/member/members2021-22/" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                 <li>
                                     Governing Body 2021-22
                                 </li>
                             </Link>
-                            <Link to="/member/members2021-22/Advisory" onClick={scrollToTop}>
+                            <Link to="/member/members2021-22/Advisory" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                 <li>
                                     Advisory Committee
                                 </li>
@@ -83,18 +80,18 @@ function Members() {
                         <div className="jack">
 
                             <ul>
-                                <Link to="/member/members2021-22/jvm" onClick={scrollToTop}>
+                                <Link to="/member/members2021-22/jvm" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                     <li>
                                         Jagriti Vidya Mandir <br />
                                         Education Initiative
                                     </li>
                                 </Link>
-                                <Link to="/member/members2021-22/prayas" onClick={scrollToTop}>
+                                <Link to="/member/members2021-22/prayas" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                     <li>
                                         PRAYAS <br /> Business Development Intiative
                                     </li>
                                 </Link>
-                                <Link to="/member/members2021-22/LiGHT" onClick={scrollToTop}>
+                                <Link to="/member/members2021-22/LiGHT" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                     <li>
                                         LiGHT <br />
                                         Expansion Initiative

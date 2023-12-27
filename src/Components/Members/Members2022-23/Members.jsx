@@ -11,10 +11,7 @@ function Members() {
     document.title = "Members | GYWS";
 
     const scrollToTop = () => {
-        const mainContent = document.querySelector('.main_content');
-        if (mainContent) {
-            mainContent.scrollIntoView({ behavior: 'smooth' });
-        }
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     };
 
     const [isCollapsed, setCollapsed] = useState(true);
@@ -42,7 +39,7 @@ function Members() {
                                 </Link>
                                 <ul className="dropdown-content">
                                     <li>
-                                        <Link to="/member/" onClick={scrollToTop}>
+                                        <Link to="/member/" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                             Session 2023-24
                                         </Link>
                                     </li>
