@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import GB from './GB/GB.jsx'
 import '../Members.css';
 import { useState } from 'react';
-
+import logo from '../hands.png'
 
 function Members() {
     document.title = "Members | GYWS";
@@ -16,13 +16,23 @@ function Members() {
     const toggleSidebar = () => {
         setCollapsed(!isCollapsed);
     };
+    var except = document.getElementsByClassName('.hamburger');
 
+    if (document.body.addEventListener)
+        document.body.addEventListener("click", bodyClick, true);
+    else
+        document.body.attachEvent("onclick", bodyClick);
+
+    function bodyClick(event) {
+        if (event.target !== except)
+            setCollapsed(true);
+    }
     return (
         <>
             <div className="wrapper">
 
                 <div className="hamburger" onClick={toggleSidebar}>
-                    &#9776;
+                <img src={logo} alt="" width={"30px"} />
                 </div>
                 <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
                     <div className="everything">

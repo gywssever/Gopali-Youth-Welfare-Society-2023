@@ -1,3 +1,4 @@
+// import { useEffect } from 'react'
 import Member2324 from './GB/GB.jsx';
 import Advisory from './Advisory/Advisory.jsx';
 import { Routes, Route, Link } from 'react-router-dom';
@@ -6,6 +7,7 @@ import Rise from './JVM/rise/rise.jsx';
 import Light from './JVM/light/light.jsx';
 import '../Members.css';
 import { useState } from 'react';
+import logo from '../hands.png'
 
 function Members() {
     document.title = "Members | GYWS";
@@ -18,11 +20,23 @@ function Members() {
     const toggleSidebar = () => {
         setCollapsed(!isCollapsed);
     };
+
+    var except = document.getElementsByClassName('.hamburger');
+
+    if (document.body.addEventListener)
+        document.body.addEventListener("click", bodyClick, true);
+    else
+        document.body.attachEvent("onclick", bodyClick);
+
+    function bodyClick(event) {
+        if (event.target !== except)
+            setCollapsed(true);
+    }
     return (
         <>
-            <div className="wrapper">
+            <div className="wrapper" >
                 <div className="hamburger" onClick={toggleSidebar}>
-                    &#9776;
+                    <img src={logo} alt="" width={"30px"} />
                 </div>
                 <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
                     <div className="everything">
@@ -95,7 +109,7 @@ function Members() {
                         </ul>
                     </div>
                 </div>
-                <div className="main_content">
+                <div className="main_content" >
                     <Routes>
                         <Route exact path="/" element={<Member2324 key={1} />} />
                         <Route exact path="/Advisory" element={<Advisory key={4} />} />

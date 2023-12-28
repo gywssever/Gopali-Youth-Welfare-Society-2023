@@ -2,7 +2,7 @@ import Advisory from './Advisory/Advisory.jsx';
 import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Jvm from './JVM/jvm.jsx';
-
+import logo from '../hands.png'
 import Light from './JVM/light/light.jsx';
 import '../Members.css';
 import GB from './GB/GB.jsx'
@@ -20,12 +20,23 @@ function Members() {
         setCollapsed(!isCollapsed);
     };
     
+    var except = document.getElementsByClassName('.hamburger');
+
+    if (document.body.addEventListener)
+        document.body.addEventListener("click", bodyClick, true);
+    else
+        document.body.attachEvent("onclick", bodyClick);
+
+    function bodyClick(event) {
+        if (event.target !== except)
+            setCollapsed(true);
+    }
     return (
         <>
             <div className="wrapper">
                 <div className="hamburgerbtn">
                     <div className="hamburger" onClick={toggleSidebar}>
-                    &#9776;
+                    <img src={logo} alt="" width={"30px"} />
                     </div>
                 </div>
                 <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
