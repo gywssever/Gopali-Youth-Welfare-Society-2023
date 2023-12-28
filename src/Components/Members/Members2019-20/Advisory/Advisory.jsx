@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../Card/card.jsx'
 import data from './Advisory'
 import './Advisory.css'
+
 import HCard from '../../HeaderCard/HCard.jsx'
 function Advisory() {
     return (

@@ -36,7 +36,7 @@ function Navbar() {
                 </div>
 
                 <ul className={`nav-links ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
-                    <Link to="/" onClick={scrollToTop}>
+                    <Link to="/about" onClick={scrollToTop}>
                         <li>
                             About Us
                         </li>
