@@ -6,6 +6,25 @@
     width: 100%;
 }
 
+.faq-container .faq-heading {
+    display: grid;
+    place-items: center;
+}
+
+.faq-container .faq-heading h1 {
+    margin: 10px 0;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.faq-container .faq-heading .heading-underline {
+    border: solid #fed136;
+    width: 9rem;
+    background-color: #fed136;
+    margin-bottom: 2rem
+}
+
 details {
     margin: 0.5em 0;
     font-size: 1rem;

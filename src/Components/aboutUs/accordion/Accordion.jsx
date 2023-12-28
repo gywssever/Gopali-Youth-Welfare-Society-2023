@@ -40,10 +40,15 @@ const AccordionCard = ({ title, content }) => {
 
 export default function Accordion() {
 
+    
+
     return (
         <>
             <section className="faq-container" aria-label="Frequently Asked Questions">
-                <h2 className="faq-title">Frequently Asked Questions</h2>
+                <div className="faq-heading">
+                    <h1>Frequently Asked Questions </h1>
+                    <div className="heading-underline"></div>
+                </div>
                 {
                     faqData.map((faq, i) => (
                         <AccordionCard key={i} title={faq.title} content={faq.content} />
