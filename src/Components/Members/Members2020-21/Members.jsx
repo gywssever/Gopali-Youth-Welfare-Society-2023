@@ -2,12 +2,13 @@ import Advisory from './Advisory/Advisory.jsx';
 import { Routes, Route, Link } from 'react-router-dom';
 import GB from './GB/GB.jsx'
 import '../Members.css';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import logo from '../hands.png'
 
 
 function Members() {
     document.title = "Members | GYWS";
+    let menuRef = useRef();
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -18,71 +19,74 @@ function Members() {
     const toggleSidebar = () => {
         setCollapsed(!isCollapsed);
     };
-    var except = document.getElementsByClassName('.hamburger');
+    useEffect(() => {
 
-    if (document.body.addEventListener)
-        document.body.addEventListener("click", bodyClick, true);
-    else
-        document.body.attachEvent("onclick", bodyClick);
+        let handler = (e) => {
+            if (!menuRef.current.contains(e.target))
+                setCollapsed(true);
 
-    function bodyClick(event) {
-        if (event.target !== except)
-            setCollapsed(true);
-    }
+        }
+        document.addEventListener("mousedown", handler);
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        }
+    });
     return (
         <>
             <div className="wrapper">
+                <div ref={menuRef}>
 
-                <div className="hamburger" onClick={toggleSidebar}>
-                <img src={logo} alt="" width={"30px"} />
-                </div>
-                <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
-                    <div className="everything">
-                        <h2>Members</h2>
-                        <ul>
-                            <li className="dropdown">
-                                <Link>
-                                    Sessions
+                    <div className="hamburger" onClick={toggleSidebar}>
+                        <img src={logo} alt="" width={"30px"} />
+                    </div>
+                    <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+                        <div className="everything">
+                            <h2>Members</h2>
+                            <ul>
+                                <li className="dropdown">
+                                    <Link>
+                                        Sessions
+                                    </Link>
+                                    <ul className="dropdown-content">
+                                        <li>
+                                            <Link to="/member/" onClick={() => { toggleSidebar(); scrollToTop() }}>
+                                                Session 2023-24
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/member/members2022-23" onClick={() => { toggleSidebar(); scrollToTop() }}>
+                                                Session 2022-23
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/member/members2021-22" onClick={() => { toggleSidebar(); scrollToTop() }}>
+                                                Session 2021-22
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/member/members2019-20" onClick={() => { toggleSidebar(); scrollToTop() }}>
+                                                Session 2019-20
+                                            </Link>
+                                        </li>
+                                        {/* Add more items as needed */}
+                                    </ul>
+                                </li>
+                                <Link to="/member/members2020-21/" onClick={() => { toggleSidebar(); scrollToTop() }}>
+                                    <li>
+                                        Governing Body 2021-22
+                                    </li>
                                 </Link>
-                                <ul className="dropdown-content">
+                                <Link to="/member/members2020-21/Advisory" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                     <li>
-                                        <Link to="/member/" onClick={() => { toggleSidebar(); scrollToTop() }}>
-                                            Session 2023-24
-                                        </Link>
+                                        Advisory Committee
                                     </li>
-                                    <li>
-                                        <Link to="/member/members2022-23" onClick={() => { toggleSidebar(); scrollToTop() }}>
-                                            Session 2022-23
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/member/members2021-22" onClick={() => { toggleSidebar(); scrollToTop() }}>
-                                            Session 2021-22
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/member/members2019-20" onClick={() => { toggleSidebar(); scrollToTop() }}>
-                                            Session 2019-20
-                                        </Link>
-                                    </li>
-                                    {/* Add more items as needed */}
-                                </ul>
-                            </li>
-                            <Link to="/member/members2020-21/" onClick={() => { toggleSidebar(); scrollToTop() }}>
-                                <li>
-                                    Governing Body 2021-22
-                                </li>
-                            </Link>
-                            <Link to="/member/members2020-21/Advisory" onClick={() => { toggleSidebar(); scrollToTop() }}>
-                                <li>
-                                    Advisory Committee
-                                </li>
-                            </Link>
+                                </Link>
 
 
-                            {/* New li with dropdown */}
-                        </ul>
+                                {/* New li with dropdown */}
+                            </ul>
 
+                        </div>
                     </div>
                 </div>
                 <div className="main_content">

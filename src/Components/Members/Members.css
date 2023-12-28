@@ -4,13 +4,12 @@
 }
 
 .wrapper .sidebar {
-    /* padding-top: 20px; */
-
+    padding-top: 20px;
     width: 350px;
     height: 100dvh;
     background: #4b4276;
     position: sticky;
-    top: 100px !important;
+    top: 100px;
     left: 0;
     bottom: 0;
 }
@@ -97,6 +96,7 @@
         /* position: ; */
     }
     .wrapper .sidebar {
+        padding-top: 0px;
         position: fixed;
         width: 100lvw;
         z-index: 11;
