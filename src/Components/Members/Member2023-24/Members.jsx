@@ -18,11 +18,13 @@ function Members() {
             mainContent.scrollIntoView({ behavior: 'smooth' });
         }
     };
+    
     const [isCollapsed, setCollapsed] = useState(true);
 
     const toggleSidebar = () => {
         setCollapsed(!isCollapsed);
     };
+
     return (
         <>
             <div className="wrapper">

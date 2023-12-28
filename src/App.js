@@ -11,7 +11,8 @@ import Members2223 from './Components/Members/Members2022-23/Members.jsx'
 import Members2122 from './Components/Members/Members2021-22/Members.jsx'
 import Members2021 from './Components/Members/Members2020-21/Members.jsx'
 import Members2020 from './Components/Members/Members2019-20/Members.jsx'
-import Accordion from './Components/aboutUs/Accordion';
+import Accordion from './Components/aboutUs/accordion/Accordion.jsx';
+import About from './Components/aboutUs/About.jsx';
 
 export default function App() {
   return (
@@ -26,7 +27,7 @@ export default function App() {
         <Route path="/member/members2021-22/*" element={<Members2122 />} />
         <Route path="/member/members2020-21/*" element={<Members2021 />} />
         <Route path="/member/members2019-20/*" element={<Members2020 />} />
-        
+        <Route path="/about" element={<About />} />
       </Routes>
       <ScrollToTop />
       <Footer />

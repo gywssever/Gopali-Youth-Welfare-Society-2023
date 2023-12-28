@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../Card/card.jsx'
 import data from './Advisory'
 import './Advisory.css'
+
 function Advisory() {
     return (
         <> <h1>Advisory Committee</h1>

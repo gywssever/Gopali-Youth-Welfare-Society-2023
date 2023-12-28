@@ -130,10 +130,6 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    background: #333;
-}
 
 .container-pr {
     max-width: 900px;
