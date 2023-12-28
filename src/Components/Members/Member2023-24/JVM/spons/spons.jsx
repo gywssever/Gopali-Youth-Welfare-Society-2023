@@ -2,12 +2,12 @@ import React from 'react'
 import '../../GB/GB.css'
 import Card from '../../Card/card'
 import data from './spons'
-
+import HCard from '../../../HeaderCard/HCard.jsx'
 export default function page() {
     return (
 
         <>
-            <h1>Sponsorship Heads</h1>
+            <HCard head={"Sponsorship Heads"}></HCard>
             <div className="members_container">
                 {data.map((data, index) => (
                     <Card key={index} name={data.name} position={data.position} imageUrl={data.imageUrl} facebookLink={data.facebookLink}

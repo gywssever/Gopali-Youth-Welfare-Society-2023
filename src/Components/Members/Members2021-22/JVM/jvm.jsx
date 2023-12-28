@@ -6,11 +6,12 @@ import Spons from './spons/spons.jsx'
 import Tech from './techops/techops.jsx'
 import Design from './Design/design.jsx'
 import Media from './Media/Media.jsx'
+import HCard from '../../HeaderCard/HCard.jsx'
 function jvm() {
     return (
         <>
-            <h1 style={{ textAlign: 'center'}}>  JAGRITI VIDYA MANDIR</h1><br />
-            <hr />
+
+            <HCard head={"JAGRITI VIDYA MANDIR"}></HCard> <br /><br /><hr /> <br />
             <Coordie />
             <br />
             <Src/><br />

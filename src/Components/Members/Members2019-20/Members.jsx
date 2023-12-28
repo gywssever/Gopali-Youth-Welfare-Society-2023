@@ -1,31 +1,38 @@
 import Advisory from './Advisory/Advisory.jsx';
 import { Routes, Route, Link } from 'react-router-dom';
 import GB from './GB/GB.jsx'
-import './Members.css'; // Add your CSS file for styling
+import '../Members.css';
 import { useState } from 'react';
-
+import logo from '../hands.png'
 
 function Members() {
     document.title = "Members | GYWS";
 
     const scrollToTop = () => {
-        const mainContent = document.querySelector('.main_content');
-        if (mainContent) {
-            mainContent.scrollIntoView({ behavior: 'smooth' });
-        }
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     };
     const [isCollapsed, setCollapsed] = useState(true);
 
     const toggleSidebar = () => {
         setCollapsed(!isCollapsed);
     };
+    var except = document.getElementsByClassName('.hamburger');
 
+    if (document.body.addEventListener)
+        document.body.addEventListener("click", bodyClick, true);
+    else
+        document.body.attachEvent("onclick", bodyClick);
+
+    function bodyClick(event) {
+        if (event.target !== except)
+            setCollapsed(true);
+    }
     return (
         <>
             <div className="wrapper">
 
                 <div className="hamburger" onClick={toggleSidebar}>
-                    <a href="#top">&#9776;</a>
+                <img src={logo} alt="" width={"30px"} />
                 </div>
                 <div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
                     <div className="everything">
@@ -37,34 +44,34 @@ function Members() {
                                 </Link>
                                 <ul className="dropdown-content">
                                     <li>
-                                        <Link to="/member/" onClick={scrollToTop}>
+                                        <Link to="/member/" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                             Session 2023-24
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/member/members2022-23" onClick={scrollToTop}>
+                                        <Link to="/member/members2022-23" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                             Session 2022-23
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/member/members2021-22" onClick={scrollToTop}>
+                                        <Link to="/member/members2021-22" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                             Session 2021-22
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/member/members2020-21" onClick={scrollToTop}>
+                                        <Link to="/member/members2020-21" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                             Session 2020-21
                                         </Link>
                                     </li>
                                     {/* Add more items as needed */}
                                 </ul>
                             </li>
-                            <Link to="/member/members2019-20/" onClick={scrollToTop}>
+                            <Link to="/member/members2019-20/" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                 <li>
                                     Governing Body 2019-20
                                 </li>
                             </Link>
-                            <Link to="/member/members2019-20/Advisory" onClick={scrollToTop}>
+                            <Link to="/member/members2019-20/Advisory" onClick={() => { toggleSidebar(); scrollToTop() }}>
                                 <li>
                                     Advisory Committee
                                 </li>
