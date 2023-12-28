@@ -1,29 +1,23 @@
-:root {
-    --main-color: #DE59C6;
+
+.timeline-container .timeline-heading {
+    display: grid;
+    place-items: center;
 }
 
-.contain .heading h1 {
-    margin-bottom: 20px;
+.timeline-container .timeline-heading h1 {
+    margin: 10px 0;
     font-weight: 900;
     text-align: center;
     font-size: 2rem;
 }
 
-.contain .heading div {
+.timeline-container .timeline-heading .heading-underline {
     border: solid #fed136;
     width: 9rem;
     background-color: #fed136;
-    margin-bottom: 1rem
+    margin-bottom: 2rem
 }
 
-
-.demo {
-    background-color: #eee;
-}
-
-.main-timeline {
-    font-family: 'Poppins', sans-serif;
-}
 
 .main-timeline:after {
     content: '';
@@ -31,7 +25,7 @@
     clear: both;
 }
 
-.contain {
+.timeline-container {
     width: 70%;
 
     margin: auto;
@@ -77,11 +71,15 @@
 }
 
 .main-timeline .timeline-year {
-    color: var(--main-color);
     font-size: 18px;
     font-weight: 700;
-    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(4, 163, 195) ;
     text-align: center;
+    width: 100px;
+    margin: 1rem auto 0;
+    padding: 5px 0;
+    border-radius: 50px;
 }
 
 .main-timeline .timeline:nth-child(even) {
@@ -100,17 +98,6 @@
     border-radius: 50px 0;
 }
 
-.main-timeline .timeline:nth-child(2) {
-    --main-color: #9453F7;
-}
-
-.main-timeline .timeline:nth-child(3) {
-    --main-color: #CA52F8;
-}
-
-.main-timeline .timeline:nth-child(4) {
-    --main-color: #6784FA;
-}
 
 @media screen and (max-width:767px) {
 

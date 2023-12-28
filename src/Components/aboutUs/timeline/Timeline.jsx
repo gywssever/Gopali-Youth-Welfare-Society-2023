@@ -1,99 +1,85 @@
 import './Timeline.css';
-import { Link } from 'react-router-dom';
+
+const TimelineData = [
+    {
+        established: "Established",
+        establishedDescription: "Established in 2002 with a mission to improve the living standards of the people of Gopali like villages.",
+        establishedYear: "2002",
+        backgroundColor: "#f26a36"
+    },
+    {
+        established: "Registered",
+        establishedDescription: "Registered under the West Bengal Societies Registration Act of 1961.",
+        establishedYear: "2004",
+        backgroundColor: "#73c48f"
+    },
+    {
+        established: "Stepped into Education",
+        establishedDescription: "Embarked in an education program Jagriti Vidya Mandir in a rented building, focused upon providing quality education.",
+        establishedYear: "2008",
+        backgroundColor: "#fed136"
+    },
+    {
+        established: "JVM Foundation",
+        establishedDescription: "2 acres of land was purchased, and the foundation of Jagriti Vidya Mandir was laid.",
+        establishedYear: "2012",
+        backgroundColor: "#685e91"
+    },
+    {
+        established: "LiGHT",
+        establishedDescription: "GYWS came up with the initiative named LiGHT to reach masses all over India, to reciprocate similar models of social upliftment throughout the nation.",
+        establishedYear: "2017",
+        backgroundColor: "#04a3c3"
+    },
+    {
+        established: "PRAYAS",
+        establishedDescription: "Started PRAYAS, Business Development Initiative, to work on Rural Entrepreneurship Development and Social Enterprises to help transform lives.",
+        establishedYear: "2018",
+        backgroundColor: "#f26a36"
+    },
+    {
+        established: "Hostel Construction",
+        establishedDescription: "Hostel Construction to provide learning environment to deprived children, begin in Jagriti Vidya Mandir.",
+        establishedYear: "2020",
+        backgroundColor: "#fed136"
+    }
+]
+
+const TimelineCard = (content) => {
+    return (
+        <>
+            <div className="timeline ">
+                <div className="timeline-content">
+                    <h3 className="title" style={{ backgroundColor: content.backgroundColor }}> {content.established} </h3>
+                    <p className="description"><strong>
+                        {content.establishedDescription}</strong>
+                    </p>
+                    <div className="timeline-year">{content.establishedYear}</div>
+                </div>
+            </div>
+        </>
+    )
+}
 
 export default function Timeline() {
     return (
         <>
-            <div class="contain">
-                <div>
-                    <center className='.heading'>
-                        <h1 >OUR STORY</h1>
-                        <div ></div>
-                    </center>
+            <div className="timeline-container">
+                <div className='timeline-heading'>
+                    <h1 >OUR STORY</h1>
+                    <div className='heading-underline' ></div>
                 </div>
-                <div class=" p-0 my-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-timeline">
-                                <div class="timeline ">
-                                    <Link to="/about" class="timeline-content">
-                                        <h3 class="title" style={{ backgroundColor: "#f26a36" }}>Established</h3>
-                                        <p class="description"><strong>
-                                            Established in 2002 with a mission to improve the living
-                                            standards of the people of Gopali like villages.</strong>
-                                        </p>
-                                        <div class="timeline-year">2002</div>
-                                    </Link>
-                                </div>
-                                <div class="timeline">
-                                    <Link to="/about" class="timeline-content">
-                                        <h3 class="title" style={{ backgroundColor: "#73c48f" }}>Registered</h3>
-                                        <p class="description"><b>
-                                            Registered under the West Bengal Societies Registration Act
-                                            of 1961.</b>
-                                        </p>
-                                        <div class="timeline-year">2004</div>
-                                    </Link>
-                                </div>
-                                <div class="timeline">
-                                    <Link to="/about" class="timeline-content">
-                                        <h3 class="title" style={{ backgroundColor: "#fed136" }}>Stepped into
-                                            Education</h3>
-                                        <p class="description"><b>
-                                            Embarked in an education program Jagriti Vidya Mandir in a
-                                            rented building, focused upon providing quality education.</b>
-                                        </p>
-                                        <div class="timeline-year">2008</div>
-                                    </Link>
-                                </div>
-                                <div class="timeline">
-                                    <Link to="/about" class="timeline-content">
-                                        <h3 class="title" style={{ backgroundColor: "#685e91" }}>JVM
-                                            Foundation</h3>
-                                        <p class="description"><b>
-                                            2 acres of land was purchased, and the foundation of
-                                            Jagriti Vidya Mandir was laid.</b>
-                                        </p>
-                                        <div class="timeline-year">2012</div>
-                                    </Link>
-                                </div>
-                                <div class="timeline">
-                                    <Link to="/about" class="timeline-content">
-                                        <h3 class="title" style={{ backgroundColor: "#04a3c3" }}>LiGHT</h3>
-                                        <p class="description"><b>
-                                            GYWS came up with the initiative
-                                            named LiGHT to reach masses all over India, to reciprocate similar models of social upliftment
-                                            throughout the nation.</b>
-                                        </p>
-                                        <div class="timeline-year">2017</div>
-                                    </Link>
-                                </div>
-                                <div class="timeline">
-                                    <Link to="/about" class="timeline-content">
-                                        <h3 class="title" style={{ backgroundColor: "#f26a36" }}>PRAYAS</h3>
-                                        <p class="description"><b>
-                                            Started PRAYAS, Business Development Initiative, to work on
-                                            Rural Entrepreneurship Development and Social Enterprises to help transform lives.</b>
-                                        </p>
-                                        <div class="timeline-year">2018</div>
-                                    </Link>
-                                </div>
-                                <div class="timeline">
-                                    <Link to="/about" class="timeline-content">
-                                        <h3 class="title" style={{ backgroundColor: "#fed136" }}>Hostel
-                                            Construction</h3>
-                                        <p class="description"><b>
-                                            Hostel Construction to provide learning environment to
-                                            deprived children, begin in Jagriti Vidya Mandir.</b>
-                                        </p>
-                                        <div class="timeline-year">2020</div>
-                                    </Link>
-                                </div>
+                <div className=" p-0 my-4">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="main-timeline">
+                                {TimelineData.map((data, key) => {
+                                    return <TimelineCard {...data} key={key} />
+                                })}
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </>
     );
