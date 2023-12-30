@@ -488,3 +488,5 @@ const allData = [
         ]
     }
 ]
+
+export default allData;

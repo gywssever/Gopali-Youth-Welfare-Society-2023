@@ -1,14 +1,19 @@
+import { ArrowUp } from 'react-bootstrap-icons';
 import './scrollToTop.css'
-import { AiOutlineArrowUp } from 'react-icons/ai'
 
 export default function ScrollToTop() {
     // Hide the button when the page is at the top
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () { scrollFunction() };
 
     // Hide the button when the page loads
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    };
+
 
     function scrollFunction() {
+
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.querySelector(".scroll_btn").style.display = "block";
         } else {
@@ -17,9 +22,9 @@ export default function ScrollToTop() {
     }
 
     return (
-        <div className="scroll_btn">
+        <div className="scroll_btn" onClick={() => scrollToTop()}>
             <div className="scroll_button">
-                <a href="#top"><AiOutlineArrowUp /></a>
+                <ArrowUp />
             </div>
         </div>
     )
