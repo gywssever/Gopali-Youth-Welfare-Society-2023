@@ -109,6 +109,9 @@ const SurveyStatsCard = ({ number, info }) => {
 
 
 export default function JVM() {
+
+    document.title = "JVM | GYWS";
+
     return (
         <>
             <div className="jvm-container">
