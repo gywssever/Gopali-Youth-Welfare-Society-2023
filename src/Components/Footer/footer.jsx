@@ -60,7 +60,7 @@ function Footer() {
                   </Link><hr />
                 </li>
                 <li>
-                  <Link to="/" onClick={scrollToTop}>
+                  <Link to="/about" onClick={scrollToTop}>
                     About Us
                   </Link>  <hr />
                 </li>

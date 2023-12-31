@@ -1,6 +1,5 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-
 import Navbar from './Components/navbar/Navbar';
 import Home from './Components/Homepage/Home';
 import Media from './Components/Media/Media';
@@ -13,6 +12,7 @@ import Members2021 from './Components/Members/Members2020-21/Members.jsx'
 import Members2020 from './Components/Members/Members2019-20/Members.jsx'
 import Accordion from './Components/aboutUs/accordion/Accordion.jsx';
 import About from './Components/aboutUs/About.jsx';
+import JVM from './Components/Initiatives/JVM_PAGE/JVM.jsx';
 
 export default function App() {
   return (
@@ -27,6 +27,7 @@ export default function App() {
         <Route path="/member/members2021-22/*" element={<Members2122 />} />
         <Route path="/member/members2020-21/*" element={<Members2021 />} />
         <Route path="/member/members2019-20/*" element={<Members2020 />} />
+        <Route path="/jvm" element={<JVM />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<h1 style={{height: "100vh"}} >404: Page Not Found</h1>} /> 
       </Routes>

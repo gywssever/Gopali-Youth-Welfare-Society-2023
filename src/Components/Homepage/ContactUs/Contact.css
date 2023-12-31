@@ -3,7 +3,8 @@
 }
 
 .contactUs {
-    background: linear-gradient(90deg, #695E91 0%, #73c48f 30%, #05A1C7 100%);
+    /* background: linear-gradient(90deg, #695E91 0%, #73c48f 30%, #05A1C7 100%); */
+
     position: relative;
     width: 100%;
     padding: 40px 100px;
@@ -16,6 +17,10 @@
     align-items: center;
 }
 
+.box {
+    
+}
+
 .contactUs .title h2 {
     color: #fff;
     font-weight: 500;
@@ -24,6 +29,7 @@
 
 .form {
     grid-area: form;
+    box-shadow: 0 5px 35px rgpa(0, 0, 0, 0.5);
 }
 
 .form h2 {
@@ -94,13 +100,16 @@
 }
 
 .inputBox input {
+
     padding: 10px;
     font-size: 1.1rem;
     outline: none;
     border: 1px solid #333;
+    border-radius: 5px;
 }
 
 .inputBox textarea {
+    border-radius: 5px;
     padding: 10px;
     font-size: 1.1rem;
     outline: none;
