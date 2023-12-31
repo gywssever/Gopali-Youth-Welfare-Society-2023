@@ -25,6 +25,7 @@ body {
 ::selection {
   background-color: #ffcc00;
   color: #000;
+  text-shadow: none;
 }
 
 code {

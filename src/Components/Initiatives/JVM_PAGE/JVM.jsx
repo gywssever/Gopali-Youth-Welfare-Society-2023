@@ -1,5 +1,39 @@
 import './JVM.css';
 
+const jvmData = [
+    {
+        imgPath: "./images/school_logo-removebg-preview.png",
+        content: "JVM was established in April, 2008. It's Initiative of Gopali Youth Walefare Society. Its Main motto is To educate each and every child for a better tommorow .",
+    },
+    {
+        imgPath: "./images/child_logo-removebg-preview.png",
+        content: "It is located in Tangasool village, 1.5 kilometers from Salua Air Force Station which in turn is 5 kilometers away from IIT campus.",
+    },
+    {
+        imgPath: "./images/teachers_logo-removebg-preview.png",
+        content: "At present, school is up to 5th standard and 240+ students are enrolled from nursery to 5th standard and 11+ teachers.",
+    },
+]
+
+const eventsData = [
+    {
+        name: "Aashayien",
+        imgPath: "./images/aashayein.jpeg",
+    },
+    {
+        name: 'Sports Day',
+        imgPath: "./images/sportsday.jpeg",
+    },
+    {
+        name: "Republic Day",
+        imgPath: "./images/republicday.jpeg",
+    },
+    {
+        name: "KTJ Visit",
+        imgPath: "./images/ktjvisit.jpeg",
+    },
+]
+
 const surveyData = [
     {
         number: 25,
@@ -35,44 +69,38 @@ const surveyData = [
     },
 ]
 
-const eventsData = [
-    {
-        name: "Aashayien",
-        imgPath: "./images/aashayein.jpeg",
-    },
-    {
-        name: 'Sports Day',
-        imgPath: "./images/sportsday.jpeg",
-    },
-    {
-        name: "Republic Day",
-        imgPath: "./images/republicday.jpeg",
-    },
-    {
-        name: "KTJ Visit",
-        imgPath: "./images/ktjvisit.jpeg",
-    },
-]
-
-const EventCard = ({ name, imgPath }) => {
+const JVMCard = ({ imgPath, content }) => {
     return (
         <>
-            <div className="gallery">
-                <div className="jvm-event-img">
-                    <img src={imgPath} alt="Event Img" />
-                </div>
-                <div className="jvm-event-name">{name}</div>
+            <div class="jvm-section-content-card">
+                <img src={imgPath} alt="not found" />
+                <p>{content}</p>
             </div>
         </>
     )
 }
-    
+
+
+
+const EventCard = ({ name, imgPath }) => {
+    return (
+        <>
+            <div className="event-gallery-card">
+                <div className="event-gallery-card-img">
+                    <img src={imgPath} alt="Event Img" />
+                </div>
+                <p>{name}</p>
+            </div>
+        </>
+    )
+}
+
 
 const SurveyStatsCard = ({ number, info }) => {
     return (
         <>
             <div class="stats">
-                <h1>{number}</h1>
+                <h2>{number}</h2>
                 <p>{info}</p>
             </div>
         </>
@@ -83,110 +111,90 @@ const SurveyStatsCard = ({ number, info }) => {
 export default function JVM() {
     return (
         <>
-            <header>
+            <div className="jvm-container">
                 <div class="jvm-header-content">
-                    <h2>
-                        <span>G</span>opali <span>Y</span>outh <span>W</span>elfare
-                        <span>S</span>ociety
-                    </h2>
-                    <h1><span>J</span>agriti <span>V</span>idya <span>M</span>andir</h1>
+                    <h2> Jagriti Vidya Mandir</h2>
+                    <h2>Gopali Youth Welfare Society </h2>
                 </div>
-            </header>
 
-            <section>
                 <div class="jvm-details">
                     <div class="jvm-title">
-                        <h1>JVM</h1>
+                        <h2>JVM</h2>
+                        <div className="heading-underline"></div>
                     </div>
 
                     <div class="jvm-section-content">
-                        <div class="jvm-section-content-1">
-                            <img src="school_logo-removebg-preview.png" alt="not found" />
-                            <p>
-                                JVM was established in April, 2008. It's Initiative of Gopali
-                                Youth Walefare Society. Its Main motto is To educate each and
-                                every child for a better tommorow .
-                            </p>
-                        </div>
-                        <div class="jvm-section-content-2">
-                            <div class="jvm_details2">
-                                <img src="child_logo-removebg-preview.png" alt="not found" />
-                                <p>
-                                    It is located in Tangasool village, 1.5 kilometers from Salua
-                                    Air Force Station which in turn is 5 kilometers away from IIT
-                                    campus.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="jvm-section-content-3">
-                            <img src="teachers_logo-removebg-preview.png" alt="not found" />
-                            <p>
-                                At present, school is up to 5th standard and 240+ students are
-                                enrolled from nursery to 5th standard and 11+ teachers.
-                            </p>
-                        </div>
+                        {
+                            jvmData.map((item) => {
+                                return (
+                                    <JVMCard title={item.title} imgPath={item.imgPath} content={item.content} />
+                                )
+                            })
+                        }
                     </div>
                 </div>
-            </section>
 
-            <div class="jvm-lecture">
-                <div class="jvm-heading">
-                    <h2>Future Plan</h2>
-                </div>
+                <div class="jvm-lecture">
+                    <div class="jvm-title">
+                        <h2>Future Plan</h2>
+                        <div className="heading-underline"></div>
+                    </div>
 
-                <div class="lecture-container">
-                    <div class="jvm-lecture-content">
+                    <div class="lecture-container">
                         <div class="lecture-img">
-                            <img src="futureplan.png" alt="#" />
+                            <img src="./images/futureplan.png" alt="#" />
                         </div>
 
-                        <div class="lecture0_C">
-                            <p>
-                                JVM aspires to be a residential full-fledged school for students
-                                of under privileged families offering a variety of courses at +2
-                                level, vocational training and career guidance. We seek to take
-                                Jagriti Vidya Mandir to beyond its current primary level to
-                                complete school cum hostel Catering to the needs of over 500
-                                students. The facility will not only provide education up to 12th
-                                grade, but will also take responsibility for ensuring that its
-                                students settle in their professional or educational lives before
-                                they leave.
-                            </p>
+                        <div class="lecture-content">
+                            JVM aspires to be a residential full-fledged school for students
+                            of under privileged families offering a variety of courses at +2
+                            level, vocational training and career guidance. We seek to take
+                            Jagriti Vidya Mandir to beyond its current primary level to
+                            complete school cum hostel Catering to the needs of over 500
+                            students. The facility will not only provide education up to 12th
+                            grade, but will also take responsibility for ensuring that its
+                            students settle in their professional or educational lives before
+                            they leave.
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div class="Event_detail">
-                <div class="event_detail_heading">
-                    <h1>Events</h1>
+                <div class="event-details">
+                    <div class="jvm-title">
+                        <h2>Events</h2>
+                        <div className="heading-underline"></div>
+                    </div>
+
+                    <div class="event-gallery">
+                        {
+                            eventsData.map((item) => {
+                                return (
+                                    <EventCard name={item.name} imgPath={item.imgPath} />
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-                <div class="eventgallery">
-                    {
-                        eventsData.map((item) => {
-                            return (
-                                <EventCard name={item.name} imgPath={item.imgPath} />
-                            )
-                        })
-                    }
+
+
+                <div class="jvm-survey">
+                    <div class="jvm-title">
+                        <h2>Survey Stats</h2>
+                        <div className="heading-underline"></div>
+                    </div>
+
+                    <div class="survey-stats">
+                        {
+                            surveyData.map((item) => {
+                                return (
+                                    <SurveyStatsCard number={item.number} info={item.info} />
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
-
-
-            <div class="Survey">
-                <h1>Survey Stats</h1>
-                <div class="Surveystats">
-                    {
-                        surveyData.map((item) => {
-                            return (
-                                <SurveyStatsCard number={item.number} info={item.info} />
-                            )
-                        })
-                    }
-                </div>
-            </div>
-
         </>
     );
 };

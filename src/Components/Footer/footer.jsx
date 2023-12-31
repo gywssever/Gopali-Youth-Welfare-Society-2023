@@ -65,7 +65,7 @@ function Footer() {
                   </Link>  <hr />
                 </li>
                 <li>
-                  <Link to="/" onClick={scrollToTop}>
+                  <Link to="/jvm" onClick={scrollToTop}>
                     Initiative
                   </Link> <hr />
                 </li>

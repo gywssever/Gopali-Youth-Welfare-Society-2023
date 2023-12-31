@@ -41,10 +41,15 @@ function Navbar() {
                             About Us
                         </li>
                     </Link>
-                    <Link to="/" onClick={scrollToTop}>
+                    <Link to="/jvm" onClick={scrollToTop}>
                         <li>
                             Initiatives
                         </li>
+                        {/* <div className="initiative-menu">
+                            <Link to="/jvm">
+                                JVM
+                            </Link>
+                        </div> */}
                     </Link>
                     <Link to="/media" onClick={scrollToTop}>
                         <li>
