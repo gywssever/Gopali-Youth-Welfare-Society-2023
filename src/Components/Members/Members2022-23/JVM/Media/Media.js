@@ -10,7 +10,7 @@ const Data = [
     {
         name: "Tanushri Tawari",
         position: "Media & Publicity Team",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""

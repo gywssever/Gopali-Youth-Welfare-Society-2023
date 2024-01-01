@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Sumit Deora",
         position: "Finance Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "https://www.facebook.com/profile.php?id=100085671729571",
         linkedinLink: "https://www.linkedin.com/in/22ee10015ashutoshkrsingh/",
         email: "ashutoshkrsingh.iitkgp@gmail.com"

@@ -42,7 +42,7 @@ const Data = [
     {
         name: "Gourav Kumar Shaw",
         position: "Sponsorship Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""

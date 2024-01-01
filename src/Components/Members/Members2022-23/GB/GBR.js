@@ -9,7 +9,7 @@ const data = [
     {
         name: "Dipti Naik",
         position: "EXECUTIVE OFFICER, LiGHT SAMVEDNA",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: ""
     },

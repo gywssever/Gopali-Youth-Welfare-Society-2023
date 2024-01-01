@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Nadimpalli Deepthi",
         position: "Design Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -10,7 +10,7 @@ const Data = [
     {
         name: "Prithviraj Kadam",
         position: "Design Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""

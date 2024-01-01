@@ -44,21 +44,21 @@ const data = [
     {
         name: "Retd. Prof. H.R. Tiwari",
         position: "",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: ""
     },
     {
         name: "Prof. Sasmita Mohakud",
         position: "",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: ""
     },
     {
         name: "Prof. Sudipta Datta",
         position: "",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: ""
     },

@@ -3,7 +3,7 @@ const Data = [
     {
         name: "Priyansh Shrivastava",
         position: "Rise Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -11,7 +11,7 @@ const Data = [
     {
         name: "Manosij Sarkar",
         position: "Rise Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -19,7 +19,7 @@ const Data = [
     {
         name: "Nilesh Nagesh",
         position: "Rise Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""

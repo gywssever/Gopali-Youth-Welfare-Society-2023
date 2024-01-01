@@ -9,10 +9,11 @@ function ContactUs() {
           <h1>GET IN TOUCH</h1>
         </div>
 
-        <div class="box" style={{boxShadow: '0 0px 4px rgba(0, 0, 0, 0.6)',
+        <div class="box" style={{
+          boxShadow: '0 0px 4px rgba(0, 0, 0, 0.6)',
           borderRadius: '10px',
           overflow: 'hidden',
-          }}>
+        }}>
           <div class="contact form">
             <h2>
               <strong>SEND A MESSAGE</strong>

@@ -80,8 +80,6 @@ const JVMCard = ({ imgPath, content }) => {
     )
 }
 
-
-
 const EventCard = ({ name, imgPath }) => {
     return (
         <>

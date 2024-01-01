@@ -9,7 +9,7 @@ const Data =[
     {
         name: "Udeshya Raj",
         position: "LiGHT Coordinator",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: ""
     },

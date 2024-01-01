@@ -65,7 +65,7 @@ const data = [
     {
         name: "Naman Goel",
         position: "CHIEF TECHNICAL OFFICER + PUBLIC RELATION OFFICER",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: ""
     },

@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Sweta kumari",
         position: "SRC Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""

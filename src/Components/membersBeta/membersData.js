@@ -156,7 +156,7 @@ const allData = [
                 srNo: 7,
                 name: "Retd. Prof. H.R. Tiwari",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+                imageUrl: "/images/profile.png",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -164,7 +164,7 @@ const allData = [
                 srNo: 8,
                 name: "Prof. Sasmita Mohakud",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+                imageUrl: "/images/profile.png",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -172,7 +172,7 @@ const allData = [
                 srNo: 9,
                 name: "Prof. Sudipta Datta",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+                imageUrl: "/images/profile.png",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -400,7 +400,7 @@ const allData = [
                 srNo: 7,
                 name: "Retd. Prof. H.R. Tiwari",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+                imageUrl: "/images/profile.png",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -408,7 +408,7 @@ const allData = [
                 srNo: 8,
                 name: "Prof. Sasmita Mohakud",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+                imageUrl: "/images/profile.png",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -416,7 +416,7 @@ const allData = [
                 srNo: 9,
                 name: "Prof. Sudipta Datta",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+                imageUrl: "/images/profile.png",
                 facebookLink: "",
                 linkedinLink: ""
             },

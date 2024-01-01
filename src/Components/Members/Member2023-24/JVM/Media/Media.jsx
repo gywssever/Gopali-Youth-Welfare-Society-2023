@@ -3,6 +3,7 @@ import '../../../Member2023-24/GB/GB.css'
 import Card from '../../Card/card'
 import data from './Media'
 import HCard from '../../../HeaderCard/HCard.jsx'
+
 export default function page() {
     return (
 

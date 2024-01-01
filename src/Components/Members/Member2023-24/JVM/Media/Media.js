@@ -10,7 +10,7 @@ const Data = [
     {
         name: "Pranita Shirsat",
         position: "Media & Publicity Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -18,7 +18,7 @@ const Data = [
     {
         name: "Ayush Kumar",
         position: "Media & Publicity Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dummy.png",
+        imageUrl: "/images/profile.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""
