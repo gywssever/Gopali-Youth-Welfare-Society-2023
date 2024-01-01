@@ -23,7 +23,7 @@ function Navbar() {
     );
 
     return (
-        <>
+        < >
             <nav>
                 <div className="logo">
                     <img src={LOGO} alt="GYWS_Logo" />
@@ -32,7 +32,6 @@ function Navbar() {
                 
                 <div className={`menu-toggle ${showMenu ? 'open' : ''}`}>
                     {menuIcon}
-                    {/* <Hamburger className="HiMenu" onClick={toggleMenu}  /> */}
                 </div>
 
                 <ul className={`nav-links ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
@@ -45,12 +44,14 @@ function Navbar() {
                         <li>
                             Initiatives
                         </li>
-                        {/* <div className="initiative-menu">
-                            <Link to="/jvm">
-                                JVM
-                            </Link>
-                        </div> */}
                     </Link>
+                    {/* <Link>
+                        <div className="initiative-menu">
+                            <a target="_blank" rel='noreferrer' href="https://light.org.in">
+                                JVM
+                            </a>
+                        </div>
+                    </Link> */}
                     <Link to="/media" onClick={scrollToTop}>
                         <li>
                             Media
@@ -69,7 +70,7 @@ function Navbar() {
                 </ul>
             </nav>
 
-            <div className="nav_space"></div>
+           <div className="nav_space"></div>
         </>
     );
 }
