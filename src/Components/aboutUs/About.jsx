@@ -5,6 +5,9 @@ import HowWeStarted from './howWeStarted';
 import Foundersmsg from './Foundersmsg';
 
 export default function about() {
+
+    document.title = "About Us | GYWS";
+
     return (
         <>
             <HowWeStarted />
