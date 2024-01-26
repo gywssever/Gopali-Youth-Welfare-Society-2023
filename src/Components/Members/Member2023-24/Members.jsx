@@ -15,15 +15,31 @@ function Members() {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     };
+    function getWindowSize() {
+      const {innerWidth, innerHeight} = window;
+      return {innerWidth, innerHeight};
+    }
+    const [windowSize, setWindowSize] = useState(getWindowSize());
+
+    useEffect(() => {
+      function handleWindowResize() {
+        setWindowSize(getWindowSize());
+      }
+  
+      window.addEventListener('resize', handleWindowResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleWindowResize);
+      };
+    }, []);
     
-    const [isCollapsed, setCollapsed] = useState(false);
+    const [isCollapsed, setCollapsed] = useState((windowSize.innerWidth>=1024)?(false):true);
 
     const toggleSidebar = () => {
         setCollapsed(!isCollapsed);
  
     };
     useEffect(() => {
-
         let handler = (e) => {
             if (!menuRef.current.contains(e.target))
                 setCollapsed(true);
