@@ -8,7 +8,7 @@ export default function page() {
     return (
 
         <>
-            <HCard head={"LiGHT"}></HCard>
+            <HCard head={"LiGHT 2021-22"}></HCard>
             <div className="members_container">
                 {ceo.map((data, index) => (
                     <Card key={index} name={data.name} position={data.position} imageUrl={data.imageUrl} facebookLink={data.facebookLink}

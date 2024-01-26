@@ -8,7 +8,7 @@ const GB = () => {
 
 
     return (
-        <> <HCard head={"Governing Body Members"}></HCard>
+        <> <HCard head={"Governing Body Members 2020-21"}></HCard>
 
             <div className="table-container">
                 <table className="table">

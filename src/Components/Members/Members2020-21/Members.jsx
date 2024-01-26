@@ -14,7 +14,7 @@ function Members() {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     };
 
-    const [isCollapsed, setCollapsed] = useState(true);
+    const [isCollapsed, setCollapsed] = useState(false);
 
     const toggleSidebar = () => {
         setCollapsed(!isCollapsed);

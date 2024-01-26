@@ -10,7 +10,7 @@ const GB = () => {
   return (
 
     <>
-   <HCard head={"Governing Body Members"}></HCard>
+   <HCard head={"Governing Body Members 2019-20"}></HCard>
       <div className="table-container">
         <table className="table">
           <thead>
