@@ -63,8 +63,14 @@ function Members() {
             <div className="everything">
               <h2>Members</h2>
               <ul>
-                <li className="dropdown">
-                  <Link>Sessions</Link>
+                <li className="dropdown"  style={{ border: "solid #fed136", borderRadius: "5px" }}>
+                  <Link>
+                   
+                    <div className="jack">
+                      <span>Sessions</span>
+                      <span style={{ fontSize: "10px" }}>&#9660;</span>
+                    </div>
+                  </Link>
                   <ul className="dropdown-content">
                     <li>
                       <Link
