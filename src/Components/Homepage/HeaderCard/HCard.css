@@ -1,4 +1,4 @@
-.name {
+.nam {
     /* border: solid red; */
     text-transform: uppercase;
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 @media (max-width:385px) {
-    .name h2{
+    .nam h2{
         font-size: 1.27em;
     }
 }
