@@ -6,10 +6,8 @@
     margin: 0 auto;
     max-width: 1200px;
 }
-
-.heading h1 {
-    text-align: center;
-    margin: 2vw 0;
+.heading{
+    margin: 2rem;
 }
 
 .mainbox {

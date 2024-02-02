@@ -1,13 +1,13 @@
 import impcss from './impact.module.css'
 import childlogo from './images/child.jpg'
 import mapimg from './images/map.png'
-
+import HCard from '../HeaderCard/HCard'
 export default function Impact() {
     return (
         <div>
             <div className={impcss.container}>
-                <div className={impcss.heading} id={impcss.area0}>
-                    <h1>IMPACT</h1>
+                <div className={impcss.heading}>
+                <HCard head={"IMPACT"}></HCard>
                 </div>
                 <div className={impcss.mycontainer}>
                     <div className={impcss.mainbox} id={impcss.first}>

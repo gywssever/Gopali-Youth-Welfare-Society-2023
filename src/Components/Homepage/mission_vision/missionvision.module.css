@@ -38,13 +38,13 @@
 #mission{
     padding: 1.7rem;
     background-color: #F16A36;
-    border: 5px solid #E19A64;
+   
     border-radius: 1rem;
     color: white;
     transition: all 0.2s ease-out;
 }
 #vision {
-    border: 5px solid #05A1C7;
+
     padding: 1.7rem;
     background-color: #286181;
     border-radius: 1rem;
