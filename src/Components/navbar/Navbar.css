@@ -3,24 +3,21 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #131921;
+    background-color: #aa3f17;
     color: #fff;
-    padding: 0 50px;
     height: 110px;
     width: 100%;
-    z-index: 999;
-    position: fixed;
+    z-index: 1000;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
+    padding: 0 20px;
 }
 
-.nav_space {
-    height: 110px;
-}
-
-.nav_space {
-    height: 110px;
+nav>a {
+    color: white;
+    text-decoration: none;
 }
 
 .logo {
@@ -33,14 +30,8 @@ nav {
     cursor: pointer;
 }
 
-.logo a {
-    text-decoration: none;
-    color: white;
-}
-
 nav .logo img {
     height: 100px;
-    margin: 5px 10px;
 }
 
 /* Hamburger menu styles */
@@ -163,7 +154,7 @@ nav .logo img {
         font-weight: 600;
         color: #fff;
         margin: 0px 10px;
-        
+
         text-transform: uppercase;
         text-shadow: 2px 2px 5px #0000004f;
         border-radius: 10px;
