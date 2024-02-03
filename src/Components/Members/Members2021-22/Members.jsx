@@ -162,7 +162,7 @@ function Members() {
               <h2>
                 <span>Intiatives</span>
               </h2>
-              <div className="jack">
+              <div>
                 <ul>
                   <Link
                     to="/member/members2021-22/jvm"
