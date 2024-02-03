@@ -12,21 +12,54 @@ function Members() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [isSessionOpen, setSessionOpen] = useState(false);
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
 
-  const [isCollapsed, setCollapsed] = useState(false);
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  const [isCollapsed, setCollapsed] = useState(
+    windowSize.innerWidth >= 1024 ? false : true
+  );
 
   const toggleSidebar = () => {
     setCollapsed(!isCollapsed);
   };
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) setCollapsed(true);
+      if (!menuRef.current.contains(e.target)) {
+        setCollapsed(true);
+        setSessionOpen(false);
+      }
     };
     document.addEventListener("mousedown", handler);
     return () => {
       document.removeEventListener("mousedown", handler);
     };
   });
+
+  const toggleSessionDropdown = () => {
+    setSessionOpen(!isSessionOpen);
+  };
+  // const openSessionDropdown = () => {
+  //   setSessionOpen(true);
+  // };
+
+  const closeSessionDropdown = () => {
+    setSessionOpen(false);
+  };
   return (
     <>
       <div className="wrapper">
@@ -38,13 +71,19 @@ function Members() {
             <div className="everything">
               <h2>Members</h2>
               <ul>
-                <li className="dropdown"  style={{ border: "solid #fed136", borderRadius: "5px" }}>
-                  <Link>
-                    <div className="jack">
-                      <span>Sessions</span>
-                      <span style={{ fontSize: "10px" }}>&#9660;</span>
-                    </div>
-                  </Link>
+                <li
+                  className="dropdown"
+
+                  // onMouseEnter={openSessionDropdown}
+                  onMouseLeave={closeSessionDropdown}
+                >
+                  <div className="jack" onClick={toggleSessionDropdown}>
+                    <span>Sessions</span>
+                    <span style={{ fontSize: "10px" }}>
+                      {isSessionOpen ? "▲" : "▼"}
+                    </span>
+                  </div>
+                  {isSessionOpen && (
                   <ul className="dropdown-content">
                     <li>
                       <Link
@@ -91,7 +130,7 @@ function Members() {
                       </Link>
                     </li>
                     {/* Add more items as needed */}
-                  </ul>
+                  </ul>)}
                 </li>
                 <Link
                   to="/member/members2020-21/"
@@ -100,7 +139,7 @@ function Members() {
                     scrollToTop();
                   }}
                 >
-                  <li>Governing Body 2021-22</li>
+                  <li>Governing Body 2020-21</li>
                 </Link>
                 <Link
                   to="/member/members2020-21/Advisory"

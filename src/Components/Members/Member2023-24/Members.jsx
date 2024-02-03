@@ -20,7 +20,7 @@ function Members() {
     return { innerWidth, innerHeight };
   }
   const [windowSize, setWindowSize] = useState(getWindowSize());
-
+  const [isSessionOpen, setSessionOpen] = useState(false);
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -42,13 +42,26 @@ function Members() {
   };
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) setCollapsed(true);
+      if (!menuRef.current.contains(e.target)) {
+        setCollapsed(true);
+        setSessionOpen(false);
+      }
     };
     document.addEventListener("mousedown", handler);
     return () => {
       document.removeEventListener("mousedown", handler);
     };
   });
+  const toggleSessionDropdown = () => {
+    setSessionOpen(!isSessionOpen);
+  };
+  // const openSessionDropdown = () => {
+  //   setSessionOpen(true);
+  // };
+
+  const closeSessionDropdown = () => {
+    setSessionOpen(false);
+  };
 
   return (
     <>
@@ -63,60 +76,64 @@ function Members() {
               <ul>
                 <li
                   className="dropdown"
-                  style={{ border: "solid #fed136", borderRadius: "5px" }}
+
+                  // onMouseEnter={openSessionDropdown}
+                  onMouseLeave={closeSessionDropdown}
                 >
-                  <Link>
-                    <div className="jack">
-                      <span>Sessions</span>
-                      <span style={{fontSize: '10px'}}>&#9660;</span>
-                    </div>
-                  </Link>
-                  <ul className="dropdown-content">
-                    <li>
-                      <Link
-                        to="/member/members2022-23"
-                        onClick={() => {
-                          toggleSidebar();
-                          scrollToTop();
-                        }}
-                      >
-                        Session 2022-23
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/member/members2021-22"
-                        onClick={() => {
-                          toggleSidebar();
-                          scrollToTop();
-                        }}
-                      >
-                        Session 2021-22
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/member/members2020-21"
-                        onClick={() => {
-                          toggleSidebar();
-                          scrollToTop();
-                        }}
-                      >
-                        Session 2020-21
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/member/members2019-20"
-                        onClick={() => {
-                          toggleSidebar();
-                          scrollToTop();
-                        }}
-                      >
-                        Session 2019-20
-                      </Link>
-                    </li>
-                  </ul>
+                  <div className="jack" onClick={toggleSessionDropdown}>
+                    <span>Sessions</span>
+                    <span style={{ fontSize: "10px" }}>
+                      {isSessionOpen ? "▲" : "▼"}
+                    </span>
+                  </div>
+                  {isSessionOpen && (
+                    <ul className="dropdown-content">
+                      <li>
+                        <Link
+                          to="/member/members2022-23"
+                          onClick={() => {
+                            toggleSidebar();
+                            scrollToTop();
+                          }}
+                        >
+                          Session 2022-23
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/member/members2021-22"
+                          onClick={() => {
+                            toggleSidebar();
+                            scrollToTop();
+                          }}
+                        >
+                          Session 2021-22
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/member/members2020-21"
+                          onClick={() => {
+                            toggleSidebar();
+                            scrollToTop();
+                          }}
+                        >
+                          Session 2020-21
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/member/members2019-20"
+                          onClick={() => {
+                            toggleSidebar();
+                            scrollToTop();
+                          }}
+                        >
+                          Session 2019-20
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
                 </li>
 
                 <Link

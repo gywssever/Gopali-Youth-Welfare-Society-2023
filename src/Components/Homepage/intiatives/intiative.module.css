@@ -55,11 +55,11 @@
     background-color: #F9EE34;
     border: solid #F9EE34;
     border-radius: 2rem;
-    transition: all 0.2s ease-out;
+    transition: all 2s linear;
 
 }
 .mainbox:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: 0 0 10px #00000080;
     cursor: pointer;
 }
@@ -154,7 +154,10 @@
         /* width: 20rem; */
         /* border: solid red; */
         text-align: center;
-        font-size: 1.3rem;
-
+        font-size: 0.9rem;
+    }
+    .mainbox
+    {
+        height: 440px;
     }
 }

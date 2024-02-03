@@ -16,7 +16,7 @@ function Members() {
     return { innerWidth, innerHeight };
   }
   const [windowSize, setWindowSize] = useState(getWindowSize());
-
+  const [isSessionOpen, setSessionOpen] = useState(false);
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -38,13 +38,27 @@ function Members() {
   };
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) setCollapsed(true);
+      if (!menuRef.current.contains(e.target)) {
+        setCollapsed(true);
+        setSessionOpen(false);
+      }
     };
     document.addEventListener("mousedown", handler);
     return () => {
       document.removeEventListener("mousedown", handler);
     };
   });
+  const toggleSessionDropdown = () => {
+    setSessionOpen(!isSessionOpen);
+  };
+  // const openSessionDropdown = () => {
+  //   setSessionOpen(true);
+  // };
+
+  const closeSessionDropdown = () => {
+    setSessionOpen(false);
+  };
+
   return (
     <>
       <div className="wrapper">
@@ -56,13 +70,19 @@ function Members() {
             <div className="everything">
               <h2>Members</h2>
               <ul>
-                <li className="dropdown"  style={{ border: "solid #fed136", borderRadius: "5px" }}>
-                  <Link>
-                    <div className="jack">
-                      <span>Sessions</span>
-                      <span style={{ fontSize: "10px" }}>&#9660;</span>
-                    </div>
-                  </Link>
+                <li
+                  className="dropdown"
+
+                  // onMouseEnter={openSessionDropdown}
+                  onMouseLeave={closeSessionDropdown}
+                >
+                  <div className="jack" onClick={toggleSessionDropdown}>
+                    <span>Sessions</span>
+                    <span style={{ fontSize: "10px" }}>
+                      {isSessionOpen ? "▲" : "▼"}
+                    </span>
+                  </div>
+                  {isSessionOpen && (
                   <ul className="dropdown-content">
                     <li>
                       <Link
@@ -110,6 +130,7 @@ function Members() {
                     </li>
                     {/* Add more items as needed */}
                   </ul>
+                  )}
                 </li>
                 <Link
                   to="/member/members2019-20/"
