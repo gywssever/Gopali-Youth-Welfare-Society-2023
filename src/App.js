@@ -14,7 +14,10 @@ import Accordion from './Components/aboutUs/accordion/Accordion.jsx';
 import About from './Components/aboutUs/About.jsx';
 import JVM from './Components/Initiatives/JVM_PAGE/JVM.jsx';
 import LightDonate from './Components/lightdonate/LightDonate.jsx';
-import Donate from './Components/Donation/Hostel_Contruction.jsx'
+import Each from './Components/Donation/Each_JVMCare.jsx'
+import HostelCons from './Components/Donation/Hostel_Contruction.jsx'
+import HostelSus from './Components/Donation/Hostel_Sustainability.jsx'
+
 export default function App() {
   return (
     <>
@@ -30,8 +33,10 @@ export default function App() {
         <Route path="/member/members2019-20/*" element={<Members2020 />} />
         <Route path="/jvm" element={<JVM />} />
         <Route path="/about" element={<About />} />
-        <Route path="/lightdonate" element={<LightDonate />} />
-        <Route path="/donate" element={<Donate />} />
+        <Route path="/donate/each" element={<Each />} />
+        <Route path="/donate/hostel_construction" element={<HostelCons />} />
+        <Route path="/donate/hostel_sustainability" element={<HostelSus />} />
+        <Route path="/donate/light" element={<LightDonate/>} />
         <Route path="*" element={<h1 style={{ height: "100vh" }} >404: Page Not Found</h1>} />
       </Routes>
       <ScrollToTop />
