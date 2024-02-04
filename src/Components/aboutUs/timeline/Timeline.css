@@ -129,4 +129,8 @@
         margin: 0 0 15px -45px;
         padding-left: 75px;
     }
+    .timeline-container{
+      width: 90% !important;
+       
+    }
 }

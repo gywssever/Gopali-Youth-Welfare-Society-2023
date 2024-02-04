@@ -17,6 +17,9 @@
     text-align: center;
     margin-top: 10px;
   }
+  .how-we-started-text p{
+    text-align: justify;
+  }
   .para1{
     margin-bottom: 2rem;
     line-height: 1.5;
