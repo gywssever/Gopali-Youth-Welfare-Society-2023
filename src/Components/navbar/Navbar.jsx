@@ -1,8 +1,7 @@
 import './Navbar.css';
 import { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link if using React Router
+import { Link } from 'react-router-dom';
 import LOGO from './Images/logo.png';
-// import Hamburger from './Hamburger';
 import { List, XLg } from 'react-bootstrap-icons';
 
 function Navbar() {
@@ -13,6 +12,7 @@ function Navbar() {
     };
     const scrollToTop = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        setShowMenu(false);
     };
     const menuIcon = showMenu ? (
         // <IoClose className="HiMenu" onClick={toggleMenu} />
@@ -30,11 +30,11 @@ function Navbar() {
                     <div >Gopali Youth Welfare Society</div> {/* Use Link here */}
                 </Link>
 
-                <div className={`menu-toggle ${showMenu ? 'open' : ''}`}>
+                <div className={`menu-toggle ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>
                     {menuIcon}
                 </div>
 
-                <ul className={`nav-links ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
+                <ul className={`nav-links ${showMenu ? 'show' : ''}`} >
                     <Link to="/" onClick={scrollToTop}>
                         <li>
                             Home
