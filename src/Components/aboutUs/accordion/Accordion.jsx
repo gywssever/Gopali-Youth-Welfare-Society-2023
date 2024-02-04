@@ -1,4 +1,4 @@
-import { PlusCircleFill } from 'react-bootstrap-icons';
+import { DashCircleFill, PlusCircleFill } from 'react-bootstrap-icons';
 import './Accordion.css';
 
 import { useState } from 'react';
@@ -15,7 +15,7 @@ const FAQAccordion = ({ question, answer, index, expandedIndex, setExpandedIndex
     <div className="accordion-item" >
       <div className="accordion-header" onClick={handleClick} >
         <div className='accordion-header-question'>{question}</div>
-        <div className={`accordion-header-icon ${isOpen ? 'open' : ''}`}> <PlusCircleFill /> </div>
+        <div className={`accordion-header-icon`}> {isOpen ?  <DashCircleFill /> : <PlusCircleFill />} </div>
       </div>
       {isOpen && <div className="accordion-content">{answer}</div>}
     </div>
@@ -45,16 +45,16 @@ const FAQAccordionContainer = ({ faqs }) => {
 // Example Usage
 const FAQs = [
   {
-    question: 'What is React?',
-    answer: 'React is a JavaScript library for building user interfaces.',
+    question: 'How can I contact GYWS to donate or for related information?',
+    answer: 'You can reach out to us by email: gywsociety@gmail.com or call us at: 03222296537.',
   },
   {
-    question: 'How do I install React?',
-    answer: 'You can install React by using npm or yarn.',
+    question: 'Why is the society named \'Gopali\' Youth Welfare Society?',
+    answer: 'The NGO took shape to uplift the youth from the village of Gopali, located close to IIT Kharagpur campus. Our Founder- Mr. Mrinal Kanti Bhanja, a localite sowed the seeds of GYWS for the welfare of the people of Gopali along with some socially motivated students from IIT-KGP, back in 2002.',
   },
   {
-    question: 'What are the features of React?',
-    answer: 'React provides features like virtual DOM, component-based architecture, etc.',
+    question: 'Is the website safe to make online payments?',
+    answer: 'Yes, the website is safe for all kinds of transaction. Also, any information exchange is safe and secure and under no circumstances shall be disclosed.',
   },
 ];
 
