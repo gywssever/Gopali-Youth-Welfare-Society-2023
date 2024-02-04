@@ -3,10 +3,15 @@ import Timeline from './timeline/Timeline';
 import Accordion from './accordion/Accordion';
 import HowWeStarted from './howWeStarted';
 import Foundersmsg from './Foundersmsg';
+import { useEffect } from 'react';
 
-export default function about() {
+export default function About() {
 
-    document.title = "About Us | GYWS";
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        document.title = "About Us | GYWS";
+
+    }, [])
 
     return (
         <>
