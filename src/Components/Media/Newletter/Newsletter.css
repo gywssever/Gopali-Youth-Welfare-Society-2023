@@ -67,14 +67,14 @@
     align-items: center;
     height: 100%;
     max-width: 900px;
-    
+
 }
 
 .newsletter_card_content h2 {
     font-size: 1.2rem;
     margin: 0 0 1rem 0;
     text-align: center;
-    color: #fed136;
+    color: #33236c;
     letter-spacing: 0.5px;
 }
 

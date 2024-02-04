@@ -18,7 +18,7 @@ footer .footer_container1 {
     display: grid;
     grid-template-columns: 4fr 2fr 2fr;
     grid-gap: 20px;
-    padding: 50px 100px;
+    padding: 18px 100px;
 }
 
 footer .footer_container1 .footer_logo{
@@ -108,23 +108,28 @@ footer .footer_container1 .footer_container1 .footer_info li a {
 
 .footer_copyrightText {
     width: 100%;
-    background-color: #73C38E;
-    padding: 20px 100px 30px;
+    background-color: #695d91;
+    padding: 4px 2px 4px 2px;
     text-align: center;
-    color: #555;
+    color: #fefefe;
     border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: small;
+    font-weight: 300;
+
 }
 
 .footer_copyrightText p {
     margin-bottom: 0 !important;
+    font-weight: 600;
 }
 
 .footer_info p {
     margin-bottom: 0px !important;
+    margin: 0px !important;
 }
 
 .footer_footerbody .footer_contact {    
-    line-height: 3;
+    line-height: 2.2;
 }
 
 .footer_footerbody .footer_contact a {

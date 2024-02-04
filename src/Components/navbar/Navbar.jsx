@@ -1,8 +1,7 @@
 import './Navbar.css';
 import { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link if using React Router
+import { Link } from 'react-router-dom';
 import LOGO from './Images/logo.png';
-// import Hamburger from './Hamburger';
 import { List, XLg } from 'react-bootstrap-icons';
 
 function Navbar() {
@@ -13,6 +12,7 @@ function Navbar() {
     };
     const scrollToTop = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        setShowMenu(false);
     };
     const menuIcon = showMenu ? (
         // <IoClose className="HiMenu" onClick={toggleMenu} />
@@ -25,16 +25,21 @@ function Navbar() {
     return (
         < >
             <nav>
-                <div className="logo">
+                <Link to={"/"} onClick={scrollToTop} className="logo">
                     <img src={LOGO} alt="GYWS_Logo" />
-                    <Link to="/" onClick={scrollToTop}>Gopali Youth Welfare Society</Link> {/* Use Link here */}
-                </div>
-                
-                <div className={`menu-toggle ${showMenu ? 'open' : ''}`}>
+                    <div >Gopali Youth Welfare Society</div> {/* Use Link here */}
+                </Link>
+
+                <div className={`menu-toggle ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>
                     {menuIcon}
                 </div>
 
-                <ul className={`nav-links ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
+                <ul className={`nav-links ${showMenu ? 'show' : ''}`} >
+                    <Link to="/" onClick={scrollToTop}>
+                        <li>
+                            Home
+                        </li>
+                    </Link>
                     <Link to="/about" onClick={scrollToTop}>
                         <li>
                             About Us
@@ -45,13 +50,6 @@ function Navbar() {
                             Initiatives
                         </li>
                     </Link>
-                    {/* <Link>
-                        <div className="initiative-menu">
-                            <a target="_blank" rel='noreferrer' href="https://light.org.in">
-                                JVM
-                            </a>
-                        </div>
-                    </Link> */}
                     <Link to="/media" onClick={scrollToTop}>
                         <li>
                             Media
@@ -68,9 +66,7 @@ function Navbar() {
                         </a>
                     </li>
                 </ul>
-            </nav>
-
-           <div className="nav_space"></div>
+            </nav >
         </>
     );
 }

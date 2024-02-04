@@ -1,9 +1,10 @@
 .how-we-started-container {
-    max-width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    margin: auto;
     padding: 2rem;
   }
   
@@ -16,6 +17,9 @@
   .how-we-started-text {
     text-align: center;
     margin-top: 10px;
+  }
+  .how-we-started-text p{
+    text-align: justify;
   }
   .para1{
     margin-bottom: 2rem;

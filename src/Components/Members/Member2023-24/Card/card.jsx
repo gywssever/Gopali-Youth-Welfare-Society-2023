@@ -1,5 +1,5 @@
 import "./card.css";
-// import { Linkedin, Facebook, EnvelopeFill } from 'react-bootstrap-icons'
+import { Linkedin, Facebook, EnvelopeFill } from 'react-bootstrap-icons'
 
 function card(props) {
   return (
@@ -11,7 +11,7 @@ function card(props) {
         <div className="members_card_info">
           <h3 className="members_name">{props.name}</h3>
           <p className="members_designation">{props.position}</p>
-          {/* <div className="members_social_links">
+          <div className="members_social_links">
             <a
               href={props.facebookLink}
               className=""
@@ -36,7 +36,7 @@ function card(props) {
             >
               <Linkedin />
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
