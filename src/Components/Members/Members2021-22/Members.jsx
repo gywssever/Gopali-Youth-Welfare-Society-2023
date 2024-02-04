@@ -69,7 +69,7 @@ function Members() {
       <div className="wrapper">
         <div ref={menuRef}>
           <div className="hamburger" onClick={toggleSidebar}>
-            <img src={logo} alt="" width={"30px"} />
+            <img src={logo} alt="" width={"35px"} />
           </div>
 
           <div className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
@@ -83,8 +83,8 @@ function Members() {
                   onMouseLeave={closeSessionDropdown}
                 >
                   <div className="jack" onClick={toggleSessionDropdown}>
-                    <span>Sessions</span>
-                    <span style={{ fontSize: "10px" }}>
+                    <span>Session 2021-22</span>
+                    <span style={{ fontSize: "10px", marginLeft: '20px' }}>
                       {isSessionOpen ? "▲" : "▼"}
                     </span>
                   </div>
@@ -162,7 +162,7 @@ function Members() {
               <h2>
                 <span>Intiatives</span>
               </h2>
-              <div>
+              <div >
                 <ul>
                   <Link
                     to="/member/members2021-22/jvm"

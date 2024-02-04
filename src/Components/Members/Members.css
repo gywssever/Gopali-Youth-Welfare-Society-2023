@@ -123,15 +123,22 @@
   position: relative;
   color: white;
 }
+
 .jack {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
   /* border: solid red; */
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.20s ease-in 0s;
 }
+
+.jack:hover{
+  transform: translateY(-5px);
+}
+
 .dropdown-content {
   /* display: none; */
   position: absolute;

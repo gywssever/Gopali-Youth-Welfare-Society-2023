@@ -68,7 +68,7 @@ function Members() {
       <div className="wrapper">
         <div ref={menuRef}>
           <div className="hamburger" onClick={toggleSidebar}>
-            <img src={logo} alt="" width={"30px"} />
+            <img src={logo} alt="" width={"35px"} />
           </div>
           <div className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
             <div className="everything">
@@ -81,8 +81,8 @@ function Members() {
                   onMouseLeave={closeSessionDropdown}
                 >
                   <div className="jack" onClick={toggleSessionDropdown}>
-                    <span>Sessions</span>
-                    <span style={{ fontSize: "10px" }}>
+                    <span>Session 2023-24</span>
+                    <span style={{ fontSize: "10px", marginLeft: '20px' }}>
                       {isSessionOpen ? "▲" : "▼"}
                     </span>
                   </div>
