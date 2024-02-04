@@ -97,19 +97,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    width: 100%;
 }
 
 .msg-container-links a {
-    margin: 0 1rem;
-    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #555;
-    transition: all 0.3s ease;
-
-    padding: 0.5rem;
+    /* box-shadow: 0 0 7px rgb(0, 0, 0, 0.5); */
+    transition: all 0.3s ease-in-out;
 }
 
 .msg-container-links a:hover {
-    color: #fed136;
+    transform: scale(1.1);
+    opacity: 1;
+    color: #fff;
+    background-color: #555;
 }
 
 
@@ -140,6 +151,16 @@
 @media (max-width:991px) {
     .content {
         padding-left: 5px;
+    }
+
+    .msg-container-about {
+        flex-direction: column;
+
+    }
+
+    .msg-container-about .description {
+        max-width: 700px;
+        text-align: justify;
     }
 
 

@@ -30,7 +30,7 @@ export default function Foundersmsg() {
           </div>
           <div className="msg-container-links">
             <a href='mailto:gywsociety@gmail.com'>
-              <EnvelopeFill className='logo-footercontact' />
+              <EnvelopeFill />
             </a>
             <a href='https://www.facebook.com/mrinalkbhanja'>
               <Facebook />
