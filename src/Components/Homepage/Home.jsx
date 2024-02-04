@@ -4,6 +4,8 @@ import Slider from "./slider/Slider";
 import GuestPage from "./GuestPage/Guest";
 import Impact from "./impact/Impact";
 import ContactUs from "./ContactUs/ContactUs";
+import Carousel from "./sponsor/Sponsor-slider"
+import TestiMonial  from "./Testimonial/Testimonial";
 
 function Home() {
   document.title = "Home | GYWS";
@@ -16,6 +18,10 @@ function Home() {
         <Intiative />
         <Impact />
         <GuestPage />
+        <TestiMonial/>
+        <br />
+        <Carousel/>/
+      
         <ContactUs />
       </div>
     </>
