@@ -2,8 +2,9 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px 50px;
-  
+
+  max-width: 1200px;
+  margin: auto;
 }
 
 .profile {
@@ -12,6 +13,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
 }
 .card {
   max-width: 400px;
@@ -20,10 +22,10 @@
   transition: all 0.3s ease-in-out;
   background-color: #fff;
   border-radius: 2rem;
-  margin-left: 20px;
-  margin-right: 20px;
+margin: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  /* border: solid red; */
 }
 .card:hover {
   transform: scale(1.02);
