@@ -51,10 +51,10 @@ function Navbar() {
           <Link to="/member" onClick={closeMenu}>
             <li>Members</li>
           </Link>
-          <li className="dropdown" onMouseEnter={toggleMenu} onMouseLeave={closeMenu}>
-            <Link  id="donatebtn">Donate</Link>
+          <li className="dropdown1" onMouseEnter={toggleMenu} onMouseLeave={closeMenu}>
+            <Link  id="donatebtn" >Donate</Link>
             {showMenu && (
-              <ul className="dropdown-content">
+              <ul className="dropdown1-content">
                 <li>
                   <Link to="/donate/hostel_construction"onClick={closeMenu}>
                     Hostel Construction
