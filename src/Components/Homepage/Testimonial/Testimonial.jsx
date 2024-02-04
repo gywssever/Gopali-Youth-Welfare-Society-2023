@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Testimonial.css";
 import Partha from "./Image/Partha.jpg";
 import Mrig from "./Image/Mrig.jpg";
-import  NR from "./Image/NR.jpg";
+// import  NR from "./Image/NR.jpg";
 
 function ArrowTest(props) {
   const { className, style, onClick } = props;
