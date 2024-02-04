@@ -62,9 +62,9 @@ function Navbar() {
                         </li>
                     </Link>
                     <li id="donatebtn" onClick={scrollToTop}>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
+                        <Link to="/donate">
                             Donate
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav >
