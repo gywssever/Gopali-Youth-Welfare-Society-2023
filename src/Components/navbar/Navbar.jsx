@@ -14,6 +14,7 @@ function Navbar() {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         setShowMenu(false);
     };
+    
     const menuIcon = showMenu ? (
         // <IoClose className="HiMenu" onClick={toggleMenu} />
         <XLg className="HiMenu" onClick={toggleMenu} />
