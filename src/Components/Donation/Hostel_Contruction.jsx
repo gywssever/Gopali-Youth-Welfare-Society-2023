@@ -6,7 +6,7 @@ function HostelConstruction() {
 
   return (
     <>
-      <div className="container-fluid" style={{minHeight: '30vh'}}>
+      <div className="container-fluid" style={{minHeight: '30vh', position: "relative"}}>
         <div className="row xrow">
           <div className="col-md-12" style={{ padding: '10px', fontSize: '17px' }}>
             <div id="dmScriptContainer" style={{ display: 'none' }}>
