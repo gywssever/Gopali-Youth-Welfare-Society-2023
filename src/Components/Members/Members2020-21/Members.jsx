@@ -78,8 +78,8 @@ function Members() {
                   onMouseLeave={closeSessionDropdown}
                 >
                   <div className="jack" onClick={toggleSessionDropdown}>
-                    <span>Sessions</span>
-                    <span style={{ fontSize: "10px" }}>
+                    <span>Session 2020-21</span>
+                    <span style={{ fontSize: "10px", marginLeft: '20px' }}>
                       {isSessionOpen ? "▲" : "▼"}
                     </span>
                   </div>
