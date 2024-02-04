@@ -6,8 +6,6 @@ import {
   EnvelopeFill,
 } from 'react-bootstrap-icons';
 
-const FounderName = "MR. MRINAL KANTI BHANJA";
-const Founderdesciption = "Founder (Gopali Youth Welfare Society)";
 
 
 
@@ -22,7 +20,7 @@ export default function Foundersmsg() {
       <div className="msg-container-about">
         <div className="msg-container-about-card">
           <div className="founder-image">
-            <img src={FounderImage} alt={FounderName} className='founderimg' />
+            <img src={FounderImage} alt="Founder" className='founderimg' />
           </div>
           <div className="founder-about">
             <h2>Mr. Mrinal Kanti Bhanja</h2>
