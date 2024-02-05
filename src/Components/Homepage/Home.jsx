@@ -5,10 +5,16 @@ import GuestPage from "./GuestPage/Guest";
 import Impact from "./impact/Impact";
 import ContactUs from "./ContactUs/ContactUs";
 import Carousel from "./sponsor/Sponsor-slider"
-import TestiMonial  from "./Testimonial/Testimonial";
+import TestiMonial from "./Testimonial/Testimonial";
+import { useEffect } from "react";
 
 function Home() {
-  document.title = "Home | GYWS";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "Home | GYWS";
+
+  }, [])
 
   return (
     <>
@@ -18,10 +24,10 @@ function Home() {
         <Intiative />
         <Impact />
         <GuestPage />
-        <TestiMonial/>
+        <TestiMonial />
         <br />
-        <Carousel/>/
-      
+        <Carousel />/
+
         <ContactUs />
       </div>
     </>

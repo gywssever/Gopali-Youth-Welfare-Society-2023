@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import lightDonateData from './lightDonateData';
 import './LightDonate.css';
+import lightDonateData from './lightDonateData';
 
 export default function LightDonate() {
 
@@ -19,13 +19,18 @@ export default function LightDonate() {
                             <div className="light-donate-card" key={index}>
                                 <div className='light-donate-card-title'>{data.title}</div>
                                 <div className='light-donate-card-description'>{data.description}</div>
-                                <div class="text-center">
+                                <div className="text-center" style={{
+                                    backgroundColor: "red",
+                                }}>
                                     <form>
+                                        <script>
+                                            console.log("Hello");
+                                        </script>
                                         <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                                            data-payment_button_id="pl_LSjrB60pFvlrpl" async> </script>
+                                            data-payment_button_id="pl_LSjrB60pFvlrpl" async>
+                                        </script>
                                     </form>
                                 </div>
-
                             </div>
                         )
                     }

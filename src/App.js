@@ -10,7 +10,6 @@ import Members2223 from './Components/Members/Members2022-23/Members.jsx'
 import Members2122 from './Components/Members/Members2021-22/Members.jsx'
 import Members2021 from './Components/Members/Members2020-21/Members.jsx'
 import Members2020 from './Components/Members/Members2019-20/Members.jsx'
-import Accordion from './Components/aboutUs/accordion/Accordion.jsx';
 import About from './Components/aboutUs/About.jsx';
 import JVM from './Components/Initiatives/JVM_PAGE/JVM.jsx';
 import LightDonate from './Components/lightdonate/LightDonate.jsx';
@@ -25,7 +24,6 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/media" element={<Media />} />
-        <Route path="/accordion" element={<Accordion />} />
         <Route path="/member/*" element={<Member />} />
         <Route path="/member/members2022-23/*" element={<Members2223 />} />
         <Route path="/member/members2021-22/*" element={<Members2122 />} />

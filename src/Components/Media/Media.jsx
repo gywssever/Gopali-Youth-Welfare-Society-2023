@@ -1,9 +1,16 @@
 import Reports from './Reports/ReportContainer.jsx'
-import Newsletter from './Newletter/Newsletter.jsx'  
+import Newsletter from './Newletter/Newsletter.jsx'
 import './Media.css'
+import { useEffect } from 'react'
 
 export default function Media() {
-    document.title = "Media | GYWS"
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        document.title = "Media | GYWS"
+
+    }, [])
 
     return (
         <>

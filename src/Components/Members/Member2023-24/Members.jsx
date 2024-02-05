@@ -63,6 +63,12 @@ function Members() {
     setSessionOpen(false);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "Members | GYWS";
+
+  }, [])
+
   return (
     <>
       <div className="wrapper">
