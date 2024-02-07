@@ -16,7 +16,9 @@ function Navbar() {
   const closeMenu = () => {
     setShowMenu(false);
   };
-
+  const openmenu = () => {
+    setShowMenu(true);
+  };
   const menuIcon = showMenu ? (
     <XLg className="HiMenu" onClick={toggleMenu} />
   ) : (
@@ -51,7 +53,7 @@ function Navbar() {
           <Link to="/member" onClick={closeMenu}>
             <li>Members</li>
           </Link>
-          <li className="dropdown1" onMouseEnter={toggleMenu} onMouseLeave={closeMenu}>
+          <li className="dropdown1" onMouseEnter={openmenu} onMouseLeave={closeMenu}>
             <Link  id="donatebtn" >Donate</Link>
             {showMenu && (
               <ul className="dropdown1-content">
