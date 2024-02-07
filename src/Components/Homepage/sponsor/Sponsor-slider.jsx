@@ -3,13 +3,25 @@ import "./Sponsor-slider.css"
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-// import SponImg from "./images/feedindia.avif"
 import feedindia from "./images/feedidia.avif"
+import CEL from "./images/CEL.png"
+import Gang from "./images/Gangesjute.jpg"
+import ketex from "./images/ketex.png"
+import lepton from "./images/lepton.jpg"
+import Telcon from "./images/Telcon.jpg"
+import IFEC from "./images/IFEC.JPG"
+import Amazon from "./images/Amazon.png"
+import mathwork from "./images/mathwork.jpeg"
+import IIC from "./images/IIC.JPG"
+import TISS from "./images/TISS.png"
+import NCC from "./images/NCC.png"
+import NYKS from "./images/NYKS.jpg"
+import tiara from "./images/tiara.png"
 
 function Arrow(props){
     const {className , style , onClick} = props;
     return (
-        <div className={className} style={{...style , display:"block" , background:"black"}}
+        <div className={className} style={{...style , display:"block" , background:"white"}}
         onClick={onClick}/>
 
        
@@ -18,14 +30,21 @@ function Arrow(props){
 function Carousel(){
  
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 500,
+        // speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         initialSlide: 0,
-        nextArrow:<Arrow/>,
-        prevArrow:<Arrow/>,
+        nextArrow:<Arrow color="black"/>,
+        prevArrow:<Arrow color="black"/>,
+        autoplay: true,
+     
+
+        speed: 4000,
+        autoplaySpeed:4000,
+        cssEase: "linear",
+        pauseOnHover: true,
 
         responsive: [
           {
@@ -62,44 +81,44 @@ function Carousel(){
            
             </div>
             <div className ="slider-card" >
-            <img src={feedindia} alt="" />
+            <img src={CEL} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>CEL</h3>
             </div>
             
             </div>
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={Gang} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>Gangesjute</h3>
             </div>
             
             </div>
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={IFEC} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>IFEC</h3>
             </div>
            
             </div >
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={ketex} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>Ketex</h3>
             </div>
            
             </div>
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={lepton} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>Lepton</h3>
             </div>
             
             </div>
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={Telcon} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>Telcon</h3>
             </div>
           
             </div>
@@ -111,51 +130,51 @@ function Carousel(){
         <h1 className="container-slider-heading">AFFILIATIONS</h1>
         <Slider {...settings}>
             <div  className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={Amazon} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>Amazon</h3>
             </div>
            
             </div>
             <div className ="slider-card" >
-            <img src={feedindia} alt="" />
+            <img src={mathwork} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>Mathwork</h3>
             </div>
             
             </div>
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={IIC} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>IIC</h3>
             </div>
             
             </div>
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={TISS} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>TISS</h3>
             </div>
            
             </div >
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={NCC} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>NCC</h3>
             </div>
            
             </div>
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={NYKS} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>NYKS</h3>
             </div>
             
             </div>
             <div className ="slider-card">
-            <img src={feedindia} alt="" />
+            <img src={tiara} alt="" />
             <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
+                <h3>Tiara</h3>
             </div>
           
             </div>
