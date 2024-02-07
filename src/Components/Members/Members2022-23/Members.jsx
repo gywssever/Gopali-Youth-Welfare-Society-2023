@@ -70,7 +70,7 @@ function Members() {
       <div className="wrapper">
         <div ref={menuRef}>
           <div className="hamburger" onClick={toggleSidebar}>
-            <img src={logo} alt="" width={"30px"} />
+            <img src={logo} alt="" width={"35px"} />
           </div>
 
           <div className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
@@ -88,6 +88,7 @@ function Members() {
                       {isSessionOpen ? "▲" : "▼"}
                     </span>
                   </div>
+                  
                   {isSessionOpen && (
                     <ul className="dropdown-content">
                       <li>

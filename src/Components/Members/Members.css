@@ -123,6 +123,7 @@
   position: relative;
   color: white;
 }
+
 .jack {
   display: flex;
   justify-content:center;
@@ -131,8 +132,13 @@
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.20s ease-in 0s;
 }
+
+.jack:hover{
+  transform: translateY(-5px);
+}
+
 .dropdown-content {
   /* display: none; */
   position: absolute;

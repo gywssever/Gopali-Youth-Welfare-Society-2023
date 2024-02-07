@@ -1,74 +1,89 @@
-import './Navbar.css';
-import { useState } from 'react';
+// Navbar.jsx
+
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LOGO from './Images/logo.png';
 import { List, XLg } from 'react-bootstrap-icons';
+import './Navbar.css';
 
 function Navbar() {
-    const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-    const toggleMenu = () => {
-        setShowMenu(!showMenu);
-    };
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        setShowMenu(false);
-    };
-    const menuIcon = showMenu ? (
-        // <IoClose className="HiMenu" onClick={toggleMenu} />
-        <XLg className="HiMenu" onClick={toggleMenu} />
-    ) : (
-        // <IoMenu className="HiMenu" onClick={toggleMenu} />
-        <List className="HiMenu" onClick={toggleMenu} />
-    );
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
-    return (
-        < >
-            <nav>
-                <Link to={"/"} onClick={scrollToTop} className="logo">
-                    <img src={LOGO} alt="GYWS_Logo" />
-                    <div >Gopali Youth Welfare Society</div> {/* Use Link here */}
-                </Link>
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+  const openmenu = () => {
+    setShowMenu(true);
+  };
+  const menuIcon = showMenu ? (
+    <XLg className="HiMenu" onClick={toggleMenu} />
+  ) : (
+    <List className="HiMenu" onClick={toggleMenu} />
+  );
 
-                <div className={`menu-toggle ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>
-                    {menuIcon}
-                </div>
+  return (
+    <>
+      <nav>
+        <Link to="/" onClick={closeMenu} className="logo">
+          <img src={LOGO} alt="GYWS_Logo" />
+          <div>Gopali Youth Welfare Society</div>
+        </Link>
 
-                <ul className={`nav-links ${showMenu ? 'show' : ''}`} >
-                    <Link to="/" onClick={scrollToTop}>
-                        <li>
-                            Home
-                        </li>
-                    </Link>
-                    <Link to="/about" onClick={scrollToTop}>
-                        <li>
-                            About Us
-                        </li>
-                    </Link>
-                    <Link to="/jvm" onClick={scrollToTop}>
-                        <li>
-                            Initiatives
-                        </li>
-                    </Link>
-                    <Link to="/media" onClick={scrollToTop}>
-                        <li>
-                            Media
-                        </li>
-                    </Link>
-                    <Link to="/member" onClick={scrollToTop}>
-                        <li>
-                            Members
-                        </li>
-                    </Link>
-                    <li id="donatebtn" onClick={scrollToTop}>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
-                            Donate
-                        </a>
-                    </li>
-                </ul>
-            </nav >
-        </>
-    );
+        <div className={`menu-toggle ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>
+          {menuIcon}
+        </div>
+
+        <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
+          <Link to="/" onClick={closeMenu}>
+            <li>Home</li>
+          </Link>
+          <Link to="/about" onClick={closeMenu}>
+            <li>About Us</li>
+          </Link>
+          <Link to="/jvm" onClick={closeMenu}>
+            <li>Initiatives</li>
+          </Link>
+          <Link to="/media" onClick={closeMenu}>
+            <li>Media</li>
+          </Link>
+          <Link to="/member" onClick={closeMenu}>
+            <li>Members</li>
+          </Link>
+          <li className="dropdown1" onMouseEnter={openmenu} onMouseLeave={closeMenu}>
+            <Link  id="donatebtn" >Donate</Link>
+            {showMenu && (
+              <ul className="dropdown1-content">
+                <li>
+                  <Link to="/donate/hostel_construction"onClick={closeMenu}>
+                    Hostel Construction
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/donate/hostel_sustainability" onClick={closeMenu}>
+                    Hostel Sustainability
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/donate/each" onClick={closeMenu}>
+                    Educate a Child
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/donate/light" onClick={closeMenu}>
+                    LiGHT Donation
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </li>
+        </ul>
+      </nav>
+    </>
+  );
 }
 
 export default Navbar;

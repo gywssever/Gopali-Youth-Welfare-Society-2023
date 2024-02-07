@@ -74,7 +74,7 @@ footer .footer_container1 .footer_sci li a:hover{
 
 footer .footer_container1 .footer_quicklinks {
     position: relative;
-    line-height: 3;
+    line-height: 2.5;
 }
 
 footer .footer_container1 ul li {
@@ -129,7 +129,7 @@ footer .footer_container1 .footer_container1 .footer_info li a {
 }
 
 .footer_footerbody .footer_contact {    
-    line-height: 2.2;
+    line-height: 2.5;
 }
 
 .footer_footerbody .footer_contact a {
@@ -165,7 +165,7 @@ footer .footer_container1 .footer_container1 .footer_info li a {
     }
 
     .footer_copyrightText {
-        padding: 20px 40px 30px;
+        padding: 7px 9px 9px;
     }
 }
 

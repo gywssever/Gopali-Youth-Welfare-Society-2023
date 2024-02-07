@@ -2,13 +2,13 @@ import inticss from "./intiative.module.css";
 import jvmlogo from "./images/JVM.jpg";
 import lightlogo from "./images/light a.jpg";
 import covidlogo from "./images/Covid 19 a.jpg";
-import HCard from '../HeaderCard/HCard'
-import { Link } from 'react-router-dom';
+import HCard from "../HeaderCard/HCard";
+import { Link } from "react-router-dom";
 
 export default function intiative() {
   return (
     <>
-     <HCard head={"OUR INTIATIVES"}></HCard>
+      <HCard head={"OUR INTIATIVES"}></HCard>
       <div className={inticss.container}>
         <div className={inticss.box}>
           <div className={inticss.name}>
@@ -20,17 +20,17 @@ export default function intiative() {
             </div>
             <div className={inticss.discr}>
               {" "}
-              To educate each and every child for a better tomorrow
+              "To educate each and every child for a better tomorrow."
             </div>
-            <div id={inticss.number}>500+</div>
             <div className={inticss.discr}>
-              Student's life got changed, being provided with free of cost
-              education
+              <span id={inticss.number}>500+ </span>  Student's life got
+              changed, being provided with free of cost education
             </div>
             <button
               style={{
                 backgroundColor: "#F16A36",
                 borderColor: "#F16A36",
+                marginTop: '10px'
               }}
             >
               <b>
@@ -53,13 +53,15 @@ export default function intiative() {
               <img src={covidlogo} alt="" />
             </div>
             <div className={inticss.discr}>
-              Door to door distribution of basic amenities to the rural
-              households
+              "Door to door distribution of basic amenities to the rural
+              households."
             </div>
-            <div id={inticss.number}>5000+</div>
-            <div className={inticss.discr}> masks were distributed</div>
-            <div id={inticss.number}>2000+</div>
-            <div className={inticss.discr}>needy families got food kits</div>
+            <div className={inticss.discr}> 
+            <span id={inticss.number}>5000+ </span>
+            Masks were distributed</div>
+            <div className={inticss.discr}>
+            <span id={inticss.number}>2000+ </span> 
+              Needy families got food kits</div>
           </div>
         </div>
         <div className={inticss.box}>
@@ -74,12 +76,14 @@ export default function intiative() {
               "Expansion Initiative - forming a PAN India network of socially
               motivated youth."
             </div>
-            <div id={inticss.number}>12+</div>
-            <div className={inticss.discr}>Student run centers</div>
+            <div className={inticss.discr}>
+            <span id={inticss.number}>12+ </span> 
+              Student run centers</div>
             <button
               style={{
                 backgroundColor: "#F16A36",
                 borderColor: "#F16A36",
+                marginTop: '10px'
               }}
             >
               <b>
@@ -93,8 +97,6 @@ export default function intiative() {
             </button>
           </div>
         </div>
-
-        
       </div>
     </>
   );

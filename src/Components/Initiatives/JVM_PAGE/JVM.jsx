@@ -1,6 +1,7 @@
 import "./JVM.css";
 import bgImg from "./bgImg.jpg";
 import LiGHTImg from "./LiGHT-img.png";
+import { useEffect } from "react";
 
 const jvmData = [
   {
@@ -110,7 +111,14 @@ const SurveyStatsCard = ({ number, info }) => {
 };
 
 export default function JVM() {
-  document.title = "JVM | GYWS";
+
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "Initiatives | GYWS"
+
+  }, [])
 
   return (
     <>
@@ -166,10 +174,9 @@ export default function JVM() {
                 before they leave.
               </div>
               <div class="LiGHT-button">
-               
-             
-                <a href="https://light.gyws.org/index.php" class="button">Visit Page</a>
 
+
+                <a href="https://light.gyws.org/index.php" class="button">Visit Page</a>
 
 
               </div>
