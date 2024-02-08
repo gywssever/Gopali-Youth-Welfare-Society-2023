@@ -1,5 +1,5 @@
 import './Foundersmsg.css';
-import FounderImage from './Images/founder.jpg'
+import FounderImage from './founder.jpg'
 import {
   Facebook,
   Linkedin,

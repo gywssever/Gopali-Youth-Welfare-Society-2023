@@ -1,5 +1,5 @@
 import './HowWeStarted.css';
-import Child from './Images/childimage.jpeg'
+import Child from './Child.jpg'
 
 
 const HowWeStarted = () => {

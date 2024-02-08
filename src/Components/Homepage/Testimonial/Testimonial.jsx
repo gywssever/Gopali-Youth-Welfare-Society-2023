@@ -4,16 +4,14 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Testimonial.css";
 import Partha from "./Image/Partha.jpg";
 import Mrig from "./Image/Mrig.jpg";
-<<<<<<< HEAD
 import NR from "./Image/NR.jpg";
 import sailesh from "./Image/sailesh.jpg";
 import roy from "./Image/roy.jpg";
 import suparna from "./Image/suparna.png";
 import HR from "./Image/HR.png";
 import madhu from "./Image/madhu.jpg";
-=======
 // import  NR from "./Image/NR.jpg";
->>>>>>> 37ee32b19f162c4a5a436883c6b9926f6ca91707
+
 
 function ArrowTest(props) {
   const { className, style, onClick } = props;
