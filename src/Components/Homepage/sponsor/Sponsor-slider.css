@@ -23,13 +23,7 @@
       
       padding: 20px;
      
-   
-     
-      
-    
 }
-
-
 
 @media (min-width:1500px){
     .slider-card{
@@ -38,8 +32,6 @@
     }
 
 }
-
-
 
 .slider-card img{
     width: 100%;

@@ -5,6 +5,7 @@
     margin: 10px auto;
     text-align: justify;
     margin-top: 5rem;
+    place-items: center;
 }
 
 .descriptionGuest {
