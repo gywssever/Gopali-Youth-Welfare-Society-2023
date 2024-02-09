@@ -6,7 +6,7 @@ function EachJVM() {
 
   return (
     <>
-      <div className="container-fluid" style={{minHeight: '30vh'}}>
+      <div className="container-fluid" style={{minHeight: '50vh'}}>
         <div className="row xrow">
           <div className="col-md-12" style={{ padding: '10px', fontSize: '17px' }}>
             <div id="dmScriptContainer" style={{ display: 'none' }}>

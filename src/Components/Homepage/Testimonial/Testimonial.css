@@ -12,7 +12,17 @@
     background-color: rgb(221, 231, 231);
     margin: 5px;
     border-radius: 10px;
-    height: 300px;
+    height: 350px;
+}
+@media (max-width: 769px){
+
+    .TestiMonial-card{
+        flex-direction: column;
+        height: auto;
+        font-size: small;
+    }
+
+
 }
 
 .TestiMonial-card-image{
