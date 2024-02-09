@@ -1,13 +1,9 @@
 import './Foundersmsg.css';
-import FounderImage from './founder.jpg'
 import {
   Facebook,
   Linkedin,
   EnvelopeFill,
 } from 'react-bootstrap-icons';
-
-
-
 
 export default function Foundersmsg() {
 
@@ -20,7 +16,7 @@ export default function Foundersmsg() {
       <div className="msg-container-about">
         <div className="msg-container-about-card">
           <div className="founder-image">
-            <img src={FounderImage} alt="Founder" className='founderimg' />
+            <img src="./images/founder.jpg" alt="Founder" className='founderimg' />
           </div>
           <div className="founder-about">
             <h2>Mr. Mrinal Kanti Bhanja</h2>

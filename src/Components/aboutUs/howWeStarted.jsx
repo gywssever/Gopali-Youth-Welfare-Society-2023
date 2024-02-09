@@ -1,5 +1,4 @@
 import './HowWeStarted.css';
-import Child from './Child.jpg'
 
 
 const HowWeStarted = () => {
@@ -19,7 +18,7 @@ const HowWeStarted = () => {
           </div>
         </div>
         <div className="how-we-started-img">
-          <img src={Child} alt="Child" />
+          <img src="./images/childimage.jpeg" alt="Child" />
         </div>
       </div>
     </div>
