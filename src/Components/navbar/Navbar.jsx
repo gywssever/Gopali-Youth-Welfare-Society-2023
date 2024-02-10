@@ -8,6 +8,15 @@ import './Navbar.css';
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  function handleClick() {
+    setShowDropdown(!showDropdown);
+  }
+  const closeDropdown = () => {
+    setShowDropdown(false);
+  };
+
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -50,9 +59,9 @@ function Navbar() {
           <Link to="/member" onClick={closeMenu}>
             <li>Members</li>
           </Link>
-          <li className="dropdown1" onClick={toggleMenu}  onMouseLeave={closeMenu} >
+          <li className="dropdown1" onClick={handleClick}  onMouseLeave={closeDropdown} >
           <Link id="donatebtn">Donate</Link>
-          {showMenu && (
+          {showDropdown && (
             <ul className="dropdown1-content">
                 <li>
                   <Link to="/donate/hostel_construction"onClick={closeMenu}>
