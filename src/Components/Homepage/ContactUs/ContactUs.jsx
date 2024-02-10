@@ -54,7 +54,8 @@ function ContactUs() {
 
                 <div class="row100">
                   <div class="inputBox">
-                    <input type="submit" value="Send" />
+                    <input id = "submitbutton" type="submit" value="Send" />
+                    {/* <button type="submit">Submit</button> */}
                   </div>
                 </div>
               </div>

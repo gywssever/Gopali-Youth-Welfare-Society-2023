@@ -37,9 +37,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 3rem;
+    border-radius: 1rem;
     margin: 0 auto;
-    width: 380px;
+    width: 370px;
     height: 500px;
     transition: all 0.15s ease-in-out;
     background-color: #fff;
@@ -70,7 +70,7 @@
 .mainbox img {
     width: 300px;
     /* height: 200px; */
-    border-radius: 2vmax;
+    border-radius: 1rem;
 }
 
 .discr {
@@ -159,5 +159,37 @@
     .mainbox
     {
         height: 400px;
+    }
+}
+
+@media (max-width: 1240px) {
+   
+    .mainbox{
+        width: 300px !important;
+    }
+    .mainbox img{
+        width: 90% !important;
+    }
+    .mainbox #image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        flex-direction: column;
+    }
+    .mainbox{
+        width: 450px !important;
+        height: 500px !important;
+    }
+}
+
+@media (max-width: 467px) {
+    .mainbox{
+        width: 300px !important;
+        height: 450px !important;
     }
 }

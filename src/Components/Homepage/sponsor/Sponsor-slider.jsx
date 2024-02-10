@@ -1,188 +1,186 @@
-
-import "./Sponsor-slider.css"
+import "./Sponsor-slider.css";
 import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import feedindia from "./images/feedidia.avif"
-import CEL from "./images/CEL.png"
-import Gang from "./images/Gangesjute.jpg"
-import ketex from "./images/ketex.png"
-import lepton from "./images/lepton.jpg"
-import Telcon from "./images/Telcon.jpg"
-import IFEC from "./images/IFEC.JPG"
-import Amazon from "./images/Amazon.png"
-import mathwork from "./images/mathwork.jpeg"
-import IIC from "./images/IIC.JPG"
-import TISS from "./images/TISS.png"
-import NCC from "./images/NCC.png"
-import NYKS from "./images/NYKS.jpg"
-import tiara from "./images/tiara.png"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-function Arrow(props){
-    const {className , style , onClick} = props;
-    return (
-        <div className={className} style={{...style , display:"block" , background:"white"}}
-        onClick={onClick}/>
-
-       
-    )
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "red", position: 'absolute', left: '+30px' }}
+      onClick={onClick}
+    />
+  );
 }
-function Carousel(){
- 
-    var settings = {
-        dots: false,
-        infinite: true,
-        // speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        nextArrow:<Arrow color="black"/>,
-        prevArrow:<Arrow color="black"/>,
-        autoplay: true,
-     
 
-        speed: 4000,
-        autoplaySpeed:4000,
-        cssEase: "linear",
-        pauseOnHover: true,
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
 
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow:2
-            },
-          },
-          {
-            breakpoint: 500,
-            settings: {
-              slidesToShow:2
-            },
-          }
-        ]
-     
-    }
+function Carousel() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrow: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 2000,
+    // speed: 6000,
+    // autoplaySpeed: 5000,
+    // cssEase: "linear",
+    pauseOnHover: true,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
+  const sponsorsData = [
+    {
+      name: "FeedIndia",
+      logoUrl: "assets/images/home/sponsImages/feedindia.avif",
+      websiteLink: "https://www.feedingindia.org/",
+    },
+    {
+      name: "CEL",
+      logoUrl: "assets/images/home/sponsImages/CEL.png",
+      websiteLink: "#",
+    },
+    {
+      name: "Gangesjute",
+      logoUrl: "assets/images/home/sponsImages/Gangesjute.jpg",
+      websiteLink: "https://https://www.gangesintl.com/",
+    },
+    {
+      name: "IFEC",
+      logoUrl: "assets/images/home/sponsImages/IFEC.JPG",
+      websiteLink: "#",
+    },
+    {
+      name: "Ketex",
+      logoUrl: "assets/images/home/sponsImages/ketex.png",
+      websiteLink: "https://ketex.com/",
+    },
+    {
+      name: "Lepton",
+      logoUrl: "assets/images/home/sponsImages/lepton.jpg",
+      websiteLink: "#",
+    },
+    {
+      name: "Telcon",
+      logoUrl: "assets/images/home/sponsImages/Telcon.jpg",
+      websiteLink: "#",
+    },
+  ];
+  const affiliationsData = [
+    {
+      name: "Amazon",
+      logoUrl: "assets/images/home/sponsImages/Amazon.png",
+      websiteLink: "https://amazon.care/",
+    },
+    {
+      name: "Mathwork",
+      logoUrl: "assets/images/home/sponsImages/mathwork.jpeg",
+      websiteLink: "https://in.mathworks.com/",
+    },
+    {
+      name: "IIC",
+      logoUrl: "assets/images/home/sponsImages/IIC.jpg",
+      websiteLink: "#",
+    },
+    {
+      name: "TISS",
+      logoUrl: "assets/images/home/sponsImages/TISS.png",
+      websiteLink: "#",
+    },
+    {
+      name: "NCC",
+      logoUrl: "assets/images/home/sponsImages/NCC.png",
+      websiteLink: "#",
+    },
+    {
+      name: "NYKS",
+      logoUrl: "assets/images/home/sponsImages/NYKS.jpg",
+      websiteLink: "#",
+    },
+    {
+      name: "Tiara",
+      logoUrl: "assets/images/home/sponsImages/tiara.png",
+      websiteLink: "#",
+    },
+  ];
+  const SponsorItem = ({ name, logoUrl, websiteLink }) => {
     return (
-        <>
-    <div className = "container-slider">
+      <a href={websiteLink} target="_blank" className="slider-card">
+        <img src={logoUrl} alt="" className="" />
+        <div className="slider-card-heading">
+          <h3>{name}</h3>
+        </div>
+      </a>
+    );
+  };
+  return (
+    <>
+      <div className="container-slider">
         <h1 className="container-slider-heading">SPONSORS</h1>
-        <Slider {...settings}>
-            <div  className ="slider-card">
-            <img src={feedindia} alt=""  className=""/>
-            <div className="slider-card-heading">
-                <h3>FeedIndia</h3>
-            </div>
-           
-            </div>
-            <div className ="slider-card" >
-            <img src={CEL} alt="" />
-            <div className="slider-card-heading">
-                <h3>CEL</h3>
-            </div>
-            
-            </div>
-            <div className ="slider-card">
-            <img src={Gang} alt="" />
-            <div className="slider-card-heading">
-                <h3>Gangesjute</h3>
-            </div>
-            
-            </div>
-            <div className ="slider-card">
-            <img src={IFEC} alt="" />
-            <div className="slider-card-heading">
-                <h3>IFEC</h3>
-            </div>
-           
-            </div >
-            <div className ="slider-card">
-            <img src={ketex} alt="" />
-            <div className="slider-card-heading">
-                <h3>Ketex</h3>
-            </div>
-           
-            </div>
-            <div className ="slider-card">
-            <img src={lepton} alt="" />
-            <div className="slider-card-heading">
-                <h3>Lepton</h3>
-            </div>
-            
-            </div>
-            <div className ="slider-card">
-            <img src={Telcon} alt="" />
-            <div className="slider-card-heading">
-                <h3>Telcon</h3>
-            </div>
-          
-            </div>
-            </Slider>
-    </div>
-
-
-    <div className = "container-slider">
+        <div className="sliderContainer">
+          <Slider {...settings}>
+            {sponsorsData.map((sponsor) => (
+              <SponsorItem
+                name={sponsor.name}
+                logoUrl={sponsor.logoUrl}
+                websiteLink={sponsor.websiteLink}
+              />
+            ))}
+          </Slider>
+        </div>
+      </div>
+      <div className="container-slider">
         <h1 className="container-slider-heading">AFFILIATIONS</h1>
-        <Slider {...settings}>
-            <div  className ="slider-card">
-            <img src={Amazon} alt="" />
-            <div className="slider-card-heading">
-                <h3>Amazon</h3>
-            </div>
-           
-            </div>
-            <div className ="slider-card" >
-            <img src={mathwork} alt="" />
-            <div className="slider-card-heading">
-                <h3>Mathwork</h3>
-            </div>
-            
-            </div>
-            <div className ="slider-card">
-            <img src={IIC} alt="" />
-            <div className="slider-card-heading">
-                <h3>IIC</h3>
-            </div>
-            
-            </div>
-            <div className ="slider-card">
-            <img src={TISS} alt="" />
-            <div className="slider-card-heading">
-                <h3>TISS</h3>
-            </div>
-           
-            </div >
-            <div className ="slider-card">
-            <img src={NCC} alt="" />
-            <div className="slider-card-heading">
-                <h3>NCC</h3>
-            </div>
-           
-            </div>
-            <div className ="slider-card">
-            <img src={NYKS} alt="" />
-            <div className="slider-card-heading">
-                <h3>NYKS</h3>
-            </div>
-            
-            </div>
-            <div className ="slider-card">
-            <img src={tiara} alt="" />
-            <div className="slider-card-heading">
-                <h3>Tiara</h3>
-            </div>
-          
-            </div>
-            </Slider>
-    </div>
+        <div className="sliderContainer">
+          <Slider {...settings}>
+            {affiliationsData.map((sponsor) => (
+              <SponsorItem
+                name={sponsor.name}
+                logoUrl={sponsor.logoUrl}
+                websiteLink={sponsor.websiteLink}
+              />
+            ))}
+          </Slider>
+        </div>
+      </div>
     </>
-    )
+  );
 }
 
-export default  Carousel
-
+export default Carousel;
