@@ -23,7 +23,6 @@ function Home() {
         <MissionVision />
         <Intiative />
         <Impact />
-        
         <TestiMonial/>
         <GuestPage />
         <br />

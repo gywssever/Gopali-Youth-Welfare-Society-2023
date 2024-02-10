@@ -83,7 +83,8 @@ const Data = [
         position: "Donor Engagement Officer",
         imageUrl: "/gyws/assets/img/new_website_img/members/AnkitaKhakhal.jpg",
         facebookLink: "https://www.facebook.com/ankita.khakhal?mibextid=JRoKGi",
-        linkedinLink: "https://www.linkedin.com/in/ankita-khakhal-280946205"
+        linkedinLink: "https://www.linkedin.com/in/ankita-khakhal-280946205",
+        email: 'ankita@gyws.org'
     },
     {
         name: "Swastik Sambhav",
