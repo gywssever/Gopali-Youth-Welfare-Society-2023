@@ -33,6 +33,7 @@ function TestiMonial() {
     initialSlide: 0,
 
     autoplay: true,
+    // eslint-disable-next-line no-dupe-keys
     speed: 1200,
     autoplaySpeed: 3000,
     cssEase: "linear",
