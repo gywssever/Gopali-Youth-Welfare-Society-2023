@@ -141,7 +141,7 @@ function Carousel() {
   ];
   const SponsorItem = ({ name, logoUrl, websiteLink }) => {
     return (
-      <a href={websiteLink} target="_blank" className="slider-card">
+      <a href={websiteLink} target="_blank" rel="noreferrer" className="slider-card">
         <img src={logoUrl} alt="" className="" />
         <div className="slider-card-heading">
           <h3>{name}</h3>
