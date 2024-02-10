@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Vageesh Tiwari",
         position: "Finance Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/VageeshTiwari.jpg",
+        imageUrl: "/assets/images/members/VageeshTiwari.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -10,7 +10,7 @@ const Data = [
     {
         name: "K Nikhil Sathwik",
         position: "Finance Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/KNikhilSathwik.png",
+        imageUrl: "/assets/images/members/KNikhilSathwik.png",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -18,7 +18,7 @@ const Data = [
     {
         name: "Debasish Tudu",
         position: "Finance Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/DebasishTudu.jpg",
+        imageUrl: "/assets/images/members/DebasishTudu.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""

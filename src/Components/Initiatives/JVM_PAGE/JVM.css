@@ -157,7 +157,7 @@
     padding: 1rem;
     border-radius: 1rem;
     /* background-color: #131921; */
-    background-color:#2596be;
+    background-color:#695e91;
     color: white;
     min-height: 330px;
     box-shadow: 0 0 10px #000000bb;
@@ -244,12 +244,13 @@
 }
 
 .LiGHT-button{
-           
+/*            
         display: flex;
         align-items: center;
         text-align: center;
-        justify-content: center;
-        
+        justify-content: center; */
+         margin: 3px;
+
       
         
 
@@ -370,11 +371,6 @@
     justify-content: space-evenly;
     align-items: center;
 }
-
-
-
-
-
 
 .stats {
     border-radius: 1rem;

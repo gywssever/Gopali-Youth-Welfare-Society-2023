@@ -5,31 +5,31 @@ const reportData = [
         button: [
             {
                 interval: "2022-23",
-                link: "./pdf/Annual_Reports/2022-23 Annual Report Final.pdf"
+                link: "/assets/pdf/Annual_Reports/2022-23 Annual Report Final.pdf"
             },
             {
                 interval: "2021-22",
-                link: "./pdf/Annual_Reports/Annual_Report_21-22.pdf"
+                link: "/assets/pdf/Annual_Reports/Annual_Report_21-22.pdf"
             },
             {
                 interval: "2020-21",
-                link: "./pdf/Annual_Reports/Annual_Report_20-21.pdf"
+                link: "/assets/pdf/Annual_Reports/Annual_Report_20-21.pdf"
             },
             {
                 interval: "2019-20",
-                link: "./pdf/Annual_Reports/Annual_Report_19-20.pdf"
+                link: "/assets/pdf/Annual_Reports/Annual_Report_19-20.pdf"
             },
             {
                 interval: "2018-19",
-                link: "./pdf/Annual_Reports/Annual_Report_18-19.pdf"
+                link: "/assets/pdf/Annual_Reports/Annual_Report_18-19.pdf"
             },
             {
                 interval: "2017-18",
-                link: "./pdf/Annual_Reports/Annual_Report_17-18.pdf"
+                link: "/assets/pdf/Annual_Reports/Annual_Report_17-18.pdf"
             },
             {
                 interval: "2016-17",
-                link: "./pdf/Annual_Reports/Annual_Report_16-17.pdf"
+                link: "/assets/pdf/Annual_Reports/Annual_Report_16-17.pdf"
             }
         ]
     },
@@ -39,31 +39,31 @@ const reportData = [
         button: [
             {
                 interval: "2022-23",
-                link: "./pdf//Impact_report/Impact Report 2022-2023 (1).pdf"
+                link: "/assets/pdf//Impact_report/Impact Report 2022-2023 (1).pdf"
             },
             {
                 interval: "2021-22",
-                link: "./pdf/Impact_report/Impact Report 2021-22.pdf"
+                link: "/assets/pdf/Impact_report/Impact Report 2021-22.pdf"
             },
             {
                 interval: "2020-21",
-                link: "./pdf/Impact_report/Impact Report 2020-21.pdf"
+                link: "/assets/pdf/Impact_report/Impact Report 2020-21.pdf"
             },
             {
                 interval: "2019-20",
-                link: "./pdf/Impact_report/Impact Report 19-20.pdf"
+                link: "/assets/pdf/Impact_report/Impact Report 19-20.pdf"
             },
             {
                 interval: "2018-19",
-                link: "./pdf/Impact_report/Impact Report 2018-19.pdf"
+                link: "/assets/pdf/Impact_report/Impact Report 2018-19.pdf"
             },
             {
                 interval: "2017-18",
-                link: "./pdf/Impact_report/Impact_Report_2017-18.pdf"
+                link: "/assets/pdf/Impact_report/Impact_Report_2017-18.pdf"
             },
             {
                 interval: "2016-17",
-                link: "./pdf/Impact_report/Impact_Report_2016-17.pdf"
+                link: "/assets/pdf/Impact_report/Impact_Report_2016-17.pdf"
             }
         ]
     },
@@ -73,19 +73,19 @@ const reportData = [
         button: [
             {
                 interval: "APR-JUN 2022",
-                link: "./pdf/Quaterly_reports/Quaterly Report APR-JUNE-22.pdf"
+                link: "/assets/pdf/Quaterly_reports/Quaterly Report APR-JUNE-22.pdf"
             },
             {
                 interval: "JUL-SEP 2022",
-                link: "./pdf/Quaterly_reports/Quaterly Report JUL-SEP-22.pdf"
+                link: "/assets/pdf/Quaterly_reports/Quaterly Report JUL-SEP-22.pdf"
             },
             {
                 interval: "OCT-DEC 2022",
-                link: "./pdf/Quaterly_reports/Oct - Dec 2022 Quaterly Report.pdf"
+                link: "/assets/pdf/Quaterly_reports/Oct - Dec 2022 Quaterly Report.pdf"
             },
             {
                 interval: "JAN-MAR 2023",
-                link: "./pdf/Quaterly_reports/JANUARY - MARCH 2023 Quarterly Report.pdf"
+                link: "/assets/pdf/Quaterly_reports/JANUARY - MARCH 2023 Quarterly Report.pdf"
             }
         ]
     }

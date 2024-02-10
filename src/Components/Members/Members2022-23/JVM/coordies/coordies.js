@@ -10,7 +10,7 @@ const Data = [
     {
         name: "Pranay Harwani",
         position: "UG Coordinator",
-        imageUrl: "/gyws/assets/img/new_website_img/members/Pranay Harwani.jpg",
+        imageUrl: "/assets/images/members/Pranay Harwani.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""

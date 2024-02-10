@@ -2,7 +2,7 @@ const Data =[
     {
         name: "Akash Agarwal",
         position: "Chief Executive Officer, LiGHT",
-        imageUrl: "/gyws/assets/img/new_website_img/members/Akash Agarwal.jpg",
+        imageUrl: "/assets/images/members/Akash Agarwal.jpg",
         facebookLink: "",
         linkedinLink: ""
     },
@@ -16,14 +16,14 @@ const Data =[
     {
         name: "Saamarth Singh",
         position: "LiGHT Coordinator",
-        imageUrl: "/gyws/assets/img/new_website_img/members/SaamarthSingh.jpg",
+        imageUrl: "/assets/images/members/SaamarthSingh.jpg",
         facebookLink: "",
         linkedinLink: ""
     },
     {
         name: "Sanidhya Prakash Singh",
         position: "LiGHT Coordinator",
-        imageUrl: "/gyws/assets/img/new_website_img/members/SanidhyaPrakashSingh.jpg",
+        imageUrl: "/assets/images/members/SanidhyaPrakashSingh.jpg",
         facebookLink: "",
         linkedinLink: ""
     },

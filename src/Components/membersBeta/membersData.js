@@ -108,7 +108,7 @@ const allData = [
                 srNo: 1,
                 name: "Prof. Adrijit Goswami",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Adrijit Goswami.jpg",
+                imageUrl: "/assets/images/members/Prof. Adrijit Goswami.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -116,7 +116,7 @@ const allData = [
                 srNo: 2,
                 name: "Prof. Amit Patra",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Amit Patra.jpg",
+                imageUrl: "/assets/images/members/Prof. Amit Patra.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -124,7 +124,7 @@ const allData = [
                 srNo: 3,
                 name: "Dr. Bhaskar Bhowmik",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Dr. Bhaskar Bhowmik.jpg",
+                imageUrl: "/assets/images/members/Dr. Bhaskar Bhowmik.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -132,7 +132,7 @@ const allData = [
                 srNo: 4,
                 name: "Prof. Damodar Maiti",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Damodar Maiti.jpg",
+                imageUrl: "/assets/images/members/Prof. Damodar Maiti.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -140,7 +140,7 @@ const allData = [
                 srNo: 5,
                 name: "Prof. D.K. Maiti",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. D.K. Maiti.jpg",
+                imageUrl: "/assets/images/members/Prof. D.K. Maiti.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -148,7 +148,7 @@ const allData = [
                 srNo: 6,
                 name: "Prof. Dilip Swain",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Dilip Swain.jpg",
+                imageUrl: "/assets/images/members/Prof. Dilip Swain.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -180,7 +180,7 @@ const allData = [
                 srNo: 10,
                 name: "Prof. Sudipto Chakraborty",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Sudipto Chakraborty.jpg",
+                imageUrl: "/assets/images/members/Prof. Sudipto Chakraborty.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -352,7 +352,7 @@ const allData = [
                 srNo: 1,
                 name: "Prof. Adrijit Goswami",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Adrijit Goswami.jpg",
+                imageUrl: "/assets/images/members/Prof. Adrijit Goswami.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -360,7 +360,7 @@ const allData = [
                 srNo: 2,
                 name: "Prof. Amit Patra",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Amit Patra.jpg",
+                imageUrl: "/assets/images/members/Prof. Amit Patra.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -368,7 +368,7 @@ const allData = [
                 srNo: 3,
                 name: "Dr. Bhaskar Bhowmik",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Dr. Bhaskar Bhowmik.jpg",
+                imageUrl: "/assets/images/members/Dr. Bhaskar Bhowmik.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -376,7 +376,7 @@ const allData = [
                 srNo: 4,
                 name: "Prof. Damodar Maiti",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Damodar Maiti.jpg",
+                imageUrl: "/assets/images/members/Prof. Damodar Maiti.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -384,7 +384,7 @@ const allData = [
                 srNo: 5,
                 name: "Prof. D.K. Maiti",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. D.K. Maiti.jpg",
+                imageUrl: "/assets/images/members/Prof. D.K. Maiti.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -392,7 +392,7 @@ const allData = [
                 srNo: 6,
                 name: "Prof. Dilip Swain",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Dilip Swain.jpg",
+                imageUrl: "/assets/images/members/Prof. Dilip Swain.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },
@@ -424,7 +424,7 @@ const allData = [
                 srNo: 10,
                 name: "Prof. Sudipto Chakraborty",
                 position: "",
-                imageUrl: "/gyws/assets/img/new_website_img/members/Prof. Sudipto Chakraborty.jpg",
+                imageUrl: "/assets/images/members/Prof. Sudipto Chakraborty.jpg",
                 facebookLink: "",
                 linkedinLink: ""
             },

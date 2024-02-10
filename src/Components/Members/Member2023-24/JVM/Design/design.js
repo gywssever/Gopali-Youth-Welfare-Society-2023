@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Ujjwal Kumar Singh",
         position: "Design Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/Heads23/UjjawalKSingh.jpg",
+        imageUrl: "/assets/images/members/Heads23/UjjawalKSingh.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""

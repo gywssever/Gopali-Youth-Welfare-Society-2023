@@ -16,7 +16,7 @@ export default function Impact() {
                         </div>
                         <h2>500+</h2>
                         <div className={impcss.discr}>
-                            "Student's life got changed, being provided with free of cost education.""
+                            Student's life got changed, being provided with free of cost education.
                         </div>
                     </div>
 
@@ -26,8 +26,7 @@ export default function Impact() {
                         </div>
                         <h2>16</h2>
                         <div className={impcss.discr}>
-                            "GYWS run LiGHT centers
-                            in different part of India."
+                            GYWS run LiGHT centers in different part of India.
                         </div>
                     </div>
 
@@ -37,7 +36,7 @@ export default function Impact() {
                         </div>
                         <h2>5000+</h2>
                         <div className={impcss.discr}>
-                            "Masks were distributed."
+                            Masks were distributed.
                         </div>
                     </div>
 
@@ -47,7 +46,7 @@ export default function Impact() {
                         </div>
                         <h2>2000+</h2>
                         <div className={impcss.discr}>
-                            "Needy families got food kits."
+                            Needy families got food kits.df
                         </div>
                     </div>
                 </div>

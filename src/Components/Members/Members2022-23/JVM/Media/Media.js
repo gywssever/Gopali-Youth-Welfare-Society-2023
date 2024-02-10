@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Rehana Tehazeen",
         position: "Media & Publicity Team",
-        imageUrl: "/gyws/assets/img/new_website_img/members/RehanaTehazeen.jpg",
+        imageUrl: "/assets/images/members/RehanaTehazeen.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""

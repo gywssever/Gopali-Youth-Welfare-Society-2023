@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Tanishq Agrawal",
         position: "Sponsorship Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/TanishqAgrawal.jpg",
+        imageUrl: "/assets/images/members/TanishqAgrawal.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -10,7 +10,7 @@ const Data = [
     {
         name: "Ankita Khakhal",
         position: "Sponsorship Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/AnkitaKhakhal.jpg",
+        imageUrl: "/assets/images/members/AnkitaKhakhal.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -18,7 +18,7 @@ const Data = [
     {
         name: "Rudransh Agrawal",
         position: "Sponsorship Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/RudranshAgrawal.jpg",
+        imageUrl: "/assets/images/members/RudranshAgrawal.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -26,7 +26,7 @@ const Data = [
     {
         name: "Vishad Gohel",
         position: "Sponsorship Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/vishadgohel.jpg",
+        imageUrl: "/assets/images/members/vishadgohel.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -34,7 +34,7 @@ const Data = [
     {
         name: "Sumit Chaudhari",
         position: "Sponsorship Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/SumitChaudhari.jpg",
+        imageUrl: "/assets/images/members/SumitChaudhari.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""

@@ -1,5 +1,5 @@
-import Reports from './Reports/ReportContainer.jsx'
-import Newsletter from './Newletter/Newsletter.jsx'
+import Reports from '../../Components/Media/Reports/ReportContainer.jsx'
+import Newsletter from '../../Components/Media/Newletter/Newsletter.jsx'
 import './Media.css'
 import { useEffect } from 'react'
 

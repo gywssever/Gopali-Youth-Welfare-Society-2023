@@ -2,7 +2,7 @@ const data = [
     {
         name: "Mrinal Kanti Bhanja",
         position: "PRESIDENT",
-        imageUrl: "/gyws/assets/img/new_website_img/members/dada.jpg",
+        imageUrl: "/assets/images/members/dada.jpg",
         facebookLink: "",
         linkedinLink: ""
     },

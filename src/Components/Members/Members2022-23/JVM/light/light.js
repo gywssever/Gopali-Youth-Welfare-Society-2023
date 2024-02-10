@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Sampurna Mandal",
         position: "Public Relations and Marketing Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/SampurnaMandal.jpg",
+        imageUrl: "/assets/images/members/SampurnaMandal.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -10,7 +10,7 @@ const Data = [
     {
         name: "Nikhil Lahane",
         position: "Social Strategy Development Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/NikhilLahane.jpg",
+        imageUrl: "/assets/images/members/NikhilLahane.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""

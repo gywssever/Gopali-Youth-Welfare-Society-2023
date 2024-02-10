@@ -1,8 +1,8 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/navbar/Navbar';
-import Home from './Components/Homepage/Home';
-import Media from './Components/Media/Media';
+import Home from './Pages/Home/Home';
+import Media from './Pages/Media/Media.jsx';
 import ScrollToTop from './Components/scrollToTop/scrollToTop';
 import Member from './Components/Members/Member2023-24/Members.jsx';
 import Footer from './Components/Footer/footer'
@@ -10,7 +10,7 @@ import Members2223 from './Components/Members/Members2022-23/Members.jsx'
 import Members2122 from './Components/Members/Members2021-22/Members.jsx'
 import Members2021 from './Components/Members/Members2020-21/Members.jsx'
 import Members2020 from './Components/Members/Members2019-20/Members.jsx'
-import About from './Components/aboutUs/About.jsx';
+import About from './Pages/AboutUs/About.jsx';
 import JVM from './Components/Initiatives/JVM_PAGE/JVM.jsx';
 import LightDonate from './Components/lightdonate/LightDonate.jsx';
 import Each from './Components/Donation/Each_JVMCare.jsx'

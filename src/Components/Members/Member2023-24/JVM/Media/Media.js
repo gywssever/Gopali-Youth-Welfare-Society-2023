@@ -2,7 +2,7 @@ const Data = [
     {
         name: "Kunal Agarwal",
         position: "Media & Publicity Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/Heads23/Kunal Agarwal.jpg",
+        imageUrl: "/assets/images/members/Heads23/Kunal Agarwal.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""

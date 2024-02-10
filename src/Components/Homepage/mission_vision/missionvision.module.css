@@ -4,7 +4,7 @@
     grid-template-columns: 50% 50%;
     width: 80vmax;
     margin: auto;
-    height: 80vh;
+    /* height: 80vh; */
     margin-top: 2rem;
     margin-bottom: 2rem;
 }

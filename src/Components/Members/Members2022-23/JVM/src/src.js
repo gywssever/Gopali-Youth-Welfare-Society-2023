@@ -10,7 +10,7 @@ const Data = [
     {
         name: "Mridula Mathukumalli",
         position: "SRC Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/Mridula.JPG",
+        imageUrl: "/assets/images/members/Mridula.JPG",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -18,7 +18,7 @@ const Data = [
     {   
         name: "Vinay Siwach",
         position: "SRC Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/VinaySiwach.jpg",
+        imageUrl: "/assets/images/members/VinaySiwach.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -26,7 +26,7 @@ const Data = [
     {
         name: "Sayali Mahipal Ganvir",
         position: "SRC Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/MahipalGanvir.jpg",
+        imageUrl: "/assets/images/members/MahipalGanvir.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""
@@ -34,7 +34,7 @@ const Data = [
     {
         name: "Vageesh Tiwari",
         position: "SRC Head",
-        imageUrl: "/gyws/assets/img/new_website_img/members/VageeshTiwari.jpg",
+        imageUrl: "/assets/images/members/VageeshTiwari.jpg",
         facebookLink: "",
         linkedinLink: "",
         email: ""

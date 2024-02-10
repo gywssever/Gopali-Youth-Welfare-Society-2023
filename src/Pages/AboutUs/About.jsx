@@ -1,8 +1,8 @@
 
-import Timeline from './timeline/Timeline';
-import Accordion from './accordion/Accordion';
-import HowWeStarted from './howWeStarted';
-import Foundersmsg from './Foundersmsg';
+import Timeline from '../../Components/aboutUs/timeline/Timeline';
+import Accordion from '../../Components/aboutUs/accordion/Accordion';
+import HowWeStarted from '../../Components/aboutUs/HowWeStarted/howWeStarted';
+import Foundersmsg from '../../Components/aboutUs/FounderMessage/Foundersmsg';
 import { useEffect } from 'react';
 
 export default function About() {
