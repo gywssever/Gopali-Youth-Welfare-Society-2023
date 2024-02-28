@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 
 function EachJVM() {
+  document.title = "Donate Now | GYWS";
   useEffect(() => {
-    document.title = "Donate Now | GYWS";
 
     // Load the first script
     const script1 = document.createElement("script");
