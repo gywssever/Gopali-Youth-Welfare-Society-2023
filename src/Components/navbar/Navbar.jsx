@@ -54,7 +54,7 @@ function Navbar() {
             <li>Members</li>
           </Link>
           <li>
-            <Link to="/donate" id="donatebtn">
+            <Link to="/donate" id="donatebtn"  onClick={closeMenu}>
               Donate
             </Link>
           </li>
