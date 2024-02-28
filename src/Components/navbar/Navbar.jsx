@@ -1,22 +1,13 @@
 // Navbar.jsx
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import LOGO from './Images/logo.png';
-import { List, XLg } from 'react-bootstrap-icons';
-import './Navbar.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import LOGO from "./Images/logo.png";
+import { List, XLg } from "react-bootstrap-icons";
+import "./Navbar.css";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  function handleClick() {
-    setShowDropdown(!showDropdown);
-  }
-  const closeDropdown = () => {
-    setShowDropdown(false);
-  };
-
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -39,11 +30,14 @@ function Navbar() {
           <div>Gopali Youth Welfare Society</div>
         </Link>
 
-        <div className={`menu-toggle ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>
+        <div
+          className={`menu-toggle ${showMenu ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
           {menuIcon}
         </div>
 
-        <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
+        <ul className={`nav-links ${showMenu ? "show" : ""}`}>
           <Link to="/" onClick={closeMenu}>
             <li>Home</li>
           </Link>
@@ -59,32 +53,10 @@ function Navbar() {
           <Link to="/member" onClick={closeMenu}>
             <li>Members</li>
           </Link>
-          <li className="dropdown1" onClick={handleClick}  onMouseLeave={closeDropdown} >
-          <Link id="donatebtn">Donate</Link>
-          {showDropdown && (
-            <ul className="dropdown1-content">
-                <li>
-                  <Link to="/donate/hostel_construction"onClick={closeMenu}>
-                    Hostel Construction
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/donate/hostel_sustainability" onClick={closeMenu}>
-                    Hostel Sustainability
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/donate/each" onClick={closeMenu}>
-                    Educate a Child
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/donate/light" onClick={closeMenu}>
-                    LiGHT Donation
-                  </Link>
-                </li>
-              </ul>
-            )}
+          <li>
+            <Link to="/donate" id="donatebtn">
+              Donate
+            </Link>
           </li>
         </ul>
       </nav>
