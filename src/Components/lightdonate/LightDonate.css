@@ -12,17 +12,37 @@
 
 .light-donate-card {
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     background-color: #fff;
     text-align: justify;
+    position: relative;
+}
+
+.pay-btn {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .light-donate-card-title {
     font-size: 2.2rem;
     font-weight: 600;
     margin: 0 auto;
-    margin-bottom: 1rem;
     max-width: 900px;
+}
+
+.light-donate-card-centre {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+    max-width: 900px;
+}
+
+.light-donate-card-centre a {
+    text-decoration: none;
+    color: #f26a36;
 }
 
 .light-donate-card-description {

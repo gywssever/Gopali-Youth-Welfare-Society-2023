@@ -26,7 +26,9 @@ function Navbar() {
     <>
       <nav>
         <Link to="/" onClick={closeMenu} className="logo">
-          <img src={LOGO} alt="GYWS_Logo" />
+          <div className="logoImg" >
+            <img src={LOGO} alt="GYWS_Logo" />
+          </div>
           <div>Gopali Youth Welfare Society</div>
         </Link>
 
@@ -54,7 +56,7 @@ function Navbar() {
             <li>Members</li>
           </Link>
           <li>
-            <Link to="/donate" id="donatebtn"  onClick={closeMenu}>
+            <Link to="/donate" id="donatebtn" onClick={closeMenu}>
               Donate
             </Link>
           </li>
