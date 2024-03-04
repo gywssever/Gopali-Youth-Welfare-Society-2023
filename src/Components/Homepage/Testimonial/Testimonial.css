@@ -12,7 +12,7 @@
     background-color: rgb(221, 231, 231);
     margin: 5px;
     border-radius: 10px;
-    height: auto;
+    height: 350px;
 }
 @media (min-width:450px) and  (max-width: 769px){
     
