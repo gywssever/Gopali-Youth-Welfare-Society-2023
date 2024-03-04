@@ -27,7 +27,7 @@ function TestiMonial() {
     autoplay: true,
     // eslint-disable-next-line no-dupe-keys
     speed: 1200,
-    autoplaySpeed: 3000,
+    autoplaySpeed:4000,
     cssEase: "linear",
     pauseOnHover: true,
 
@@ -93,8 +93,8 @@ function TestiMonial() {
     },
     {
       name: "Prof. H R Tiwari",
-      post:"  Ex-Professor, Department of Humanities and Social Science,                    IIT Kharagpur" ,
-      img: "assets/images/home/testimg/suparna.png",
+      post:"  Ex-Professor, Department of Humanities and Social Science, IIT Kharagpur" ,
+      img: "assets/images/home/testimg/HR.png",
       statement:" Society is purely the extension of ourselves. Though we stepped in 2lÂ® century there are still several bleak aspects remain in our society especially in the developing countries like India. Illiteracy, poverty, lack of health consciousness, lack of social consciousness, lack of worldly  knowledge are major arnong them.Out of these sacred some of  the educated youth grouped together to do something in the   field and GOPALI YOUTH WELFARE SOCIETY came into being."
     },
     {
@@ -106,7 +106,7 @@ function TestiMonial() {
   
   ];
 
-  const testimonials = ({ name, img, statement, post }) => {
+  const Testimonials = ({ name, img, statement, post }) => {
     return (
       <div className="TestiMonial-card">
         <div className="TestiMonial-card-image">
@@ -132,16 +132,19 @@ function TestiMonial() {
       <div className="container-TestiMonial">
         <h1 className="container-TestiMonial-heading">TESTIMONIALS</h1>
        <Slider {...settings}>
-       <div>
-            {testiMonialData.map((content) => (
-              <testimonials
+       
+            {testiMonialData.map((content , index) => (
+             <div>
+            <Testimonials
+                key={index}
                 img={content.img}
                 name={content.name}
                 post={content.post}
                 statement={content.statement}
               />
+              </div>
             ))}
-           </div>
+        
          
         </Slider>
         </div>
