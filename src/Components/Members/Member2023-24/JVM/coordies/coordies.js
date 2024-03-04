@@ -11,17 +11,17 @@ const Data = [
         name: "Shivam Yadav",
         position: "UG Coordinator",
         imageUrl: "/assets/images/members/Heads23/ShivamYadav.jpg",
-        facebookLink: "https://www.facebook.com/profile.php?id=100085671729571",
-        linkedinLink: "https://www.linkedin.com/in/22ee10015ashutoshkrsingh/",
-        email: "ashutoshkrsingh.iitkgp@gmail.com"
+        facebookLink: "",
+        linkedinLink: "",
+        email: ""
     },
     {
         name: "Virat Dwivedi",
         position: "UG Coordinator",
         imageUrl: "/assets/images/members/Heads23/ViratDwivedi.jpg",
-        facebookLink: "https://www.facebook.com/profile.php?id=100085671729571",
-        linkedinLink: "https://www.linkedin.com/in/22ee10015ashutoshkrsingh/",
-        email: "ashutoshkrsingh.iitkgp@gmail.com"
+        facebookLink: "https://www.facebook.com/profile.php?id=100006798225731",
+        linkedinLink: "https://www.linkedin.com/in/virat-dwivedi-55912a202/",
+        email: "avirat.dwivedi@gyws.org"
     },
 ]
 

@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext");
 
 .blog-item img {
-  display: block;
+  /* display: block; */
   width: 100%;
-
+  height: 300px;
+  object-fit: cover;
 }
 .blog-item a {
   display: flex;
@@ -121,11 +122,6 @@
     width: 100%;
   }
 
-  .blog-item .icon img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
 
   .blog-item {
     width: 92%;

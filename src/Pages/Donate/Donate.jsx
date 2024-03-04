@@ -51,8 +51,9 @@ const DonateCard = ({ name, imgPath, discr, eventlink }) => {
           </div>
 
           <div class="item-arrow">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </div>
+         
+            <i class="fa fa-long-arrow-right" aria-hidden="true" ></i>
+        </div>
         </Link>
       </div>
     </>

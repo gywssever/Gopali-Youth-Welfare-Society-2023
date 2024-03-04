@@ -3,17 +3,17 @@ const Data = [
         name: "Jitendra Kumar",
         position: "TechOps Head",
         imageUrl: "/assets/images/members/Heads23/Jitendra Kumar.jpg",
-        facebookLink: "https://www.facebook.com/profile.php?id=100085671729571",
-        linkedinLink: "https://www.linkedin.com/in/22ee10015ashutoshkrsingh/",
-        email: "ashutoshkrsingh.iitkgp@gmail.com"
+        facebookLink: "https://www.facebook.com/profile.php?id=100075395236728",
+        linkedinLink: "https://www.linkedin.com/in/jitendra-bunkar-547223232/",
+        email: "jitendra.bunkar@gyws.org"
     },
     {
         name: "Ujjawal Kumar",
         position: "TechOps Head",
         imageUrl: "/assets/images/members/Heads23/UjjawalKumar.jpeg",
-        facebookLink: "https://www.facebook.com/profile.php?id=100085671729571",
-        linkedinLink: "https://www.linkedin.com/in/22ee10015ashutoshkrsingh/",
-        email: "ashutoshkrsingh.iitkgp@gmail.com"
+        facebookLink: "https://www.facebook.com/profile.php?id=100012980770787",
+        linkedinLink: "https://www.linkedin.com/in/ujjawal-kumar-45a431228/",
+        email: "ujjawal.kumar@gyws.org"
     },
 ]
 
