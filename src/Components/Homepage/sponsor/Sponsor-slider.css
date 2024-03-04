@@ -2,8 +2,8 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px; 
-    padding: 10px;
+    margin-bottom: 7px; 
+    padding: 7px;
   }
   .sliderContainer{
       height: 400px;
@@ -15,7 +15,8 @@
       text-align: center;
       align-items: center;
       justify-content: center;
-  }
+   
+  } 
   
   .slider-card{
         /* width: auto; */
@@ -24,13 +25,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        text-decoration: none;
+        color: black;
   }
   
   @media (min-width:1500px){
       .slider-card{
           /* margin: auto;
           width: 150px; */
-          height: 250px;
+          height: 300px;
       }
   
   }
@@ -41,6 +44,7 @@
       padding: 2px;
       margin: 5px;
   }
+
   
   
   .slick-prev, .slick-next{

@@ -149,6 +149,7 @@ function Carousel() {
       </a>
     );
   };
+
   return (
     <>
       <div className="container-slider">
@@ -166,6 +167,7 @@ function Carousel() {
           </Slider>
         </div>
       </div>
+      
       <div className="container-slider">
        <HCard head={"AFFILIATIONS"}></HCard><br />
         <div className="sliderContainer">

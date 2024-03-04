@@ -40,16 +40,17 @@
   align-items: center;
   justify-content: center;
   margin: 1rem auto;
+  gap: 20px;
 }
 
 .how-we-started-text {
   text-align: justify;
   width: 100%;
+  color: #000000aa;
 }
 
-.how-we-started-text .texts {
-  margin-bottom: 1rem;
-  color: #000000aa;
+.how-we-started-text .texts1 {
+  margin-bottom: 0.6rem;
 }
 
 
@@ -66,7 +67,7 @@
   width: 100%;
   max-width: 450px;
   height: 330px;
-  margin: 2rem;
+  /* margin: 2rem; */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -88,7 +89,7 @@
   }
 
   .how-we-started-img {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     width: auto;
   }
 }
