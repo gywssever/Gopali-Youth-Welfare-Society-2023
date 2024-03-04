@@ -56,6 +56,7 @@ function Carousel() {
           slidesToShow: 3,
         },
       },
+      
       {
         breakpoint: 500,
         settings: {
