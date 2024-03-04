@@ -1,12 +1,10 @@
 import './HowWeStarted.css';
-
-
+import HCard from '../../HeaderCard/HCard';
 const HowWeStarted = () => {
   return (
     <div className="how-we-started-container">
       <div className="how-we-started-heading">
-        <h1>HOW WE STARTED</h1>
-        <div className='heading-underline'></div>
+        <HCard head={"HOW WE STARTED"} ></HCard>
       </div>
       <div className="how-we-started-about">
         <div className="how-we-started-text">

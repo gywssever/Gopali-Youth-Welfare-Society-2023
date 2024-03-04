@@ -3,7 +3,8 @@
 import React from 'react';
 import './GB.css'; // Import the CSS file for styling
 import tableData from './GB.js';
-import HCard from '../../HeaderCard/HCard.jsx'
+import HCard from '../../../HeaderCard/HCard.jsx'
+
 const GB = () => {
 
 

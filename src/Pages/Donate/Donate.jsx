@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Donate.css";
 import {Link}  from "react-router-dom";
-import TextCard from '../../Components/Members/HeaderCard/HCard'
+import TextCard from '../../Components/HeaderCard/HCard'
 const DonateLinks = [
   {
     name: "Each ( Educate a Child )",
@@ -34,6 +34,8 @@ const DonateLinks = [
 ];
 
 const DonateCard = ({ name, imgPath, discr, eventlink }) => {
+
+
   return (
     <>
       <div class="blog-item">
@@ -58,6 +60,12 @@ const DonateCard = ({ name, imgPath, discr, eventlink }) => {
 };
 
 function Donate() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "Donate | GYWS"
+
+}, [])
   return (
     <>
       <div>

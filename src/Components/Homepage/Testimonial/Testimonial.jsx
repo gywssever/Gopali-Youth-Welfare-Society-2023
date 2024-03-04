@@ -11,7 +11,7 @@ import suparna from "./Image/suparna.png";
 import HR from "./Image/HR.png";
 import madhu from "./Image/madhu.jpg";
 // import  NR from "./Image/NR.jpg";
-
+import HCard from "../../HeaderCard/HCard";
 
 function ArrowTest(props) {
   const { className, style, onClick } = props;
@@ -60,7 +60,7 @@ function TestiMonial() {
   return (
     <>
       <div className="container-TestiMonial">
-        <h1 className="container-TestiMonial-heading">TESTIMONIALS</h1>
+    <HCard head="TESTIMONIALS"></HCard>  <br />
         <Slider {...settings}>
           <div>
             <div className="TestiMonial-card">

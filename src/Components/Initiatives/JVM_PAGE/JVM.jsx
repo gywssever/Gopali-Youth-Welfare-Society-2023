@@ -2,7 +2,7 @@ import "./JVM.css";
 import bgImg from "./bgImg.jpg";
 import LiGHTImg from "./LiGHT-img.png";
 import { useEffect } from "react";
-
+import HCard from "../../HeaderCard/HCard";
 const jvmData = [
   {
     imgPath: "./images/school_logo-removebg-preview.png",
@@ -134,10 +134,10 @@ export default function JVM() {
         </div>
 
         <div class="jvm-details">
-          <div class="jvm-title">
-            <h2>JVM</h2>
-            <div className="heading-underline"></div>
-          </div>
+    
+
+            <HCard head={"JVM"}> </HCard>
+        
 
           <div class="jvm-section-content">
             {jvmData.map((item) => {
@@ -155,10 +155,9 @@ export default function JVM() {
         {/* LiGHT */}
 
         <div class="LiGHT">
-          <div class="LiGHT-title">
-            <h2>LiGHT</h2>
-            <div className="heading-underline"></div>
-          </div>
+
+            <HCard head={"LiGHT"}></HCard>
+     
 
           <div class="lecture-container">
             <div class="lecture-content">
@@ -189,10 +188,9 @@ export default function JVM() {
         </div>
 
         <div class="jvm-lecture">
-          <div class="jvm-title">
-            <h2>Future Plan</h2>
-            <div className="heading-underline"></div>
-          </div>
+
+            <HCard head={"Future Plan"}></HCard>
+
 
           <div class="lecture-container">
             <div class="lecture-img">
@@ -214,10 +212,9 @@ export default function JVM() {
         </div>
 
         <div class="event-details">
-          <div class="jvm-title">
-            <h2>Events</h2>
-            <div className="heading-underline"></div>
-          </div>
+            
+            <HCard head={"Events"}></HCard>
+        
 
           <div class="event-gallery">
             {eventsData.map((item) => {
@@ -227,10 +224,9 @@ export default function JVM() {
         </div>
 
         <div class="jvm-survey">
-          <div class="jvm-title">
-            <h2>Survey Stats</h2>
-            <div className="heading-underline"></div>
-          </div>
+ 
+            <HCard head={"Survey Stats"}></HCard>
+
 
           <div class="survey-stats">
             {surveyData.map((item) => {

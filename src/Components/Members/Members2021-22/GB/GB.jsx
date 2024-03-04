@@ -2,7 +2,8 @@ import React from 'react'
 import Card from '../Card/card.jsx'
 import data from './GB.js'
 import '../Advisory/Advisory.css'
-import HCard from '../../HeaderCard/HCard.jsx'
+import HCard from '../../../HeaderCard/HCard.jsx'
+
 function GB() {
     return (
         <>

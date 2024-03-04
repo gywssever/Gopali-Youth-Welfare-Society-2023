@@ -4,14 +4,13 @@ import {
   Linkedin,
   EnvelopeFill,
 } from 'react-bootstrap-icons';
-
+import HCard from '../../HeaderCard/HCard';
 export default function Foundersmsg() {
 
   return (
     <div className='msg-container'>
       <div className="msg-container-heading">
-        <h1>FOUNDER'S MESSAGE</h1>
-        <div className='heading-underline'></div>
+        <HCard head={"FOUNDER'S MESSAGE"}></HCard>
       </div>
       <div className="msg-container-about">
         <div className="msg-container-about-card">

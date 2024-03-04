@@ -2,7 +2,7 @@ import "./Sponsor-slider.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import HCard from "../../HeaderCard/HCard";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -152,7 +152,8 @@ function Carousel() {
   return (
     <>
       <div className="container-slider">
-        <h1 className="container-slider-heading">SPONSORS</h1>
+      <HCard head={"SPONSORS"}></HCard><br />
+  
         <div className="sliderContainer">
           <Slider {...settings}>
             {sponsorsData.map((sponsor) => (
@@ -166,7 +167,7 @@ function Carousel() {
         </div>
       </div>
       <div className="container-slider">
-        <h1 className="container-slider-heading">AFFILIATIONS</h1>
+       <HCard head={"AFFILIATIONS"}></HCard><br />
         <div className="sliderContainer">
           <Slider {...settings}>
             {affiliationsData.map((sponsor) => (

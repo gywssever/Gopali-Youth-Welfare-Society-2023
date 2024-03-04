@@ -1,12 +1,12 @@
 import "./Contact.css";
 import { GeoAltFill, EnvelopeFill, TelephoneFill } from "react-bootstrap-icons";
-
+import HCard from "../../HeaderCard/HCard";
 function ContactUs() {
   return (
     <>
       <div class="contactUs">
         <div class="heading">
-          <h1>GET IN TOUCH</h1>
+          <HCard head={"GET IN TOUCH"}></HCard><br />
         </div>
 
         <div class="box" style={{

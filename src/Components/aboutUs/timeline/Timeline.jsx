@@ -1,5 +1,5 @@
 import './Timeline.css';
-
+import HCard from '../../HeaderCard/HCard';
 const TimelineData = [
     {
         established: "Established",
@@ -66,8 +66,7 @@ export default function Timeline() {
         <>
             <div className="timeline-container">
                 <div className='timeline-heading'>
-                    <h1 >OUR STORY</h1>
-                    <div className='heading-underline' ></div>
+                    <HCard head={"OUR STORY"}></HCard> <br />
                 </div>
                 <div className=" p-0 my-4">
                     <div className="row">
