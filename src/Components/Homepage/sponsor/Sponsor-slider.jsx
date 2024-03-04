@@ -149,6 +149,7 @@ function Carousel() {
       </a>
     );
   };
+
   return (
     <>
       <div className="container-slider">
@@ -165,6 +166,7 @@ function Carousel() {
           </Slider>
         </div>
       </div>
+      
       <div className="container-slider">
         <h1 className="container-slider-heading">AFFILIATIONS</h1>
         <div className="sliderContainer">
