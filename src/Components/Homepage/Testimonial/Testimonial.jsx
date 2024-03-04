@@ -103,7 +103,6 @@ function TestiMonial() {
     img:"assets/images/home/testimg/madhu.jpg",
     statement:" The society is fortunate to have some young Samaritans who have always committed themselves for the humanitarian cause of uplifting the condition of the poor and enlightening the future generation, let all of us join our hands together to make this endeavour, envisaged to help the needy aspire for a better future, a success."
     },
-  
   ];
 
   const Testimonials = ({ name, img, statement, post }) => {
