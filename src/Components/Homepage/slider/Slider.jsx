@@ -1,8 +1,7 @@
+import './Slider.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import header_bg_1 from './images/header-bg-1.jpg';
-import JVM from './images/JVM2.jpg';
-import './Slider.css';
+import carouselData from "./carouselData";
 
 function Slider() {
 
@@ -18,68 +17,23 @@ function Slider() {
           timeInterval={1000}
           autoPlay={true}
           interval={2000}
-          // centerMode={true}
-          // centerSlidePercentage={96}
           infiniteLoop={true}
           stopOnHover={true}
           preventMovementUntilSwipeScrollTolerance={true}
         >
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
+          {
+            carouselData.map((item, index) => {
+              return (
+                <div key={index} className='home-carousel-item'>
+                  <div className="home-carousel-item-image">
+
+                    <img src={item.img} alt={item.alt} className='carousel_image' />
+                  </div>
+                  <p className="legend hide_slider">{item.legend}</p>
+                </div>
+              )
+            })
+          }
         </Carousel>
 
       </div>

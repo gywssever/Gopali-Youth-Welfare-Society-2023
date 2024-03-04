@@ -1,7 +1,7 @@
 import React from "react";
 import "./GB.css";
 import Card from "../Card/card";
-import HCard from "../../HeaderCard/HCard.jsx";
+import HCard from "../../../HeaderCard/HCard.jsx";
 import data from './GB.js'
 export default function GB() {
 

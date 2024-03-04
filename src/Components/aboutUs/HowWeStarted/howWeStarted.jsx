@@ -1,16 +1,14 @@
 import './HowWeStarted.css';
-
-
+import HCard from '../../HeaderCard/HCard';
 const HowWeStarted = () => {
   return (
     <div className="how-we-started-container">
       <div className="how-we-started-heading">
-        <h1>HOW WE STARTED</h1>
-        <div className='heading-underline'></div>
+        <HCard head={"HOW WE STARTED"} ></HCard>
       </div>
       <div className="how-we-started-about">
         <div className="how-we-started-text">
-          <div className='texts'>
+          <div className='texts texts1'>
             <b>Mr. Mrinal Kanti Bhanja</b> , or Dada as we call him , in his early twenties had the vision to give back to society by <b>helping in uplifting the less fortunate</b> . When he came across a few<b> IITians who wanted to volunteer for a good cause</b> but lacked the right platform- <b>Gopali Youth Welfare Society</b> came into being.
           </div>
           <div className='texts' >

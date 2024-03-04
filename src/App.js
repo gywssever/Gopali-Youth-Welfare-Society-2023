@@ -12,7 +12,7 @@ import Members2021 from './Components/Members/Members2020-21/Members.jsx'
 import Members2020 from './Components/Members/Members2019-20/Members.jsx'
 import About from './Pages/AboutUs/About.jsx';
 import JVM from './Components/Initiatives/JVM_PAGE/JVM.jsx';
-import LightDonate from './Components/lightdonate/LightDonate.jsx';
+import LightDonate from './Components/Donation/lightdonate/LightDonate.jsx';
 import Each from './Components/Donation/Each_JVMCare.jsx'
 import HostelCons from './Components/Donation/Hostel_Contruction.jsx'
 import HostelSus from './Components/Donation/Hostel_Sustainability.jsx'

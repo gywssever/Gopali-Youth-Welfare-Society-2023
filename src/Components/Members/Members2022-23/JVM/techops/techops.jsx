@@ -2,7 +2,7 @@ import React from 'react'
 import '../../../Member2023-24/GB/GB.css'
 import Card from '../../Card/card'
 import data from './techops'
-import HCard from '../../../HeaderCard/HCard.jsx'
+import HCard from '../../../../HeaderCard/HCard'
 export default function page() {
     return (
 

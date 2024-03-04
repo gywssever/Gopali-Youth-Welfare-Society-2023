@@ -23,11 +23,10 @@ function Home() {
         <MissionVision />
         <Intiative />
         <Impact />
-        <TestiMonial/>
+        <TestiMonial />
         <GuestPage />
         <br />
-        <Carousel />/
-
+        <Carousel />
         <ContactUs />
       </div>
     </>
