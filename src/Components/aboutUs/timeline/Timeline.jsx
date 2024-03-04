@@ -51,8 +51,8 @@ const TimelineCard = (content) => {
             <div className="timeline ">
                 <div className="timeline-content">
                     <h3 className="title" style={{ backgroundColor: content.backgroundColor }}> {content.established} </h3>
-                    <p className="description"><strong>
-                        {content.establishedDescription}</strong>
+                    <p className="description">
+                        {content.establishedDescription}
                     </p>
                     <div className="timeline-year">{content.establishedYear}</div>
                 </div>
