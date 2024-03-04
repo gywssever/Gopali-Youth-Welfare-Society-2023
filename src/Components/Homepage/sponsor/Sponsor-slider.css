@@ -15,7 +15,7 @@
         position: relative;
     }
     .slider-card{
-        padding: 0px 5px;
+        padding: 0px 2px;
     }
   }
 
@@ -64,7 +64,7 @@
   }
   @media (max-width:500px){
     .slider-card img{
-        width: 80%;
+        width: 100%;
         height: 80%;
         padding: 1px;
         margin: 1px;
