@@ -2,20 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonial.css";
-<<<<<<< HEAD
-import Partha from "./Image/Partha.jpg";
-import Mrig from "./Image/Mrig.jpg";
-import NR from "./Image/NR.jpg";
-import sailesh from "./Image/sailesh.jpg";
-import roy from "./Image/roy.jpg";
-import suparna from "./Image/suparna.png";
-import HR from "./Image/HR.png";
-import madhu from "./Image/madhu.jpg";
-// import  NR from "./Image/NR.jpg";
 import HCard from "../../HeaderCard/HCard";
-=======
-
->>>>>>> 381a1bca39d58651eb61947fa82b3d41610f6884
 
 function ArrowTest(props) {
   const { className, style, onClick } = props;
@@ -143,15 +130,7 @@ function TestiMonial() {
   return (
     <>
       <div className="container-TestiMonial">
-<<<<<<< HEAD
-    <HCard head="TESTIMONIALS"></HCard>  <br />
-        <Slider {...settings}>
-          <div>
-            <div className="TestiMonial-card">
-              <div className="TestiMonial-card-image">
-                <img src={Partha} alt="#" />
-=======
-        <h1 className="container-TestiMonial-heading">TESTIMONIALS</h1>
+        <HCard head={"TESTIMONIALS"}></HCard>
        <Slider {...settings}>
        
             {testiMonialData.map((content , index) => (
@@ -163,7 +142,6 @@ function TestiMonial() {
                 post={content.post}
                 statement={content.statement}
               />
->>>>>>> 381a1bca39d58651eb61947fa82b3d41610f6884
               </div>
             ))}
         
