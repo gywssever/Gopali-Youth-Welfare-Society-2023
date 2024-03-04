@@ -131,8 +131,8 @@ function TestiMonial() {
     <>
       <div className="container-TestiMonial">
         <h1 className="container-TestiMonial-heading">TESTIMONIALS</h1>
-        <Slider {...settings}>
-          <div>
+       <Slider {...settings}>
+       <div>
             {testiMonialData.map((content) => (
               <testimonials
                 img={content.img}
@@ -141,9 +141,11 @@ function TestiMonial() {
                 statement={content.statement}
               />
             ))}
-          </div>
+           </div>
+         
         </Slider>
-      </div>
+        </div>
+     
     </>
   );
 }
