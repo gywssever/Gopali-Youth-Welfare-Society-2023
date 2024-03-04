@@ -4,6 +4,90 @@ import header_bg_1 from './images/header-bg-1.jpg';
 import JVM from './images/JVM2.jpg';
 import './Slider.css';
 
+const carouselData = [
+  {
+    img: header_bg_1,
+    alt: 'Students at Jagriti Vidya Mandir(JVM)',
+    legend: 'Students at Jagriti Vidya Mandir(JVM)',
+  },
+  {
+    img: JVM,
+    alt: 'We with the students',
+    legend: 'We with the students',
+  },
+  {
+    img: header_bg_1,
+    alt: 'Students at Jagriti Vidya Mandir(JVM)',
+    legend: 'Students at Jagriti Vidya Mandir(JVM)',
+  },
+  {
+    img: JVM,
+    alt: 'We with the students',
+    legend: 'We with the students',
+  },
+  {
+    img: header_bg_1,
+    alt: 'Students at Jagriti Vidya Mandir(JVM)',
+    legend: 'Students at Jagriti Vidya Mandir(JVM)',
+  },
+  {
+    img: JVM,
+    alt: 'We with the students',
+    legend: 'We with the students',
+  },
+  {
+    img: header_bg_1,
+    alt: 'Students at Jagriti Vidya Mandir(JVM)',
+    legend: 'Students at Jagriti Vidya Mandir(JVM)',
+  },
+  {
+    img: JVM,
+    alt: 'We with the students',
+    legend: 'We with the students',
+  },
+  {
+    img: header_bg_1,
+    alt: 'Students at Jagriti Vidya Mandir(JVM)',
+    legend: 'Students at Jagriti Vidya Mandir(JVM)',
+  },
+  {
+    img: JVM,
+    alt: 'We with the students',
+    legend: 'We with the students',
+  },
+  {
+    img: header_bg_1,
+    alt: 'Students at Jagriti Vidya Mandir(JVM)',
+    legend: 'Students at Jagriti Vidya Mandir(JVM)',
+  },
+  {
+    img: JVM,
+    alt: 'We with the students',
+    legend: 'We with the students',
+  },
+  {
+    img: header_bg_1,
+    alt: 'Students at Jagriti Vidya Mandir(JVM)',
+    legend: 'Students at Jagriti Vidya Mandir(JVM)',
+  },
+  {
+    img: JVM,
+    alt: 'We with the students',
+    legend: 'We with the students',
+  },
+  {
+    img: header_bg_1,
+    alt: 'Students at Jagriti Vidya Mandir(JVM)',
+    legend: 'Students at Jagriti Vidya Mandir(JVM)',
+  },
+  {
+    img: JVM,
+    alt: 'We with the students',
+    legend: 'We with the students',
+  },
+
+]
+
 function Slider() {
 
 
@@ -24,62 +108,16 @@ function Slider() {
           stopOnHover={true}
           preventMovementUntilSwipeScrollTolerance={true}
         >
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
-          <div>
-            <img src={header_bg_1} alt='JVM Students' className='carousel_image'  />
-            <p className="legend hide_slider">Students at Jagriti Vidya Mandir(JVM)</p>
-          </div>
-          <div>
-            <img src={JVM} alt='We with the students' className='carousel_image'  />
-            <p className="legend hide_slider">We with the students</p>
-          </div>
+          {
+            carouselData.map((item, index) => {
+              return (
+                <div key={index}>
+                  <img src={item.img} alt={item.alt} className='carousel_image' />
+                  <p className="legend hide_slider">{item.legend}</p>
+                </div>
+              )
+            })
+          }
         </Carousel>
 
       </div>

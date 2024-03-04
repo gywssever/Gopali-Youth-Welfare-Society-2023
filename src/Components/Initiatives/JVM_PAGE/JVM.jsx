@@ -78,7 +78,7 @@ const surveyData = [
 const JVMCard = ({ imgPath, content }) => {
   return (
     <>
-      <div class="jvm-section-content-card">
+      <div className="jvm-section-content-card">
         <img src={imgPath} alt="not found" />
         <p>{content}</p>
       </div>
@@ -102,7 +102,7 @@ const EventCard = ({ name, imgPath }) => {
 const SurveyStatsCard = ({ number, info }) => {
   return (
     <>
-      <div class="stats">
+      <div className="stats">
         <h2>{number}</h2>
         <p>{info}</p>
       </div>
@@ -123,7 +123,7 @@ export default function JVM() {
   return (
     <>
       <div className="jvm-container">
-        <div class="jvm-header">
+        <div className="jvm-header">
           <div className="bgImg">
             <img src={bgImg} alt="" />
           </div>
@@ -133,13 +133,13 @@ export default function JVM() {
           </div>
         </div>
 
-        <div class="jvm-details">
-    
+        <div className="jvm-details">
 
-            <HCard head={"JVM"}> </HCard>
-        
 
-          <div class="jvm-section-content">
+          <HCard head={"JVM"}> </HCard>
+
+
+          <div className="jvm-section-content">
             {jvmData.map((item) => {
               return (
                 <JVMCard
@@ -154,13 +154,13 @@ export default function JVM() {
 
         {/* LiGHT */}
 
-        <div class="LiGHT">
+        <div className="LiGHT">
 
-            <HCard head={"LiGHT"}></HCard>
-     
+          <HCard head={"LiGHT"}></HCard>
 
-          <div class="lecture-container">
-            <div class="lecture-content">
+
+          <div className="lecture-container">
+            <div className="lecture-content">
               <div>
                 JVM aspires to be a residential full-fledged school for students
                 of under privileged families offering a variety of courses at +2
@@ -172,32 +172,32 @@ export default function JVM() {
                 its students settle in their professional or educational lives
                 before they leave.
               </div>
-              <div class="LiGHT-button">
+              <div className="LiGHT-button">
 
 
-                <a href="https://light.gyws.org/index.php" class="button">Visit Page</a>
+                <a href="https://light.gyws.org/index.php" className="button">Visit Page</a>
 
 
               </div>
             </div>
 
-            <div class="lecture-img">
+            <div className="lecture-img">
               <img src={LiGHTImg} alt="#" />
             </div>
           </div>
         </div>
 
-        <div class="jvm-lecture">
+        <div className="jvm-lecture">
 
-            <HCard head={"Future Plan"}></HCard>
+          <HCard head={"Future Plan"}></HCard>
 
 
-          <div class="lecture-container">
-            <div class="lecture-img">
+          <div className="lecture-container">
+            <div className="lecture-img">
               <img src="./images/futureplan.png" alt="#" />
             </div>
 
-            <div class="lecture-content">
+            <div className="lecture-content">
               JVM aspires to be a residential full-fledged school for students
               of under privileged families offering a variety of courses at +2
               level, vocational training and career guidance. We seek to take
@@ -211,24 +211,24 @@ export default function JVM() {
           </div>
         </div>
 
-        <div class="event-details">
-            
-            <HCard head={"Events"}></HCard>
-        
+        <div className="event-details">
 
-          <div class="event-gallery">
+          <HCard head={"Events"}></HCard>
+
+
+          <div className="event-gallery">
             {eventsData.map((item) => {
               return <EventCard name={item.name} imgPath={item.imgPath} />;
             })}
           </div>
         </div>
 
-        <div class="jvm-survey">
- 
-            <HCard head={"Survey Stats"}></HCard>
+        <div className="jvm-survey">
+
+          <HCard head={"Survey Stats"}></HCard>
 
 
-          <div class="survey-stats">
+          <div className="survey-stats">
             {surveyData.map((item) => {
               return <SurveyStatsCard number={item.number} info={item.info} />;
             })}

@@ -153,12 +153,13 @@ function Carousel() {
   return (
     <>
       <div className="container-slider">
-      <HCard head={"SPONSORS"}></HCard><br />
-  
+        <HCard head={"SPONSORS"}></HCard><br />
+
         <div className="sliderContainer">
           <Slider {...settings}>
-            {sponsorsData.map((sponsor) => (
+            {sponsorsData.map((sponsor, index) => (
               <SponsorItem
+                key={index}
                 name={sponsor.name}
                 logoUrl={sponsor.logoUrl}
                 websiteLink={sponsor.websiteLink}
@@ -167,13 +168,14 @@ function Carousel() {
           </Slider>
         </div>
       </div>
-      
+
       <div className="container-slider">
-       <HCard head={"AFFILIATIONS"}></HCard><br />
+        <HCard head={"AFFILIATIONS"}></HCard><br />
         <div className="sliderContainer">
           <Slider {...settings}>
-            {affiliationsData.map((sponsor) => (
+            {affiliationsData.map((sponsor, index) => (
               <SponsorItem
+                key={index}
                 name={sponsor.name}
                 logoUrl={sponsor.logoUrl}
                 websiteLink={sponsor.websiteLink}

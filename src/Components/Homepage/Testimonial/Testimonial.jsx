@@ -27,7 +27,7 @@ function TestiMonial() {
     autoplay: true,
     // eslint-disable-next-line no-dupe-keys
     speed: 1200,
-    autoplaySpeed:4000,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     pauseOnHover: true,
 
@@ -81,7 +81,7 @@ function TestiMonial() {
     },
     {
       name: "Mr. Roy Da Silva",
-      post:  "IIT Kharagpur, '74 batch Former President, IIT foundation",
+      post: "IIT Kharagpur, '74 batch Former President, IIT foundation",
       img: "assets/images/home/testimg/roy.jpg",
       statement: " I would like to recognize Gopali Youth Welfare Society at  IIT Kharagpur at which I found out about when I visited PAN IIT GLOBAL CONFERENCE 2012 and what I said was about, you have got to establish a cause you would like to give back to  and I'm extremely happy this organisation exists within IIT  Kharagpur campus.",
     },
@@ -93,17 +93,17 @@ function TestiMonial() {
     },
     {
       name: "Prof. H R Tiwari",
-      post:"  Ex-Professor, Department of Humanities and Social Science, IIT Kharagpur" ,
+      post: "  Ex-Professor, Department of Humanities and Social Science, IIT Kharagpur",
       img: "assets/images/home/testimg/HR.png",
-      statement:" Society is purely the extension of ourselves. Though we stepped in 2lÂ® century there are still several bleak aspects remain in our society especially in the developing countries like India. Illiteracy, poverty, lack of health consciousness, lack of social consciousness, lack of worldly  knowledge are major arnong them.Out of these sacred some of  the educated youth grouped together to do something in the   field and GOPALI YOUTH WELFARE SOCIETY came into being."
+      statement: " Society is purely the extension of ourselves. Though we stepped in 2lÂ® century there are still several bleak aspects remain in our society especially in the developing countries like India. Illiteracy, poverty, lack of health consciousness, lack of social consciousness, lack of worldly  knowledge are major arnong them.Out of these sacred some of  the educated youth grouped together to do something in the   field and GOPALI YOUTH WELFARE SOCIETY came into being."
     },
     {
-    name:"Prof. Madhusudan Chakraborty",
-    post:"Former Director, IIT Bhubaneshwar",
-    img:"assets/images/home/testimg/madhu.jpg",
-    statement:" The society is fortunate to have some young Samaritans who have always committed themselves for the humanitarian cause of uplifting the condition of the poor and enlightening the future generation, let all of us join our hands together to make this endeavour, envisaged to help the needy aspire for a better future, a success."
+      name: "Prof. Madhusudan Chakraborty",
+      post: "Former Director, IIT Bhubaneshwar",
+      img: "assets/images/home/testimg/madhu.jpg",
+      statement: " The society is fortunate to have some young Samaritans who have always committed themselves for the humanitarian cause of uplifting the condition of the poor and enlightening the future generation, let all of us join our hands together to make this endeavour, envisaged to help the needy aspire for a better future, a success."
     },
-  
+
   ];
 
   const Testimonials = ({ name, img, statement, post }) => {
@@ -131,24 +131,23 @@ function TestiMonial() {
     <>
       <div className="container-TestiMonial">
         <HCard head={"TESTIMONIALS"}></HCard>
-       <Slider {...settings}>
-       
-            {testiMonialData.map((content , index) => (
-             <div>
-            <Testimonials
-                key={index}
+        <Slider {...settings}>
+
+          {testiMonialData.map((content, index) => (
+            <div key={index} >
+              <Testimonials
                 img={content.img}
                 name={content.name}
                 post={content.post}
                 statement={content.statement}
               />
-              </div>
-            ))}
-        
-         
+            </div>
+          ))}
+
+
         </Slider>
-        </div>
-     
+      </div>
+
     </>
   );
 }
