@@ -36,6 +36,7 @@
     .guestPage {
         display: flex;
         flex-direction: column;
+      
     }
 
     .image  img {
@@ -45,6 +46,12 @@
         margin: 10px 0px;
         display: flex;
         justify-content: space-evenly;
+    }
+}
+@media (max-width:1200px){
+    .guestPage {
+                padding: 10px;
+                margin: 5px; 
     }
 }
 

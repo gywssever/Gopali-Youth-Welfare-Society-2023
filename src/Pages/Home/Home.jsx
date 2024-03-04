@@ -24,7 +24,7 @@ function Home() {
         <Intiative />
         <Impact />
         <TestiMonial />
-        <GuestPage />
+        <GuestPage/>
         <br />
         <Carousel />
         <ContactUs />
