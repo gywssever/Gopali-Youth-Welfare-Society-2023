@@ -1,6 +1,7 @@
 import "./Contact.css";
 import { GeoAltFill, EnvelopeFill, TelephoneFill } from "react-bootstrap-icons";
 import HCard from "../../HeaderCard/HCard";
+
 function ContactUs() {
   return (
     <>

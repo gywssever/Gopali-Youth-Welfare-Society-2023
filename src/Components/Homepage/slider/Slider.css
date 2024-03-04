@@ -1,3 +1,15 @@
+.carousel.carousel-slider .control-arrow {
+    background-color: transparent !important;
+    opacity: 1;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 15px solid#f26a36 !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 15px solid#f26a36 !important;
+}
 
 
 @media screen and (max-width: 768px) {
