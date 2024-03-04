@@ -14,7 +14,6 @@ function ArrowTest(props) {
     />
   );
 }
-
 function TestiMonial() {
   var settings = {
     dots: false,
@@ -36,7 +35,7 @@ function TestiMonial() {
 
     responsive: [
       {
-        breakpoint: 1500,
+        breakpoint: 1300,
         settings: {
           slidesToShow: 1,
         },
