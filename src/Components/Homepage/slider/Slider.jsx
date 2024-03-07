@@ -14,11 +14,12 @@ function Slider() {
           showStatus={false}
           showThumbs={false}
           showIndicators={false}
-          timeInterval={1000}
+          // timeInterval={5000}
           autoPlay={true}
-          interval={2000}
+          interval={4000}
           infiniteLoop={true}
           stopOnHover={true}
+          animationHandler={'fade'}
           preventMovementUntilSwipeScrollTolerance={true}
         >
           {

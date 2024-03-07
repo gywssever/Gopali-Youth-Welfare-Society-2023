@@ -1,6 +1,6 @@
 .carousel.carousel-slider .control-arrow {
     background-color: transparent !important;
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .carousel .control-next.control-arrow:before {
@@ -12,19 +12,20 @@
 }
 
 .home-carousel-item {
-    height: calc(90vh - 80px);
+    height: calc(100vh - 90px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    color: #fff;
+    padding: 1rem 2rem;
 }
 
 .home-carousel-item-image {
     height: 100%;
     width: 100%;
-
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .home-carousel-item-image img {
@@ -39,12 +40,13 @@
     }
 
     .home-carousel-item {
-        height: calc(70vh - 80px);
+        height: calc(90vh - 80px);
     }
 }
 
 @media screen and (max-width: 500px) {
     .home-carousel-item {
-        height: calc(60vh - 80px);
+        height: calc(80vh - 80px);
+        padding: 10px;
     }
 }
