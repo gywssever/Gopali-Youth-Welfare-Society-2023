@@ -59,6 +59,7 @@
     cursor: pointer;
     background-color: #f26a36;
     border-radius: 1rem;
+    transition: all 0.4s ease-in-out;
 
 }
 

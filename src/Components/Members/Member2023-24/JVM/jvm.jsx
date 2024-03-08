@@ -5,7 +5,7 @@ import Finance from './finance/finance.jsx'
 import Spons from './spons/spons.jsx'
 import Tech from './techops/techops.jsx'
 import Design from './Design/design.jsx'
-import Media from './Media/Media.jsx'
+// import Media from './Media/Media.jsx'
 import './jvm.css'
 function jvm() {
     return (
@@ -21,7 +21,7 @@ function jvm() {
             <Spons/><br />
             <Tech/> <br />
             <Design></Design> <br />
-            <Media></Media> <br />
+            {/* <Media></Media> <br /> */}
         </>
     )
 }

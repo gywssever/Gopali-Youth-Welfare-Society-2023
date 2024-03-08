@@ -135,7 +135,7 @@ nav .logo img {
   }
 
   .nav-links {
-    border-top: solid white;
+    /* border-top: solid white; */
     list-style: none;
     display: flex;
     flex-direction: column;
