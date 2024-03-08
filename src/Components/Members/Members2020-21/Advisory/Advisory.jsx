@@ -6,8 +6,8 @@ import HCard from '../../../HeaderCard/HCard.jsx'
 
 function Advisory() {
     return (
-        <> 
-        <HCard head={"Advisory Committee"}></HCard>
+        <>
+            <HCard head={"Advisory Committee"}></HCard>
             <div className="members_container">
                 {data.map((data, index) => (
                     <Card key={index} name={data.name} position={data.position} imageUrl={data.imageUrl} facebookLink={data.facebookLink}

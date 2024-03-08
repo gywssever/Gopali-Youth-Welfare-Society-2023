@@ -2,7 +2,7 @@ import inticss from "./intiative.module.css";
 import jvmlogo from "./images/JVM.jpg";
 import lightlogo from "./images/light a.jpg";
 import covidlogo from "./images/Covid 19 a.jpg";
-import HCard from "../../../utils/HeaderCard/HCard";
+import HCard from "../../HeaderCard/HCard";
 import { Link } from "react-router-dom";
 
 export default function intiative() {

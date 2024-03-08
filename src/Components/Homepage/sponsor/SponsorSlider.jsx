@@ -1,6 +1,6 @@
 import "./SponsorSlider.css";
 import SponsorItem from "./SponsorItem";
-import HCard from "../../../utils/HeaderCard/HCard";
+import HCard from "../../HeaderCard/HCard";
 import { sponsorsData, affiliationsData } from "./data/sponsorData";
 
 import Slider from "react-slick";
