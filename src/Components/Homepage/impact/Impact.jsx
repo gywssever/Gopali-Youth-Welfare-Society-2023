@@ -45,7 +45,7 @@ export default function Impact() {
               </div>
               <h2>2000+</h2>
               <div className={impcss.discr}>
-                Needy families got food kits.df
+                Needy families got food kits
               </div>
             </div>
           </div>
