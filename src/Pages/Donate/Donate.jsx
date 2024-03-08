@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Donate.css";
 import { Link } from "react-router-dom";
 import TextCard from '../../Components/HeaderCard/HCard'
+import DonateModal from "./DonateModal";
 
 const DonateLinks = [
   {
@@ -71,6 +72,7 @@ function Donate() {
   return (
     <>
       <div>
+        <DonateModal />
         <br />
         <TextCard head="Donate Now"></TextCard>
         <br />
