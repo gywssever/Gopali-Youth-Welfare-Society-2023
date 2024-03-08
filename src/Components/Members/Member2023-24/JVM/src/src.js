@@ -1,12 +1,5 @@
 const Data = [
-    {
-        name: "Disha Jain",
-        position: "SRC Head",
-        imageUrl: "/assets/images/members/Heads23/DishaJain.JPG",
-        facebookLink: "",
-        linkedinLink: "",
-        email: ""
-    },
+  
     {
         name: "Himanshu Verma",
         position: "SRC Head",
@@ -15,14 +8,7 @@ const Data = [
         linkedinLink: "https://www.linkedin.com/in/himanshu-verma-26a8b5223",
         email: "himanshu.verma@gyws.org"
     },
-    {
-        name: "Nikhil Mishra",
-        position: "SRC Head",
-        imageUrl: "/assets/images/members/Heads23/Nikhil Mishra.jpg",
-        facebookLink: "",
-        linkedinLink: "",
-        email: ""
-    },
+
     {
         name: "Kopal Jain",
         position: "SRC Head",

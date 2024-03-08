@@ -1,7 +1,4 @@
 import impcss from "./impact.module.css";
-import childlogo from "./images/child.jpg";
-import child from './images/DSC_0159.JPG'
-import mapimg from "./images/map.png";
 import HCard from "../../HeaderCard/HCard";
 export default function Impact() {
   return (
@@ -13,7 +10,7 @@ export default function Impact() {
           <div className={impcss.DusraContainer}>
             <div className={impcss.mainbox} id={impcss.first}>
               <div>
-                <img src={child} alt="" />
+                <img src="./images/child.jpg" alt="" />
               </div>
               <h2>500+</h2>
               <div className={impcss.discr}>
@@ -24,7 +21,7 @@ export default function Impact() {
 
             <div className={impcss.mainbox} id={impcss.second}>
               <div>
-                <img src={mapimg} alt="" />
+                <img src="./images/map.png" alt="" />
               </div>
               <h2>16</h2>
               <div className={impcss.discr}>
@@ -36,7 +33,7 @@ export default function Impact() {
           <div className={impcss.DusraContainer}>
             <div className={impcss.mainbox} id={impcss.third}>
               <div>
-                <img src={childlogo} alt="" />
+                <img src="./images/child1.jpg" alt="" />
               </div>
               <h2>5000+</h2>
               <div className={impcss.discr}>Masks were distributed.</div>
@@ -44,11 +41,11 @@ export default function Impact() {
 
             <div className={impcss.mainbox} id={impcss.fourth}>
               <div>
-                <img src={childlogo} alt="" />
+                <img src="./images/DSC_0159.JPG" alt="" />
               </div>
               <h2>2000+</h2>
               <div className={impcss.discr}>
-                Needy families got food kits.df
+                Needy families got food kits
               </div>
             </div>
           </div>
