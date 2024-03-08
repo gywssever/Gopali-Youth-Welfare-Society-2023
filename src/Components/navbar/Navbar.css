@@ -135,16 +135,17 @@ nav .logo img {
   }
 
   .nav-links {
+    border-top: solid white;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #13192180;
+    background-color: #f26a36;
     line-height: 30px;
     margin: -7px 0px;
     padding: 20px 10px;
     position: fixed;
-    top: 90px;
+    top: 97px;
     right: 0;
     width: 100%;
     min-height: 50vh;
@@ -217,6 +218,6 @@ nav .logo img {
   }
 
   .nav-links {
-    top: 69px;
+    top: 76px;
   }
 }

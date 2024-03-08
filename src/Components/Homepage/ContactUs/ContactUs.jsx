@@ -114,7 +114,7 @@ function ContactUs() {
 
           <div className="contact map ">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3691.0241240906203!2d87.30795617492898!3d22.3149273796761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1693781012625!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3691.0241240906203!2d87.27507156219414!3d22.283160926123873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1693781012625!5m2!1sen!2sin&markers=color:red%7Clabel:I%7C22.283160926123873,87.27507156219414"
               style={{ border: "0" }}
               title="map"
               allowFullScreen=""
