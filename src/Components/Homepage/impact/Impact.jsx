@@ -1,5 +1,6 @@
 import impcss from "./impact.module.css";
 import childlogo from "./images/child.jpg";
+import child from './images/DSC_0159.JPG'
 import mapimg from "./images/map.png";
 import HCard from "../../HeaderCard/HCard";
 export default function Impact() {
@@ -12,7 +13,7 @@ export default function Impact() {
           <div className={impcss.DusraContainer}>
             <div className={impcss.mainbox} id={impcss.first}>
               <div>
-                <img src={childlogo} alt="" />
+                <img src={child} alt="" />
               </div>
               <h2>500+</h2>
               <div className={impcss.discr}>
