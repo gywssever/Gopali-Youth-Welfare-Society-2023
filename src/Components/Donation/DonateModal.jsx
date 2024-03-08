@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
-const DonateModal = () => {
+const DonateModal = (props) => {
     const [showModal, setShowModal] = useState(false);
     const handleClose = () => setShowModal(false);
     const handleShow = () => setShowModal(true);
+
 
     return (
         <div className=''>
@@ -21,7 +22,7 @@ const DonateModal = () => {
                             </button>
                         </div>
                         <div className="p-3">
-                            Modal Content
+                            {props.children}
                         </div>
                     </div>
                 </div>

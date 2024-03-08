@@ -2,7 +2,12 @@ import React, { useEffect } from "react";
 import "./Donate.css";
 import { Link } from "react-router-dom";
 import TextCard from '../../Components/HeaderCard/HCard'
-import DonateModal from "./DonateModal";
+// import Modal from "../../Components/Donation/Modal";
+// import Each from "../../Components/Donation/Each_JVMCare";
+// import HostelConstruction from "../../Components/Donation/Hostel_Contruction";
+// import HostelSustainability from "../../Components/Donation/Hostel_Sustainability";
+// import LightDonate from "../../Components/Donation/lightdonate/LightDonate";
+// import DonateModal from "../../Components/Donation/DonateModal";
 
 const DonateLinks = [
   {
@@ -11,6 +16,7 @@ const DonateLinks = [
     discr:
       "Each ( Educate a Child ) Invite donors to Donate 6000/- per year for a child's education.",
     eventlink: "/donate/each",
+    modal: "each"
   },
   {
     name: "Hostel Construction",
@@ -18,6 +24,7 @@ const DonateLinks = [
     discr:
       "JVM School has hostel facility for students who come from remote areas. Hostel has 100 students capacity.",
     eventlink: "/donate/hostel_construction",
+    modal: "hostelConstruction"
   },
   {
     name: "Hostel Sustainability",
@@ -25,6 +32,7 @@ const DonateLinks = [
     discr:
       "JVM School has hostel facility for students who come from remote areas. Hostel has 100 students capacity.",
     eventlink: "/donate/hostel_sustainability",
+    modal: "hostelsustainability"
   },
   {
     name: "LiGHT",
@@ -32,11 +40,18 @@ const DonateLinks = [
     discr:
       "LiGHT is Expantion Intiative of GWYS to reach to PAN INDIA",
     eventlink: "/donate/LiGHT",
+    modal: "light"
   },
 ];
 
 const DonateCard = ({ name, imgPath, discr, eventlink }) => {
 
+
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // const modalHandler = () => {
+  //   setIsModalOpen(!isModalOpen);
+  // }
 
   return (
     <>
@@ -64,15 +79,18 @@ const DonateCard = ({ name, imgPath, discr, eventlink }) => {
 
 function Donate() {
 
+
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Donate | GYWS"
-
   }, [])
+
+
+
   return (
     <>
-      <div>
-        <DonateModal />
+      <div className="donate-page-container">
+        {/* <DonateModal /> */}
         <br />
         <TextCard head="Donate Now"></TextCard>
         <br />
@@ -83,8 +101,10 @@ function Donate() {
             imgPath={data.imgPath}
             discr={data.discr}
             eventlink={data.eventlink}
+            modal={data.modal}
           />
         ))}
+
       </div>
     </>
   );

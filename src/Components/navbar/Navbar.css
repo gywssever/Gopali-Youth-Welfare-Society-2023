@@ -135,17 +135,17 @@ nav .logo img {
   }
 
   .nav-links {
-    border-top: solid white;
+    border-top: solid rgba(255, 255, 255, 0.271);
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: #f26a36;
     line-height: 30px;
-    margin: -7px 0px;
+    /* margin: -7px 0px; */
     padding: 20px 10px;
     position: fixed;
-    top: 97px;
+    top: 90px;
     right: 0;
     width: 100%;
     min-height: 50vh;
@@ -200,7 +200,7 @@ nav .logo img {
 @media screen and (max-width: 767px) {
   nav {
     padding: 0 10px;
-    height: 69px;
+    height: 70px;
   }
 
   .nav_space {
@@ -212,12 +212,18 @@ nav .logo img {
     letter-spacing: 0px;
   }
 
+  .logoImg {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+
   .menu-toggle,
   .HiMenu {
     font-size: 20px;
   }
 
   .nav-links {
-    top: 76px;
+    top: 70px;
   }
 }

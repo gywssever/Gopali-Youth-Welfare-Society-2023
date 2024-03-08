@@ -1,12 +1,15 @@
 // Navbar.jsx
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import LOGO from "./Images/logo.png";
 import { List, XLg } from "react-bootstrap-icons";
 import "./Navbar.css";
+import BackToDonate from "../back/BackToDonate";
+
 
 function Navbar() {
+  const location = useLocation();
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -16,6 +19,7 @@ function Navbar() {
   const closeMenu = () => {
     setShowMenu(false);
   };
+
   const menuIcon = showMenu ? (
     <XLg className="HiMenu" onClick={toggleMenu} />
   ) : (
@@ -32,12 +36,19 @@ function Navbar() {
           <div>Gopali Youth Welfare Society</div>
         </Link>
 
-        <div
-          className={`menu-toggle ${showMenu ? "open" : ""}`}
-          onClick={toggleMenu}
-        >
-          {menuIcon}
-        </div>
+
+        {
+          (location.pathname === "/donate/each" || location.pathname === "/donate/hostel_construction" || location.pathname === "/donate/hostel_sustainability")
+            ?
+            <BackToDonate />
+            :
+            <div
+              className={`menu-toggle ${showMenu ? "open" : ""}`}
+              onClick={toggleMenu}
+            >
+              {menuIcon}
+            </div>
+        }
 
         <ul className={`nav-links ${showMenu ? "show" : ""}`}>
           <Link to="/" onClick={closeMenu}>
