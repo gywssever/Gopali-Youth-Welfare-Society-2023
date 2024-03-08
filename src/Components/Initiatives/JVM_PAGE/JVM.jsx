@@ -96,7 +96,8 @@ const EventCard = ({ name, imgPath }) => {
         <p>{name}</p>
       </div>
     </>
-  );
+  ); 
+  
 };
 
 const SurveyStatsCard = ({ number, info }) => {
