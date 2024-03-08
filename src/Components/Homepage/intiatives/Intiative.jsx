@@ -2,7 +2,7 @@ import inticss from "./intiative.module.css";
 import jvmlogo from "./images/JVM.jpg";
 import lightlogo from "./images/light a.jpg";
 import covidlogo from "./images/Covid 19 a.jpg";
-import HCard from "../../HeaderCard/HCard";
+import HCard from "../../../utils/HeaderCard/HCard";
 import { Link } from "react-router-dom";
 
 export default function intiative() {
@@ -56,11 +56,11 @@ export default function intiative() {
               "Door to door distribution of basic amenities to the rural
               households."
             </div>
-            <div className={inticss.discr}> 
-            <span id={inticss.number}>5000+ </span>
-            Masks were distributed</div>
             <div className={inticss.discr}>
-            <span id={inticss.number}>2000+ </span> 
+              <span id={inticss.number}>5000+ </span>
+              Masks were distributed</div>
+            <div className={inticss.discr}>
+              <span id={inticss.number}>2000+ </span>
               Needy families got food kits</div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function intiative() {
               motivated youth."
             </div>
             <div className={inticss.discr}>
-            <span id={inticss.number}>12+ </span> 
+              <span id={inticss.number}>12+ </span>
               Student run centers</div>
             <button
               style={{
