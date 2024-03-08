@@ -56,11 +56,11 @@ export default function intiative() {
               "Door to door distribution of basic amenities to the rural
               households."
             </div>
-            <div className={inticss.discr}> 
-            <span id={inticss.number}>5000+ </span>
-            Masks were distributed</div>
             <div className={inticss.discr}>
-            <span id={inticss.number}>2000+ </span> 
+              <span id={inticss.number}>5000+ </span>
+              Masks were distributed</div>
+            <div className={inticss.discr}>
+              <span id={inticss.number}>2000+ </span>
               Needy families got food kits</div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function intiative() {
               motivated youth."
             </div>
             <div className={inticss.discr}>
-            <span id={inticss.number}>12+ </span> 
+              <span id={inticss.number}>12+ </span>
               Student run centers</div>
             <button
               style={{

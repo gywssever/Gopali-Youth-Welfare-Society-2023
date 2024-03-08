@@ -1,11 +1,12 @@
 const carouselData = [
     {
-        legend: "IITians empowering youths for better tomorrow",
+        legend: "IITians empowering youth for better tomorrow",
         img: "/images/header_bg_1.jpg",
         alt: 'Students at Jagriti Vidya Mandir(JVM)',
     },
     {
-        legend: "IITians empowering youths for better tomorrow",
+        // legend: "Do something today that your future self will thank you for",
+        legend: "IITians empowering youth for better tomorrow",
         img: "/images/JVM2.jpg",
         alt: 'We with the students',
     },

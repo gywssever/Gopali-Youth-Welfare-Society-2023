@@ -4,7 +4,7 @@ import Slider from "../../Components/Homepage/slider/Slider";
 import GuestPage from "../../Components/Homepage/GuestPage/Guest";
 import Impact from "../../Components/Homepage/impact/Impact";
 import ContactUs from "../../Components/Homepage/ContactUs/ContactUs";
-import Carousel from "../../Components/Homepage/sponsor/Sponsor-slider"
+import Carousel from "../../Components/Homepage/sponsor/SponsorSlider"
 import TestiMonial from "../../Components/Homepage/Testimonial/Testimonial";
 import { useEffect } from "react";
 
@@ -24,8 +24,8 @@ function Home() {
         <Intiative />
         <Impact />
         <TestiMonial />
-        <GuestPage/>
-        <br />
+        <GuestPage />
+        {/* <br /> */}
         <Carousel />
         <ContactUs />
       </div>

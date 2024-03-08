@@ -3,6 +3,7 @@ import "./Donate.css";
 import { Link } from "react-router-dom";
 import TextCard from '../../Components/HeaderCard/HCard'
 import DonateModal from "./DonateModal";
+
 const DonateLinks = [
   {
     name: "Each ( Educate a Child )",
