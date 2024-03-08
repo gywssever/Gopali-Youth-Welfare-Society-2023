@@ -13,7 +13,7 @@ const settings = {
   responsive: [
     { breakpoint: 1024, settings: { slidesToShow: 4, } },
     { breakpoint: 768, settings: { slidesToShow: 3, }, },
-    { breakpoint: 500, settings: { slidesToShow: 1, }, },
+    { breakpoint: 500, settings: { slidesToShow: 2, }, },
   ],
 };
 
