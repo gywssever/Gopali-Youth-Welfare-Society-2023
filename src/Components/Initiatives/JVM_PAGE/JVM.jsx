@@ -234,6 +234,8 @@ export default function JVM() {
               return <SurveyStatsCard number={item.number} info={item.info} />;
             })}
           </div>
+
+          
         </div>
       </div>
     </>
