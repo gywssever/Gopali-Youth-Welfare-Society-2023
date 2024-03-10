@@ -70,11 +70,21 @@ nav .logo img {
   text-transform: uppercase;
   transition: all 0.2s ease-in;
   letter-spacing: 0.4px;
+  
 }
 
-.nav-links a {
+.nav-links a{
   text-decoration: none;
   color: white;
+
+}
+.nav-links> a {
+  text-decoration: none;
+  color: white;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links li:hover {
@@ -227,4 +237,8 @@ nav .logo img {
   .nav-links {
     top: 70px;
   }
+}
+
+.active{
+  border-bottom: 4px solid #fed136;
 }
