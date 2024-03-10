@@ -115,3 +115,7 @@
     width: 100%;
   }
 }
+
+b{
+  font-weight: 500 !important;
+}
