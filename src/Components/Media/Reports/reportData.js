@@ -86,7 +86,19 @@ const reportData = [
             {
                 interval: "JAN-MAR 2023",
                 link: "/assets/pdf/Quaterly_reports/JANUARY - MARCH 2023 Quarterly Report.pdf"
-            }
+            },
+            {
+                interval: "APR-JUN 2023",
+                link: "/assets/pdf/Quaterly_reports/APRIL - JUNE 2023 Quarterly Report.pdf"
+            },
+            {
+                interval: "JUL-SEP 2023",
+                link: "/assets/pdf/Quaterly_reports/JULY-SEPT 2023 Quarterly Report.pdf"
+            },
+            {
+                interval: "OCT-DEC 2023",
+                link: "/assets/pdf/Quaterly_reports/OCT-DEC 2023 Quarterly Report.pdf"
+            },
         ]
     }
 ];
