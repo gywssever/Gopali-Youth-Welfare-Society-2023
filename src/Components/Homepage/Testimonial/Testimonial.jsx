@@ -36,13 +36,7 @@ export default function TestiMonial() {
 
     responsive: [
       {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 500,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 1,
         },
