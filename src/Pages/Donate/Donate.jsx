@@ -8,7 +8,7 @@ import TextCard from '../../Components/HeaderCard/HCard'
 // import HostelSustainability from "../../Components/Donation/Hostel_Sustainability";
 // import LightDonate from "../../Components/Donation/lightdonate/LightDonate";
 // import DonateModal from "../../Components/Donation/DonateModal";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const DonateLinks = [
   {
@@ -59,7 +59,7 @@ const DonateCard = ({ name, imgPath, discr, eventlink }) => {
       <div className="blog-item">
         <Link to={eventlink}>
           <div className="icon">
-            <LazyLoadImage src={imgPath} alt="" />
+            <img src={imgPath} alt="" />
           </div>
           <div className="content">
             <div className="title">{name}</div>

@@ -1,14 +1,14 @@
 import cssfile from'./missionvision.module.css';
 import missionlogo from './images/mission.png';
 import visionlogo from './images/vision.png';
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 export default function missionvision() {
     return (
         <>
             <div className={cssfile.container}>
                 <div className={cssfile.box1} id={cssfile.missionlogo}>
-                    <LazyLoadImage src={missionlogo} alt="" />
+                    <img src={missionlogo} alt="" />
                 </div>
                 <div className={cssfile.box2}>
                     <h2 style={{color: '#F16A36', fontSize: '2rem'}}>Mission </h2>
@@ -26,7 +26,7 @@ export default function missionvision() {
                     </div>
                 </div>
                 <div className={cssfile.box4} id={cssfile.visionlogo}>
-                    <LazyLoadImage src={visionlogo} alt="" />
+                    <img src={visionlogo} alt="" />
                 </div>
             </div >
         </>

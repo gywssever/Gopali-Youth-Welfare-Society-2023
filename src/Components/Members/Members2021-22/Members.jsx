@@ -7,7 +7,7 @@ import Light from "./JVM/light/light.jsx";
 import "../Members.css";
 import GB from "./GB/GB.jsx";
 import Prayas from "./JVM/prayas/prayas.jsx";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function Members() {
   document.title = "Members | GYWS";
@@ -71,7 +71,7 @@ function Members() {
       <div className="wrapper">
         <div ref={menuRef}>
           <div className="hamburger" onClick={toggleSidebar}>
-            <LazyLoadImage src={logo} alt="" width={"35px"} />
+            <img src={logo} alt="" width={"35px"} />
           </div>
 
           <div className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>

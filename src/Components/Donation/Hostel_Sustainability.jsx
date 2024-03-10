@@ -1,5 +1,5 @@
 import React, { useEffect }  from 'react';
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function HostelSustainability() {
   document.title = "Donate Now | GYWS";
@@ -33,7 +33,7 @@ function HostelSustainability() {
             <div id="ngoContentContainer" ingoid="640" odisplay="product" oLayout="LIST"
               iproductid="6672,6673" icustombuttonimage="no">
               <center>
-                <LazyLoadImage alt="please wait..." src="https://danamojo.org/dm/css/images/loading.gif" />
+                <img alt="please wait..." src="https://danamojo.org/dm/css/images/loading.gif" />
               </center>
             </div>
           </div>

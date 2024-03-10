@@ -4,7 +4,7 @@ import lightlogo from "./images/light a.jpg";
 import covidlogo from "./images/Covid 19 a.jpg";
 import HCard from "../../HeaderCard/HCard";
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 export default function intiative() {
   return (
@@ -17,7 +17,7 @@ export default function intiative() {
           </div>
           <div className={inticss.mainbox} id={inticss.first}>
             <div id={inticss.image}>
-              <LazyLoadImage src={jvmlogo} alt="" />
+              <img src={jvmlogo} alt="" />
             </div>
             <div className={inticss.discr}>
               {" "}
@@ -51,7 +51,7 @@ export default function intiative() {
           </div>
           <div className={inticss.mainbox} id={inticss.third}>
             <div id={inticss.image}>
-              <LazyLoadImage src={covidlogo} alt="" />
+              <img src={covidlogo} alt="" />
             </div>
             <div className={inticss.discr}>
               "Door to door distribution of basic amenities to the rural
@@ -71,7 +71,7 @@ export default function intiative() {
           </div>
           <div className={inticss.mainbox} id={inticss.middle}>
             <div id={inticss.image}>
-              <LazyLoadImage src={lightlogo} alt="" />
+              <img src={lightlogo} alt="" />
             </div>
             <div className={inticss.discr}>
               "Expansion Initiative - forming a PAN India network of socially

@@ -1,13 +1,13 @@
 import "./card.css";
 // import { Linkedin, Facebook, EnvelopeFill } from 'react-bootstrap-icons'
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function card(props) {
   return (
     <>
       <div className="members_card">
         <div className="members_card_image">
-          <LazyLoadImage src={props.imageUrl} alt="member" srcset="" />
+          <img src={props.imageUrl} alt="member" srcset="" />
         </div>
         <div className="members_card_info">
           <h3 className="members_name">{props.name}</h3>

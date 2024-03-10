@@ -3,7 +3,7 @@ import bgImg from "./bgImg.jpg";
 import LiGHTImg from "./LiGHT-img.png";
 import { useEffect } from "react";
 import HCard from "../../HeaderCard/HCard";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const jvmData = [
   {
@@ -81,7 +81,7 @@ const JVMCard = ({ imgPath, content }) => {
   return (
     <>
       <div className="jvm-section-content-card">
-        <LazyLoadImage src={imgPath} alt="not found" />
+        <img src={imgPath} alt="not found" />
         <p>{content}</p>
       </div>
     </>
@@ -93,7 +93,7 @@ const EventCard = ({ name, imgPath }) => {
     <>
       <div className="event-gallery-card">
         <div className="event-gallery-card-img">
-          <LazyLoadImage src={imgPath} alt="Event Img" />
+          <img src={imgPath} alt="Event Img" />
         </div>
         <p>{name}</p>
       </div>
@@ -128,7 +128,7 @@ export default function JVM() {
       <div className="jvm-container">
         <div className="jvm-header">
           <div className="bgImg">
-            <LazyLoadImage src={bgImg} alt="" />
+            <img src={bgImg} alt="" />
           </div>
           <div className="jvm-header-content">
             <h2> Jagriti Vidya Mandir</h2>
@@ -185,7 +185,7 @@ export default function JVM() {
             </div>
 
             <div className="lecture-img">
-              <LazyLoadImage src={LiGHTImg} alt="#" />
+              <img src={LiGHTImg} alt="#" />
             </div>
           </div>
         </div>
@@ -197,7 +197,7 @@ export default function JVM() {
 
           <div className="lecture-container">
             <div className="lecture-img">
-              <LazyLoadImage src="./images/futureplan.png" alt="#" />
+              <img src="./images/futureplan.png" alt="#" />
             </div>
 
             <div className="lecture-content">
