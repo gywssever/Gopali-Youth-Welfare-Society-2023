@@ -2,7 +2,12 @@ import React, { useEffect } from "react";
 import "./Donate.css";
 import { Link } from "react-router-dom";
 import TextCard from '../../Components/HeaderCard/HCard'
-
+// import Modal from "../../Components/Donation/Modal";
+// import Each from "../../Components/Donation/Each_JVMCare";
+// import HostelConstruction from "../../Components/Donation/Hostel_Contruction";
+// import HostelSustainability from "../../Components/Donation/Hostel_Sustainability";
+// import LightDonate from "../../Components/Donation/lightdonate/LightDonate";
+// import DonateModal from "../../Components/Donation/DonateModal";
 
 const DonateLinks = [
   {
