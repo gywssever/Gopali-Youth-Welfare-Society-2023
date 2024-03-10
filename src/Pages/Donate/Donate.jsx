@@ -9,7 +9,6 @@ import TextCard from '../../Components/HeaderCard/HCard'
 // import LightDonate from "../../Components/Donation/lightdonate/LightDonate";
 // import DonateModal from "../../Components/Donation/DonateModal";
 
-
 const DonateLinks = [
   {
     name: "Each ( Educate a Child )",
