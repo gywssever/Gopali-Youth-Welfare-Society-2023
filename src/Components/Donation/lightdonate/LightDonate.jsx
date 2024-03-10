@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './LightDonate.css';
 import lightDonateData from './lightDonateData';
 import RazorpayButton from './RazorpayButton';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function LightDonate() {
 
@@ -36,7 +37,7 @@ export default function LightDonate() {
                         There are many among us who are born with some disabilities and we LiGHT GWALIOR THATIPUR is trying to make those faces happy. We are planning to provide sports kit and organise our flagship event KHELE EHSAAS. By conducting a 'Sport's day' in the campus of Gwalior's only disability school EHSAAS for these special kids.So let's donate with all our hearts and come together in our initiative. Be the part of a CHANGE with us.
                     </div>
                     <div className="text-center pay-btn">
-                        <a href='https://gopali-youth-welfare-society.danamojo.org/dm/khel-ehsas-7108?utm_source=danamojo&utm_medium=share&utm_campaign=dmMicroSite' target='_blank'  rel="noreferrer"><img src="/images/donate.png" width={174} alt="" /></a>
+                        <a href='https://gopali-youth-welfare-society.danamojo.org/dm/khel-ehsas-7108?utm_source=danamojo&utm_medium=share&utm_campaign=dmMicroSite' target='_blank'  rel="noreferrer"><LazyLoadImage src="/images/donate.png" width={174} alt="" /></a>
                     </div>
                 </div>
             </div>

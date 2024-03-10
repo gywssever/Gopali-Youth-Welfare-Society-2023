@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function EachJVM() {
   document.title = "Donate Now | GYWS";
@@ -39,7 +40,7 @@ function EachJVM() {
               icustombuttonimage="no"
             >
               <center>
-                <img
+                <LazyLoadImage
                   alt="please wait..."
                   src="https://danamojo.org/dm/css/images/loading.gif"
                 />

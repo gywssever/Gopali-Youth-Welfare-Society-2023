@@ -1,5 +1,7 @@
 import './HowWeStarted.css';
 import HCard from '../../HeaderCard/HCard';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const HowWeStarted = () => {
   return (
     <div className="how-we-started-container">
@@ -16,7 +18,7 @@ const HowWeStarted = () => {
           </div>
         </div>
         <div className="how-we-started-img">
-          <img src="./images/childimage.jpeg" alt="Child" />
+          <LazyLoadImage src="./images/childimage.jpeg" alt="Child" />
         </div>
       </div>
     </div>

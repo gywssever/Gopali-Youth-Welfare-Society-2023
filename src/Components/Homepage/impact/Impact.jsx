@@ -1,5 +1,6 @@
 import impcss from "./impact.module.css";
 import HCard from "../../HeaderCard/HCard";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Impact() {
   return (
     <div>
@@ -10,7 +11,7 @@ export default function Impact() {
           <div className={impcss.DusraContainer}>
             <div className={impcss.mainbox} id={impcss.first}>
               <div>
-                <img src="./images/child.jpg" alt="" />
+                <LazyLoadImage src="./images/child.jpg" alt="" />
               </div>
               <h2>500+</h2>
               <div className={impcss.discr}>
@@ -21,7 +22,7 @@ export default function Impact() {
 
             <div className={impcss.mainbox} id={impcss.second}>
               <div>
-                <img src="./images/map.png" alt="" />
+                <LazyLoadImage src="./images/map.png" alt="" />
               </div>
               <h2>16</h2>
               <div className={impcss.discr}>
@@ -33,7 +34,7 @@ export default function Impact() {
           <div className={impcss.DusraContainer}>
             <div className={impcss.mainbox} id={impcss.third}>
               <div>
-                <img src="./images/child1.jpg" alt="" />
+                <LazyLoadImage src="./images/child1.jpg" alt="" />
               </div>
               <h2>5000+</h2>
               <div className={impcss.discr}>Masks were distributed.</div>
@@ -41,7 +42,7 @@ export default function Impact() {
 
             <div className={impcss.mainbox} id={impcss.fourth}>
               <div>
-                <img src="./images/DSC_0159.JPG" alt="" />
+                <LazyLoadImage src="./images/DSC_0159.JPG" alt="" />
               </div>
               <h2>2000+</h2>
               <div className={impcss.discr}>

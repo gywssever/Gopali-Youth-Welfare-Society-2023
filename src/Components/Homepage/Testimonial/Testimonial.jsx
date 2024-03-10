@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonial.css";
 import HCard from "../../HeaderCard/HCard";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function ArrowTest(props) {
   const { className, style, onClick } = props;
@@ -109,7 +110,7 @@ function TestiMonial() {
     return (
       <div className="TestiMonial-card">
         <div className="TestiMonial-card-image">
-          <img src={img} alt="#" />
+          <LazyLoadImage src={img} alt="#" />
         </div>
 
         <div className="TestiMonial-card-content">

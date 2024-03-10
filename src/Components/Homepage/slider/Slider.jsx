@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import carouselData from "./carouselData";
 import Typewriter from './Typewriter';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Slider() {
 
@@ -28,7 +29,7 @@ function Slider() {
               return (
                 <div key={index} className='home-carousel-item'>
                   <div className="home-carousel-item-image">
-                    <img src={item.img} alt={item.alt} className='carousel_image' />
+                    <LazyLoadImage src={item.img} alt={item.alt} className='carousel_image' />
                     <div className='message'>
                       <div>
                         <Typewriter text={item.legend.toUpperCase()} delay={100} />

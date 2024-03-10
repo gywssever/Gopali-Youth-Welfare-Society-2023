@@ -27,7 +27,7 @@ function Slider() {
               return (
                 <div key={index} className='home-carousel-item'>
                   <div className="home-carousel-item-image">
-                    <img src={item.img} alt={item.alt} className='carousel_image' />
+                    <LazyLoadImage src={item.img} alt={item.alt} className='carousel_image' />
                   </div>
                   {/* <p className="legend hide_slider">{item.legend}</p> */}
                 </div>

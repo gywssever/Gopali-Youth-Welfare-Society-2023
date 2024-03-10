@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function HostelConstruction() {
   document.title = "Donate Now | GYWS";
@@ -44,7 +45,7 @@ function HostelConstruction() {
               icustombuttonimage="no"
             >
               <center>
-                <img
+                <LazyLoadImage
                   alt="please wait..."
                   src="https://danamojo.org/dm/css/images/loading.gif"
                 />

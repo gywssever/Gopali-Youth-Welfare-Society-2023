@@ -1,4 +1,5 @@
 // Navbar.jsx
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -27,7 +28,7 @@ function Navbar() {
       <nav>
         <Link to="/" onClick={closeMenu} className="logo">
           <div className="logoImg" >
-            <img src={LOGO} alt="GYWS_Logo" />
+            <LazyLoadImage src={LOGO} alt="GYWS_Logo" />
           </div>
           <div>Gopali Youth Welfare Society</div>
         </Link>

@@ -1,6 +1,8 @@
 import './footer.css';
 import logo from '../navbar/Images/logo.png';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import {
   Facebook,
   Instagram,
@@ -23,7 +25,7 @@ function Footer() {
           <div className="footer_container1">
             <div className="footer_sec footer_aboutus">
               <div className='footer_logo'>
-                <img src={logo} alt="" />
+                <LazyLoadImage src={logo} alt="" />
                 <h2 style={{fontSize: '2rem'}}>GYWS</h2>
               </div>
               <p>Gopali Youth Welfare Society is a registered voluntary non-governmental organisation run by IIT Kharagpur students along with some faculty members with the support of local members from Gopali.

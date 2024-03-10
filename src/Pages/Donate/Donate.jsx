@@ -3,6 +3,7 @@ import "./Donate.css";
 import { Link } from "react-router-dom";
 import TextCard from '../../Components/HeaderCard/HCard'
 import DonateModal from "./DonateModal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const DonateLinks = [
   {
@@ -43,7 +44,7 @@ const DonateCard = ({ name, imgPath, discr, eventlink }) => {
       <div className="blog-item">
         <Link to={eventlink}>
           <div className="icon">
-            <img src={imgPath} alt="" />
+            <LazyLoadImage src={imgPath} alt="" />
           </div>
           <div className="content">
             <div className="title">{name}</div>

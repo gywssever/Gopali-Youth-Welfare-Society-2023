@@ -1,6 +1,7 @@
 import React from "react";
 import "./guest.css";
 import guestPhoto from "./image/SDO_AzmalHossain.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Guest() {
 
@@ -23,7 +24,7 @@ export default function Guest() {
 
         <div className="imageGuest">
           <div className="image">
-            <img src={guestPhoto} alt="" />
+            <LazyLoadImage src={guestPhoto} alt="" />
           </div>
         </div>
       </div>

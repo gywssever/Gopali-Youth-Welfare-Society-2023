@@ -1,4 +1,6 @@
 import './Foundersmsg.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import {
   Facebook,
   Linkedin,
@@ -15,7 +17,7 @@ export default function Foundersmsg() {
       <div className="msg-container-about">
         <div className="msg-container-about-card">
           <div className="founder-image">
-            <img src="./images/founder.jpg" alt="Founder" className='founderimg' />
+            <LazyLoadImage src="./images/founder.jpg" alt="Founder" className='founderimg' />
           </div>
           <div className="founder-about">
             <h2>Mr. Mrinal Kanti Bhanja</h2>
