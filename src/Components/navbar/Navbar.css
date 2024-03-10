@@ -164,6 +164,7 @@ nav .logo img {
   .nav-links.show {
     transform: translateX(0);
     opacity: 1;
+    height: calc(100vh - 70px);
   }
 
   .menu-toggle {
