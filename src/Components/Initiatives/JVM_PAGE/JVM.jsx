@@ -45,35 +45,35 @@ const eventsData = [
 const surveyData = [
   {
     number: 25,
-    info: "Teacher training sessions conducted",
+    info: "Teacher training sessions Conducted",
   },
   {
     number: 410,
-    info: "students",
+    info: "Students",
   },
   {
     number: 10,
-    info: "students rescued from child labour",
+    info: "Students Rescued from child Labour",
   },
   {
     number: 100,
-    info: "People attend the computer workshop",
+    info: "People attend the Computer Workshop",
   },
   {
     number: 25,
-    info: "cycles donated",
+    info: "Cycles Donated",
   },
   {
     number: 110,
-    info: "women attended the tailoring workshop",
+    info: "Women Attended the Tailoring workshop",
   },
   {
     number: 1000,
-    info: "potential blood donors database",
+    info: "Potential Blood Donors Database",
   },
   {
     number: 11,
-    info: "centers",
+    info: "Centers",
   },
 ];
 
@@ -98,7 +98,8 @@ const EventCard = ({ name, imgPath }) => {
         <p>{name}</p>
       </div>
     </>
-  );
+  ); 
+
 };
 
 const SurveyStatsCard = ({ number, info }) => {
@@ -235,6 +236,8 @@ export default function JVM() {
               return <SurveyStatsCard number={item.number} info={item.info} />;
             })}
           </div>
+
+          
         </div>
       </div>
     </>

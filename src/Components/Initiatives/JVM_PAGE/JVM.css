@@ -135,7 +135,7 @@
     justify-content: space-evenly;
     align-items: center;
 
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 1rem;
     border-radius: 1rem;
     /* background-color: #131921; */
@@ -154,6 +154,9 @@
 .lecture-img img {
     height: 100%;
     max-height: 250px;
+    background-color: white;
+    padding: 5px;
+    border-radius:10px;
 }
 
 .lecture-content {
@@ -180,11 +183,14 @@
     .lecture-img {
         width: 100%;
         height: 100%;
+        background-color: white;
+      
     }
 
     .lecture-img img {
         height: 100%;
         max-height: 200px;
+        background-color: white;
     }
 
     .lecture-content {
@@ -198,7 +204,7 @@
 
 .LiGHT {
     width: 100%;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -213,7 +219,7 @@
         align-items: center;
         text-align: center;
         justify-content: center; */
-         margin: 3px;
+         margin: 2.5px;
 
       
         
@@ -224,7 +230,7 @@
 
   @media screen and (max-width:870px) {
     .LiGHT-button{
-      margin-bottom: 5px;
+      margin-bottom: 4px;
 
       
      }
@@ -235,11 +241,11 @@
 .LiGHT-button a {
     border: none;
     color: white;
-    padding: 12px 25px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 8px;
     margin: 8px 6px;
     cursor: pointer;
     background-color: #000000bb;
@@ -314,6 +320,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
+    color: #131921;
 }
 
 
