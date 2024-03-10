@@ -15,7 +15,7 @@ function Home() {
     window.scrollTo(0, 0);
     document.title = "Home | GYWS";
 
-  }, []) 
+  }, [])
 
   return (
     <>
@@ -25,8 +25,8 @@ function Home() {
         <Intiative />
         <Impact />
         <TestiMonial />
+        <FeedIndia />
         <GuestPage />
-        <FeedIndia/>
 
         {/* <br /> */}
         <Carousel />

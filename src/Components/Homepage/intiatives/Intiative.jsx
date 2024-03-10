@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function intiative() {
   return (
-    <>
+    <div className={inticss.outerContainer}>
       <HCard head={"OUR INTIATIVES"}></HCard>
       <div className={inticss.container}>
         <div className={inticss.box}>
@@ -99,6 +99,6 @@ export default function intiative() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

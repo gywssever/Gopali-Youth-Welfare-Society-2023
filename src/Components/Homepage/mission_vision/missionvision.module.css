@@ -3,7 +3,7 @@
     /* border: solid red; */
     grid-template-columns: 50% 50%;
     max-width: 1200px;
-    min-height: 60vh;
+    min-height: 70vh;
     margin: auto;
     /* height: 80vh; */
     margin: 2rem auto;
@@ -41,7 +41,7 @@
 }
 
 .box3 .heading {
-    color: #286181;
+    color: #05A1C7;
 }
 
 .box2 h2,
@@ -58,16 +58,20 @@
     border-radius: 1rem;
     color: #fff;
     font-weight: 500;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+
     transition: all 0.15s ease-out;
 }
 
 #vision {
 
     padding: 1.4rem;
-    background-color: #286181;
+    background-color: #05A1C7;
     border-radius: 1rem;
     color: #fff;
     font-weight: 500;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+
     transition: all 0.15s ease-in-out;
 }
 
