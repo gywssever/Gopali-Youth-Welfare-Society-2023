@@ -229,7 +229,11 @@
 
 @media screen and (max-width: 768px) {
     .contactUs .box {
-        
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:"form"
+        "info"
+        "map"
     }
 
     .contact.form {
@@ -240,7 +244,7 @@
         display: none;
     }
 
-    .contact.map {
+    /* .contact.map {
         display: none;
-    }
+    } */
 }
