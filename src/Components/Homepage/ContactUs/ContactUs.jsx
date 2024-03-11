@@ -26,7 +26,7 @@ function ContactUs() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8000/api/contactUs",
+      const response = await fetch("http://localhost:5000/api/contactUs",
         {
           method: "POST",
           headers: {
@@ -36,9 +36,13 @@ function ContactUs() {
         }
       );
 
-      // const data = await response.json();
+      const data = await response.json();
 
-      console.log(response);
+      if (data.success === true) {
+        console.log(data.message);
+      } else {  
+        console.log(data.message);
+      }
 
     } catch (error) {
       console.log(error);
