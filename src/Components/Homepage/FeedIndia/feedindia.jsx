@@ -22,6 +22,7 @@ export default function Guest() {
           <img src={feedindiaimage} alt="#" />
         </div>
       </div>
+      </div>
     </>
   );
 }

@@ -14,7 +14,7 @@
     width: 100%;
     padding: 2rem 1rem;
     background-color: #fff;
-    text-align: justify;
+    /* text-align: justify; */
     position: relative;
 }
 
@@ -31,6 +31,11 @@
     margin: 0 auto;
     max-width: 900px;
 }
+@media (max-width:500px){
+    .light-donate-card-title{
+        font-size: 1.4rem;
+        font-weight: 500;  }
+}
 
 
 
@@ -44,8 +49,8 @@
 
 @media (max-width:500px) {
     .light-donate-card-centre {
-        font-size: 1.8rem;
-        font-weight: 500;
+        font-size: 1.4rem;
+        font-weight: 550;
         margin: 0 auto;
         max-width: 700px;
     }
