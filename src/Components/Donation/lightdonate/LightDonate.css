@@ -14,9 +14,11 @@
     width: 100%;
     padding: 2rem 1rem;
     background-color: #fff;
-    /* text-align: justify; */
+    text-align: justify;
     position: relative;
 }
+
+
 
 .pay-btn {
     margin-top: 15px;
