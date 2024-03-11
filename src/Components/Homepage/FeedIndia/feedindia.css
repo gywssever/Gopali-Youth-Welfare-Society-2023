@@ -1,28 +1,48 @@
-.guestPage {
-    display: grid;
-    grid-template-columns: 50% 50%;
+.feedindiapage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
     margin: 10px auto;
     text-align: justify;
-    margin-top: 5rem;
-    place-items: center;
+    flex-direction: row-reverse;
 }
 
-.descriptionGuest {
-    padding-top: 50px;
+.infofeed {
+    padding: 1rem;
+    margin: 10px;
+    width: 100%;
+    
 }
 
-.nameGuest {
-    color: red;
+.infofeed h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #202020;
 }
 
-.image img {
-    width: 30vw;
-    border-radius: 2vmax;
+.descriptionfeed {
+    padding-top: 1rem;
+    color: #202020;
+}
+
+.namefeed {
+    color: #695E91;
+}
+
+.feed-image {
+    max-width: 450px;
+    margin: 1rem;
+}
+
+.feed-image img {
+    width: 100%;
+    border-radius: 2rem;
     text-align: center;
-    margin-left: 10px;
-    border-left: 10px solid blue;
-    border-bottom: 10px solid blue;
+    border-left: 10px solid #695E91;
+    border-bottom: 10px solid #695E91;
+    border-top: 2px solid #695E91;
+    border-right: 2px solid #695E91;
     align-items: center;
 }
 
@@ -33,13 +53,12 @@
 }
 
 @media (max-width:980px) {
-    .guestPage {
+    .feedindiapage {
         display: flex;
         flex-direction: column;
-      
     }
 
-    .image  img {
+    .image img {
         width: 95%;
         border-radius: 2vmax;
         padding-top: 10px;
@@ -48,15 +67,16 @@
         justify-content: space-evenly;
     }
 }
-@media (max-width:1200px){
-    .guestPage {
-                padding: 10px;
-                margin: 5px; 
+
+@media (max-width:1200px) {
+    .feedindiapage {
+        padding: 10px;
+        margin: 5px;
     }
 }
 
 @media (max-width:500px) {
-    .guestPage {
+    .feedindiapage {
         padding: 0px;
         flex-direction: column-reverse;
     }
@@ -70,7 +90,7 @@
         justify-content: space-evenly;
     }
 
-    .infoGuest {
-        margin: 10px;
+    .infofeed {
+        padding: 10px;
     }
 }

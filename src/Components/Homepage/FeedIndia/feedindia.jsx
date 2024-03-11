@@ -1,5 +1,5 @@
 import React from "react";
-// import "./feedindia.css";
+import "./feedindia.css";
 import feedindiaimage from "./image/FeedIndia.jpg";
 
 
@@ -7,21 +7,23 @@ export default function Guest() {
 
   return (
     <>
-      <div className="guestPage">
-        <div className="infoGuest">
-          <h2 className="titleGuest">
+      <div className="feedindiapage">
+        <div className="infofeed">
+          <h2 className="titlefeed">
             Gratitude to
-            <span className="nameGuest"> Feeding India by Zomato: </span>
+            <span className="namefeed"> Feeding India by Zomato: </span>
             Nourishing Children's Futures
           </h2>
-          <div className="descriptionGuest">
-            We extend our deepest thanks to FeedIndia by Zomato for their invaluable support in providing food to children through Gyws, a student-led NGO from IIT Kharagpur. Your generosity nourishes young minds and fuels their dreams. Together, we're making a difference! #FeedIndia #Zomato #Gyws #ThankYou
-          </div>
+          <div className="descriptionfeed">
+          We extend our deepest thanks to FeedIndia by Zomato for their invaluable support in providing food to children through Gyws, a student-led NGO from IIT Kharagpur. Your generosity nourishes young minds and fuels their dreams. Together, we're making a difference.
+        
         </div>
-        <div className="guest-image">
+        </div>
+        <div className="feed-image">
           <img src={feedindiaimage} alt="#" />
         </div>
       </div>
+      
     </>
   );
 }

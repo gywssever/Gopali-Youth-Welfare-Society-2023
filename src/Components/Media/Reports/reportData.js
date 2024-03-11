@@ -72,18 +72,6 @@ const reportData = [
         summary: "Statement of expenses and donations received for Quarterly Finance Reports",
         button: [
             {
-                interval: "APR-JUN 2022",
-                link: "/assets/pdf/Quaterly_reports/Quaterly Report APR-JUNE-22.pdf"
-            },
-            {
-                interval: "JUL-SEP 2022",
-                link: "/assets/pdf/Quaterly_reports/Quaterly Report JUL-SEP-22.pdf"
-            },
-            {
-                interval: "OCT-DEC 2022",
-                link: "/assets/pdf/Quaterly_reports/Oct - Dec 2022 Quaterly Report.pdf"
-            },
-            {
                 interval: "JAN-MAR 2023",
                 link: "/assets/pdf/Quaterly_reports/JANUARY - MARCH 2023 Quarterly Report.pdf"
             },
