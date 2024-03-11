@@ -26,7 +26,7 @@ function ContactUs() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/contactUs",
+      const response = await fetch("https://gyws-backend.onrender.com/api/contactUs",
         {
           method: "POST",
           headers: {
