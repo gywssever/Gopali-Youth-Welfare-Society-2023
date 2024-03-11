@@ -79,10 +79,9 @@ nav .logo img {
   color: white;
 
 }
-.nav-links> a {
+.nav-links a {
   text-decoration: none;
   color: white;
-  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,5 +240,5 @@ nav .logo img {
 }
 
 .active{
-  border-bottom: 4px solid #fed136;
+  border-bottom: 3px solid #fed136;
 }
