@@ -42,7 +42,7 @@
     grid-template-areas: "form info" "form map";
     grid-gap: 20px;
     margin-top: 20px;
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -230,9 +230,9 @@
     .contactUs .box {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas:"form"
-        "info"
-        "map"
+        grid-template-areas: "form"
+            "info"
+            "map"
     }
 
     .contact.form {
