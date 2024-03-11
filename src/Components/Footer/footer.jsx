@@ -81,6 +81,11 @@ function Footer() {
                     Members
                   </Link> <hr />
                 </li>
+                <li>
+                  <Link to="/donate" onClick={scrollToTop}>
+                    Donate
+                  </Link> <hr />
+                </li>
               </ul>
             </div>
 

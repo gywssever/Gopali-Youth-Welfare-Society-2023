@@ -1,13 +1,12 @@
 // Navbar.jsx
 
-
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import LOGO from "./Images/logo.png";
 import { List, XLg } from "react-bootstrap-icons";
 import "./Navbar.css";
 import BackToDonate from "../back/BackToDonate";
-
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const location = useLocation();
@@ -31,47 +30,74 @@ function Navbar() {
     <>
       <nav>
         <Link to="/" onClick={closeMenu} className="logo">
-          <div className="logoImg" >
+          <div className="logoImg">
             <img src={LOGO} alt="GYWS_Logo" />
           </div>
           <div>Gopali Youth Welfare Society</div>
         </Link>
 
-
-        {
-          (location.pathname === "/donate/each" || location.pathname === "/donate/hostel_construction" || location.pathname === "/donate/hostel_sustainability")
-            ?
-            <BackToDonate />
-            :
-            <div
-              className={`menu-toggle ${showMenu ? "open" : ""}`}
-              onClick={toggleMenu}
-            >
-              {menuIcon}
-            </div>
-        }
+        {location.pathname === "/donate/each" ||
+        location.pathname === "/donate/hostel_construction" ||
+        location.pathname === "/donate/hostel_sustainability" ? (
+          <BackToDonate />
+        ) : (
+          <div
+            className={`menu-toggle ${showMenu ? "open" : ""}`}
+            onClick={toggleMenu}
+          >
+            {menuIcon}
+          </div>
+        )}
 
         <ul className={`nav-links ${showMenu ? "show" : ""}`}>
-          <Link to="/" onClick={closeMenu}>
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+            onClick={closeMenu}
+          >
             <li>Home</li>
-          </Link>
-          <Link to="/about" onClick={closeMenu}>
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+            onClick={closeMenu}
+          >
             <li>About Us</li>
-          </Link>
-          <Link to="/jvm" onClick={closeMenu}>
+          </NavLink>
+          <NavLink
+            to="/jvm"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+            onClick={closeMenu}
+          >
             <li>Initiatives</li>
-          </Link>
-          <Link to="/media" onClick={closeMenu}>
+          </NavLink>
+          <NavLink
+            to="/media"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+            onClick={closeMenu}
+          >
             <li>Media</li>
-          </Link>
-          <Link to="/member" onClick={closeMenu}>
+          </NavLink>
+          <NavLink
+            to="/member"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+            onClick={closeMenu}
+          >
             <li>Members</li>
-          </Link>
-          <li>
-            <Link to="/donate" id="donatebtn" onClick={closeMenu}>
-              Donate
-            </Link>
-          </li>
+          </NavLink>
+          <NavLink to="/donate" id="donatebtn" onClick={closeMenu}>
+            <li>Donate</li>
+          </NavLink>
         </ul>
       </nav>
     </>

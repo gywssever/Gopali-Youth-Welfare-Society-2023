@@ -25,8 +25,8 @@ function Home() {
         <Intiative />
         <Impact />
         <TestiMonial />
+        <FeedIndia />
         <GuestPage />
-        <FeedIndia/>
 
         {/* <br /> */}
         <Carousel />

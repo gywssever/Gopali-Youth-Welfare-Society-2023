@@ -12,6 +12,7 @@ nav {
   left: 0;
   right: 0;
   padding: 0 20px;
+  box-shadow: 0px 0px 10px 0px #0000004f;
 }
 
 nav>a {
@@ -70,11 +71,20 @@ nav .logo img {
   text-transform: uppercase;
   transition: all 0.2s ease-in;
   letter-spacing: 0.4px;
+  
 }
 
+.nav-links a{
+  text-decoration: none;
+  color: white;
+
+}
 .nav-links a {
   text-decoration: none;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links li:hover {
@@ -164,6 +174,7 @@ nav .logo img {
   .nav-links.show {
     transform: translateX(0);
     opacity: 1;
+    height: calc(93vh - 70px);
   }
 
   .menu-toggle {
@@ -226,4 +237,8 @@ nav .logo img {
   .nav-links {
     top: 70px;
   }
+}
+
+.active{
+  border-bottom: 3px solid #fed136;
 }

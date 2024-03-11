@@ -1,3 +1,12 @@
+.outerContainer {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .heading h1 {
     text-align: center;
     margin: 0 auto;
@@ -5,117 +14,101 @@
 }
 
 .container {
-    /* border: solid red; */
-    /* padding: 3rem; */
-    /* width: fit-content; */
-    margin: 0 auto;
+    margin: 1rem auto 3rem;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
-    max-width: 1250px;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
 
 
 .name {
     /* border: solid red; */
     text-align: center;
-    font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-.box {
-    /* margin-top: 2rem;
-    margin-bottom: 2rem; */
-    margin: 1rem;
-}
 
 .mainbox {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 2rem;
     border-radius: 1rem;
-    margin: 0 auto;
-    width: 370px;
-    height: 500px;
-    transition: all 0.15s ease-in-out;
+    max-width: 370px;
+    min-height: 480px;
+    transition: all 0.2s ease;
     background-color: #fff;
-    /* box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.8); */
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+.mainbox:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 .mainbox button {
-    padding-top: 0.4rem;
-    padding-right: 1rem;
-    padding-bottom: 0.4rem;
-    padding-left: 1rem;
+    padding: 0.4rem 0.8rem;
     font-size: 1rem;
     background-color: #F9EE34;
-    border: solid #F9EE34;
+    border: 2px solid #F9EE34;
     border-radius: 2rem;
-    transition: all 2s linear;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.mainbox button:hover {
+    transform: scale(1.08);
+}
+
+.mainbox .image {
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
 
 }
-.mainbox:hover{
-    transform: scale(1.01);
-    box-shadow: 0 0 10px #00000080;
-    cursor: pointer;
-}
-.mainbox button:hover{
-    transform: scale(1.04);
-    box-shadow: 0px 0px 10px 0px #73C48F;
-}
+
 .mainbox img {
-    width: 300px;
-    /* height: 200px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 1rem;
 }
 
-.discr {
-    /* border: solid red; */
-    /* width: 70%; */
+
+.mainbox .discr {
     text-align: center;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    font-size: 1.08rem;
+    margin: 1rem 0 0;
+    text-align: justify;
 
 }
 
-#number {
+.mainbox .number {
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 #first {
-    border-right: 3px solid #05A1C7;
-    border-bottom: 3px solid #05A1C7;
-    border-left: 3px solid #05A1C7;
-    border-top: 3px solid #05A1C7;
-
+    border: 3px solid #05A1C790;
 }
 
 #middle {
-    /* margin: 0px; */
-    border-left: 3px solid #F9EE34;
-    border-bottom: 3px solid #F9EE34;
-    border-right: 3px solid #F9EE34;
-    border-top: 3px solid #F9EE34;
-    /* padding: 2.7rem; */
+    border: 3px solid #F9EE3490;
 
 }
 
 #third {
-    border-right: 3px solid #F16A36;
-    border-bottom: 3px solid #F16A36;
-    border-left: 3px solid #F16A36;
-    border-top: 3px solid #F16A36;
-
+    border: 3px solid #F16A3690;
 }
 
 
@@ -126,7 +119,7 @@
     }
 
     .mainbox {
-        width: 90%;
+        min-height: auto;
     }
 
     .mainbox img {
@@ -156,21 +149,23 @@
         text-align: center;
         font-size: 0.9rem;
     }
-    .mainbox
-    {
+
+    .mainbox {
         height: 400px;
     }
 }
 
 @media (max-width: 1240px) {
-   
-    .mainbox{
+
+    .mainbox {
         width: 300px !important;
     }
-    .mainbox img{
+
+    .mainbox img {
         width: 90% !important;
     }
-    .mainbox #image{
+
+    .mainbox #image {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -178,17 +173,18 @@
 }
 
 @media (max-width: 1024px) {
-    .container{
+    .container {
         flex-direction: column;
     }
-    .mainbox{
+
+    .mainbox {
         width: 450px !important;
         height: 500px !important;
     }
 }
 
 @media (max-width: 467px) {
-    .mainbox{
+    .mainbox {
         width: 300px !important;
         height: 450px !important;
     }
