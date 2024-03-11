@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-const port = 8000;
+const port = process.env.URL || 8000;
 
 app.listen(port, () => {
     console.log("Server is Running on port: ", port);
