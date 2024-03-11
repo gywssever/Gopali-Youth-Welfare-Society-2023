@@ -108,10 +108,11 @@
 }
 
 
-.inputBox input[type="submit"] {
+.inputBox button[type="submit"] {
     background: #ffc107;
     color: #fff;
     border: none;
+    border-radius: 5px;
     font-weight: 600;
     font-size: 1.2rem;
     min-width: 120px;
