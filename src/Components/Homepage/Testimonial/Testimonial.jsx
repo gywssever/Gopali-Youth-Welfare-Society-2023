@@ -15,19 +15,19 @@ function ArrowTest(props) {
     />
   );
 }
-function TestiMonial() {
-  var settings = {
+
+export default function TestiMonial() {
+  const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
 
     autoplay: true,
     // eslint-disable-next-line no-dupe-keys
-    speed: 1200,
-    autoplaySpeed: 4000,
+    speed: 1000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
 
@@ -36,13 +36,7 @@ function TestiMonial() {
 
     responsive: [
       {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 500,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 1,
         },
@@ -73,7 +67,7 @@ function TestiMonial() {
         "   The fact that a group of students of IIT Kharagpur run a               fully-fledged NGO leaves me filled with immense pride. As an advisory committee member of GYWS and having closely  observed all their activities. They are breaking the trends which see IITians aiming at bagging high salary jobs as soon as they enter the campus. These people are contributing back to the society and their contribution is making a difference.",
     },
     {
-      name: "MR. SAILESH GANDHI",
+      name: "MR. Sailesh Gandhi",
       post: "IIT Bombay,'63 batch",
       img: "assets/images/home/testimg/sailesh.jpg",
       statement:
@@ -89,7 +83,7 @@ function TestiMonial() {
       name: "Ms. Suparna Mondal",
       post: "Former President, GYWS",
       img: "assets/images/home/testimg/suparna.png",
-      statement: "  Since its establishment in 2002, Gopali Youth Welfare Society has successfully launched and carried out several training and develooment activities in and around the Gopaili. In the past we have established rural libraries providing vocational training to the people from under-privileged section of society beside carrying out several awareness generation programs. We express our gratitude to them and our well wishes.",
+      statement: "  Since its establishment in 2002, Gopali Youth Welfare Society has successfully launched and carried out several training and develooment activities in and around the Gopali. In the past we have established rural libraries providing vocational training to the people from under-privileged section of society beside carrying out several awareness generation programs. We express our gratitude to them and our well wishes.",
     },
     {
       name: "Prof. H R Tiwari",
@@ -116,7 +110,7 @@ function TestiMonial() {
         <div className="TestiMonial-card-content">
           <div className="TestiMonial-card-heading">
             <h2>{name}</h2>
-            <h2>{post}</h2>
+            <h3>{post}</h3>
           </div>
 
           <div className="TestiMonial-card-para">
@@ -143,12 +137,9 @@ function TestiMonial() {
               />
             </div>
           ))}
-
-
         </Slider>
       </div>
 
     </>
   );
 }
-export default TestiMonial;

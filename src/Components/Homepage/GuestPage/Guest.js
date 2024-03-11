@@ -22,10 +22,8 @@ export default function Guest() {
           </div>
         </div>
 
-        <div className="imageGuest">
-          <div className="image">
-            <img src={guestPhoto} alt="" />
-          </div>
+        <div className="guest-image">
+          <img src={guestPhoto} alt="" />
         </div>
       </div>
     </>

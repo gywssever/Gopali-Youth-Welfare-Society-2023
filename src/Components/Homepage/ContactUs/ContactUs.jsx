@@ -11,9 +11,6 @@ function ContactUs() {
         </div>
 
         <div className="box" style={{
-          boxShadow: '0 0px 4px rgba(0, 0, 0, 0.6)',
-          borderRadius: '10px',
-          overflow: 'hidden',
         }}>
           <div className="contact form">
             <h2>
@@ -55,7 +52,7 @@ function ContactUs() {
 
                 <div className="row100">
                   <div className="inputBox">
-                    <input id="submitbutton" type="submit" value="Send" />
+                    <input id="submitbutton" type="submit" value="SEND" />
                     {/* <button type="submit">Submit</button> */}
                   </div>
                 </div>
