@@ -11,7 +11,7 @@ const data = [
     {
         id: 2,
         title: "Fundraiser for Hygiene Awareness event in deprived regions",
-        centre: "",
+        centre: "LiGHT Gwalior",
         link: "https://light.gyws.org/center_gwalior_sithouli",
         description: "Women's hygiene is still considered a taboo subject in most village regions. We, the youth, have to take charge and resolve the issues that have hindered development from long times. To spread the awareness, taking a step further towards Women Empowerment we are going to small villages and small schools to distribute sanitary pads. We (LiGHT Gwalior Sithouli) are raising funds for this noble cause and we need your support to achieve this. Let's come together and join us in this initiative. Donate as you wish To fulfil someone's needs.",
         btnLink: "https://checkout.razorpay.com/v1/payment-button.js",

@@ -228,7 +228,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .contactUs .box {}
+    .contactUs .box {
+        
+    }
 
     .contact.form {
         grid-template-columns: 1fr;
