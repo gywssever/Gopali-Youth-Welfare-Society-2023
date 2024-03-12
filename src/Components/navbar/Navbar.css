@@ -85,6 +85,7 @@ nav .logo img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #f26a36;
 }
 
 .nav-links li:hover {
@@ -243,5 +244,5 @@ nav .logo img {
 }
 
 .active{
-  border-bottom: 3px solid #fed136;
+  border-bottom: 3px solid #fed136 !important;
 }
