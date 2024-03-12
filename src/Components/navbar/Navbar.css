@@ -92,6 +92,9 @@ nav .logo img {
   color: #fed136;
 }
 
+.active{
+  border-bottom: 3px solid #fed136 !important;
+}
 #donatebtn {
   transition: all 0.2s ease-out;
 }
@@ -169,7 +172,10 @@ nav .logo img {
     border-radius: 0px 0px 5px 5px;
     opacity: 0.5;
   }
-
+  .active{
+    border: 3px solid #f26a36 !important;
+    color: #fed136 !important;
+  }
   .nav_space {
     height: 90px;
   }
@@ -243,6 +249,3 @@ nav .logo img {
   }
 }
 
-.active{
-  border-bottom: 3px solid #fed136 !important;
-}
