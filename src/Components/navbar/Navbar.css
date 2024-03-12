@@ -216,6 +216,9 @@ nav .logo img {
   #donatebtn:hover {
     box-shadow: none;
   }
+  #donatebtn{
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
