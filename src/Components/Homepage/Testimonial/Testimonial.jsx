@@ -16,6 +16,7 @@ function ArrowTest(props) {
   );
 }
 
+
 export default function TestiMonial() {
   const settings = {
     dots: false,
@@ -50,7 +51,7 @@ export default function TestiMonial() {
       post: "Former Director, IIT Kharagpur",
       img: "assets/images/home/testimg/Partha.jpg",
       statement:
-        " Having attended some GYWS events, the determination of the students to make a change amazes me. This is worth applause that they have taken the initiative to work for the underprivileged. | feel privileged to have such students in the campus who seek to give back to the society. Hope to see GYWS as well as other students come forward with more such initiatives.",
+        " Having attended some GYWS events, the determination of the students to make a change amazes me. This is worth applause that they have taken the initiative to work for the underprivileged. I feel privileged to have such students in the campus who seek to give back to the society. Hope to see GYWS as well as other students come forward with more such initiatives.",
     },
     {
       name: "Mr. Mrinal Kanti Bhanja",
@@ -83,7 +84,7 @@ export default function TestiMonial() {
       name: "Ms. Suparna Mondal",
       post: "Former President, GYWS",
       img: "assets/images/home/testimg/suparna.png",
-      statement: "  Since its establishment in 2002, Gopali Youth Welfare Society has successfully launched and carried out several training and development activities in and around the Gopali. In the past we have established rural libraries providing vocational training to the people from under-privileged section of society beside carrying out several awareness generation programs. We express our gratitude to them and our well wishes.",
+      statement: " Since its establishment in 2002, Gopali Youth Welfare Society has successfully launched and carried out several training and development activities in and around the Gopali. In the past we have established rural libraries providing vocational training to the people from under-privileged section of society beside carrying out several awareness generation programs. We express our gratitude to them and our well wishes.",
     },
     {
       name: "Prof. H R Tiwari",

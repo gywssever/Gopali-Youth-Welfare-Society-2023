@@ -17,9 +17,6 @@
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
 }
 
-
-
-
 .TestiMonial-card-image {
     width: 150px;
     height: 150px;
@@ -27,8 +24,6 @@
     border: 3px solid #202020;
     overflow: hidden;
 }
-
-
 
 .TestiMonial-card-image img {
     width: 100%;
@@ -77,7 +72,7 @@
         flex-direction: column;
 
         font-size: small;
-        height: 380px;
+        height:400px;
     }
 }
 
