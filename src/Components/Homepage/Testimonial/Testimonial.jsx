@@ -90,7 +90,7 @@ export default function TestiMonial() {
       name: "Prof. H R Tiwari",
       post: "  Ex-Professor, Department of Humanities and Social Science, IIT Kharagpur",
       img: "assets/images/home/testimg/HR.png",
-      statement: " Society is purely the extension of ourselves. Though we stepped in 21st century there are still several bleak aspects remain in our society especially in the developing countries like India. Illiteracy, poverty, lack of health consciousness, lack of social consciousness, lack of worldly  knowledge are major arnong them.Out of these sacred some of  the educated youth grouped together to do something in the   field and GOPALI YOUTH WELFARE SOCIETY came into being."
+      statement: " Society is purely the extension of ourselves. Though we stepped in 21st century there are still several bleak aspects remain in our society especially in the developing countries like India. Illiteracy, poverty, lack of health consciousness, lack of social consciousness, lack of worldly  knowledge are major arnong them.Out of these sacred some of  the educated youth grouped together to do something in the field ."
     },
     {
       name: "Prof. Madhusudan Chakraborty",

@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 350px;
+    height: 360px;
     padding: 1rem;
     margin: 1rem 5px;
     background-color: #695e9152;
@@ -59,7 +59,7 @@
 .TestiMonial-card-para {
     text-align: left;
     margin-top: 1rem;
-    font-weight: 400;
+    font-weight: 450;
     color: black;
 }
 
