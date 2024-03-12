@@ -77,7 +77,7 @@ footer .footer_container1 .footer_sci li a:hover {
 
 footer .footer_container1 .footer_quicklinks {
     position: relative;
-    line-height: 2;
+    line-height: 2.1;
 }
 
 footer .footer_container1 ul li {
@@ -181,4 +181,11 @@ footer .footer_container1 .footer_container1 .footer_info li a {
         grid-gap: 20px;
     }
 
+}
+
+@media (max-width: 1370px) {
+    footer .footer_container1 .footer_quicklinks {
+        position: relative;
+        line-height: 2.4;
+    }
 }
