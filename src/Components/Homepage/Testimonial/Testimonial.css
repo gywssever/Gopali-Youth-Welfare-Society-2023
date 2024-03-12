@@ -12,7 +12,7 @@
     height: 350px;
     padding: 1rem;
     margin: 1rem 5px;
-    background-color: #73C48F;
+    background-color: #695e9152;
     border-radius: 1rem;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
 }
@@ -64,7 +64,8 @@
 .TestiMonial-card-para {
     text-align: left;
     margin-top: 1rem;
-    color: #000000dd;
+    font-weight: 400;
+    color: black;
 }
 
 
