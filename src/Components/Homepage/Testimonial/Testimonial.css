@@ -59,7 +59,7 @@
 .TestiMonial-card-para {
     text-align: left;
     margin-top: 1rem;
-    font-weight: 450;
+    font-weight: 420;
     color: black;
 }
 
@@ -72,7 +72,7 @@
         flex-direction: column;
 
         font-size: small;
-        height:400px;
+        height:370px;
     }
 }
 
