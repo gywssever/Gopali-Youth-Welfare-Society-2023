@@ -67,7 +67,7 @@ export default function intiative() {
         </div>
         <div className={inticss.box}>
           <div className={inticss.name}>
-            <div style={{ color: "#F9EE34 " }}>LiGHT </div>
+            <div style={{ color: "#fed136 " }}>LiGHT </div>
           </div>
           <div className={inticss.mainbox} id={inticss.middle}>
             <div className={inticss.image}>
@@ -82,8 +82,6 @@ export default function intiative() {
               Student run centers</div>
             <button
               style={{
-                // backgroundColor: "#F16A36",
-                // borderColor: "#F16A36",
                 marginTop: '10px'
               }}
             >

@@ -57,8 +57,8 @@
 .mainbox button {
     padding: 0.4rem 0.8rem;
     font-size: 1rem;
-    background-color: #F9EE34;
-    border: 2px solid #F9EE34;
+    background-color: #fed136;
+    border: 2px solid #fed136;
     border-radius: 2rem;
     transition: all 0.2s ease-in-out;
 }
@@ -103,7 +103,7 @@
 }
 
 #middle {
-    border: 3px solid #F9EE3490;
+    border: 3px solid #fed13690;
 
 }
 

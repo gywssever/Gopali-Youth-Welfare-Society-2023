@@ -38,7 +38,6 @@ function SponsorsSlider() {
           </div>
         </div>
 
-
         <div className="container-slider">
           <HCard head={"AFFILIATIONS"}></HCard>
           <div className="sliderContainer">

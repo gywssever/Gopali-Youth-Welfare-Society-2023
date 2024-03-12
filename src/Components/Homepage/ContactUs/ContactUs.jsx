@@ -1,8 +1,54 @@
 import "./Contact.css";
+import { useState } from "react";
 import { GeoAltFill, EnvelopeFill, TelephoneFill } from "react-bootstrap-icons";
 import HCard from "../../HeaderCard/HCard";
 
 function ContactUs() {
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    mobile: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("https://gyws-backend.onrender.com/api/contactUs",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(formData)
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success === true) {
+        console.log(data.message);
+      } else {  
+        console.log(data.message);
+      }
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <>
       <div className="contactUs">
@@ -17,43 +63,43 @@ function ContactUs() {
               <strong>SEND A MESSAGE</strong>
             </h2>
 
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="formBox" >
                 <div className="row50">
                   <div className="inputBox">
                     <span></span>
-                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="First Name" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} />
                   </div>
 
                   <div className="inputBox">
                     <span></span>
-                    <input type="text" placeholder="Last Name" />
+                    <input type="text" placeholder="Last Name" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} />
                   </div>
                 </div>
 
                 <div className="row50">
                   <div className="inputBox">
                     <span></span>
-                    <input type="text" placeholder="Email Address" />
+                    <input type="text" placeholder="Email Address" id="email" name="email" value={formData.email} onChange={handleChange} />
                   </div>
 
                   <div className="inputBox">
                     <span></span>
-                    <input type="text" placeholder="Mobile" />
+                    <input type="text" placeholder="Mobile" id="mobile" name="mobile" value={formData.mobile} onChange={handleChange} />
                   </div>
                 </div>
 
                 <div className="row100">
                   <div className="inputBox">
                     <span></span>
-                    <textarea placeholder="Write Your Message Here"></textarea>
+                    <textarea placeholder="Write Your Message Here" id="message" name="message" value={formData.message} onChange={handleChange}></textarea>
                   </div>
                 </div>
 
                 <div className="row100">
                   <div className="inputBox">
-                    <input id="submitbutton" type="submit" value="SEND" />
-                    {/* <button type="submit">Submit</button> */}
+                    {/* <input id="submitbutton" type="submit" value="SEND" /> */}
+                    <button id="submitbutton" type="submit">SEND</button>
                   </div>
                 </div>
               </div>
